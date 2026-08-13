@@ -3,8 +3,14 @@
 import { useMemo, useState } from "react";
 
 const BOOKING_URL = "https://calendar.app.google/SDQkfwQwqctAsQd7A";
-const coverageOptions = ["Overflow only", "Nights & weekends", "24/7 coverage"];
-const workflowOptions = ["Answer & route", "Qualify leads", "Book + integrate"];
+const coverageOptions = [
+  { title: "After-hours", detail: "Evenings and weekends" },
+  { title: "24/7 Coverage", detail: "Every call, day or night" },
+];
+const workflowOptions = [
+  { title: "Answer & Route", detail: "Capture details and hand off" },
+  { title: "Book + Integrate Included", detail: "Schedule and sync your tools" },
+];
 
 function roundToFifty(value: number) {
   return Math.round(value / 50) * 50;
@@ -12,36 +18,56 @@ function roundToFifty(value: number) {
 
 export function PricingEstimator() {
   const [calls, setCalls] = useState(300);
-  const [coverage, setCoverage] = useState(1);
-  const [workflow, setWorkflow] = useState(1);
+  const [coverage, setCoverage] = useState(0);
+  const [workflow, setWorkflow] = useState(0);
 
   const estimate = useMemo(() => {
-    const average = roundToFifty(250 + calls * 0.55 + [0, 180, 350][coverage] + [0, 220, 430][workflow]);
+    const baseline = roundToFifty(250 + calls * 0.55 + [180, 350][coverage] + [0, 430][workflow]);
     return {
-      average,
-      low: roundToFifty(average * 0.85),
-      high: roundToFifty(average * 1.2),
+      average: baseline + 400,
+      low: roundToFifty(baseline * 0.85) + 400,
+      high: roundToFifty(baseline * 1.2) + 400,
     };
   }, [calls, coverage, workflow]);
 
   return <section className="pricingEstimator" aria-label="Monthly pricing estimator">
     <div className="pricingControls">
       <div className="pricingControl">
-        <div><label htmlFor="monthly-calls">Monthly call volume</label><output>{calls.toLocaleString()} calls</output></div>
+        <div className="pricingControlHeader"><label htmlFor="monthly-calls">Monthly call volume</label><output>{calls.toLocaleString()} calls</output></div>
         <input id="monthly-calls" type="range" min="100" max="1200" step="100" value={calls} onChange={(event) => setCalls(Number(event.target.value))} />
         <p><span>100</span><span>1,200+</span></p>
       </div>
 
-      <div className="pricingControl">
-        <div><label htmlFor="coverage">Coverage</label><output>{coverageOptions[coverage]}</output></div>
-        <input id="coverage" type="range" min="0" max="2" step="1" value={coverage} onChange={(event) => setCoverage(Number(event.target.value))} />
-        <p>{coverageOptions.map((option) => <span key={option}>{option}</span>)}</p>
+      <div className="pricingControl pricingChoiceControl">
+        <div className="pricingControlHeader"><span className="pricingControlLabel">Coverage</span><output>{coverageOptions[coverage].title}</output></div>
+        <div className="pricingChoiceGrid" role="group" aria-label="Choose coverage">
+          {coverageOptions.map((option, index) => <button
+            className={coverage === index ? "isSelected" : ""}
+            type="button"
+            aria-pressed={coverage === index}
+            onClick={() => setCoverage(index)}
+            key={option.title}
+          >
+            <span>{option.title}</span>
+            <small>{option.detail}</small>
+          </button>)}
+        </div>
       </div>
 
-      <div className="pricingControl">
-        <div><label htmlFor="workflow">Call workflow</label><output>{workflowOptions[workflow]}</output></div>
-        <input id="workflow" type="range" min="0" max="2" step="1" value={workflow} onChange={(event) => setWorkflow(Number(event.target.value))} />
-        <p>{workflowOptions.map((option) => <span key={option}>{option}</span>)}</p>
+      <div className="pricingControl pricingChoiceControl">
+        <div className="pricingControlHeader"><span className="pricingControlLabel">Call workflow</span><output>{workflowOptions[workflow].title}</output></div>
+        <div className="pricingChoiceGrid" role="group" aria-label="Choose call workflow">
+          {workflowOptions.map((option, index) => <button
+            className={workflow === index ? "isSelected" : ""}
+            type="button"
+            aria-pressed={workflow === index}
+            onClick={() => setWorkflow(index)}
+            key={option.title}
+          >
+            <span>{option.title}</span>
+            <small>{option.detail}</small>
+          </button>)}
+        </div>
       </div>
     </div>
 
