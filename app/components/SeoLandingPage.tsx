@@ -88,6 +88,16 @@ export function SeoLandingPage({ data }: { data: SeoLandingData }) {
         <ul>{data.fitPoints.map((point) => <li key={point}><span>✓</span>{point}</li>)}</ul>
       </section>
 
+      <section className="seoLandingAgentGuide">
+        <div><p className="eyebrow">BUILT AROUND THE CALL</p><h2>What a capable AI Agent should do in this workflow.</h2></div>
+        <div>
+          <p>An AI Agent should begin with the same approved greeting, service information, and qualification standards your team uses. For {data.serviceType.toLowerCase()}, that means understanding the caller before deciding whether to book, route, transfer, or create a follow-up.</p>
+          <p>The AI Agent follows defined business rules instead of improvising important policies. It can ask the right questions in order, recognize when a request falls outside its scope, and move sensitive or unusual conversations to a person.</p>
+          <p>Every completed AI Agent call should leave your team with useful context. Names, needs, urgency, location, appointment details, and the agreed next step belong in a clear summary rather than an unstructured voicemail.</p>
+          <p>Virtual Agent AI configures and tests the AI Agent around real calls from your business, then refines the workflow as new situations appear. The result is practical call coverage that supports the team already doing the work.</p>
+        </div>
+      </section>
+
       <section className="seoLandingFaq">
         <div><p className="eyebrow">COMMON QUESTIONS</p><h2>What businesses ask before getting started.</h2></div>
         <div>{data.faqs.map((faq, index) => <details key={faq.question} open={index === 0}><summary>{faq.question}<span>+</span></summary><p>{faq.answer}</p></details>)}</div>

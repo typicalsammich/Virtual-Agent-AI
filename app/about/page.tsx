@@ -38,7 +38,7 @@ export default function About() {
         <div className="aboutHeroCopy">
           <p className="eyebrow">ABOUT VIRTUAL AGENT AI</p>
           <h1>Built for the moments your business can’t <em>afford to miss.</em></h1>
-          <p className="aboutHeroLead">We help service businesses turn incoming calls into clear next steps, without asking a busy team to be everywhere at once.</p>
+          <p className="aboutHeroLead">We help service businesses build an AI Agent that turns incoming calls into clear next steps, without asking a busy team to be everywhere at once.</p>
           <div className="aboutHeroActions">
             <a className="button" href="https://calendar.app.google/SDQkfwQwqctAsQd7A">See the AI in action <span>↗</span></a>
             <a className="aboutTextLink" href="/services">Explore our services <span>→</span></a>

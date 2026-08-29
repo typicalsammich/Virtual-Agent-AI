@@ -178,7 +178,7 @@ export function DemoExperience() {
         <div className="demoHeroCopy">
           <p className="eyebrow">DESIGN YOUR CALL EXPERIENCE</p>
           <h1>Don’t watch a generic demo. Build the call your business needs.</h1>
-          <p>Choose the work you want handled. We’ll show how the conversation, qualification, routing, and handoff fit together before you book anything.</p>
+          <p>Choose the work you want handled. We’ll show how the AI Agent conversation, qualification, routing, and handoff fit together before you book anything.</p>
           <div className="demoHeroActions">
             <a className="button" href="#call-plan">Build my call plan <span>↓</span></a>
             <a className="demoTextLink" href="#how-it-works">See the complete handoff <span>↘</span></a>

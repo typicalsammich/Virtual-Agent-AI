@@ -50,6 +50,12 @@ export default function Home() {
           <a href="/ai-receptionist-for-law-firms"><span>LEGAL INTAKE</span><strong>For law firms</strong><b>↗</b></a>
           <a href="/services/after-hours-answering"><span>24/7 COVERAGE</span><strong>After-hours answering</strong><b>↗</b></a>
         </nav>
+        <nav className="homeSearchLinks" aria-label="AI Agent solutions by industry">
+          <a href="/ai-agent-for-plumbers"><span>AI AGENT</span><strong>For plumbers</strong><b>↗</b></a>
+          <a href="/ai-agent-for-hvac"><span>AI AGENT</span><strong>For HVAC companies</strong><b>↗</b></a>
+          <a href="/ai-agent-for-roofers"><span>AI AGENT</span><strong>For roofers</strong><b>↗</b></a>
+          <a href="/ai-agent-for-dental-offices"><span>AI AGENT</span><strong>For dental offices</strong><b>↗</b></a>
+        </nav>
       </section>
 
       <section className="reviews">

@@ -97,6 +97,15 @@ export function BlogArticle({ post }: { post: BlogPost }) {
               <div>{post.faqs.map((faq) => <details key={faq.question}><summary>{faq.question}<span>+</span></summary><p>{faq.answer}</p></details>)}</div>
             </section>
 
+            <section className="articleSection articleAgentChecklist" aria-labelledby="ai-agent-implementation-checklist">
+              <span className="articleSectionNumber">FIELD NOTE</span>
+              <h2 id="ai-agent-implementation-checklist">A practical AI Agent implementation check</h2>
+              <p>An AI Agent performs best when the business defines the desired outcome before writing the call script. Start with the caller’s goal, the information your team needs, and the exact situations that require a human.</p>
+              <p>Before launch, give the AI Agent realistic calls related to {post.focusKeyword}, including interruptions, incomplete answers, objections, and requests outside the approved scope. Testing only the easiest conversation creates false confidence.</p>
+              <p>A useful AI Agent should finish with a clear action and a structured record. Review whether the booking, transfer, qualification result, or follow-up task matches what a strong employee would have done.</p>
+              <p>Virtual Agent AI reviews real outcomes after launch so the AI Agent can improve without drifting away from the business rules. That ongoing refinement is what turns a voice demo into a dependable operating workflow.</p>
+            </section>
+
             <div className="articleAuthor">
               <div className="articleAuthorMark">V</div>
               <div><span>WRITTEN BY</span><strong>Virtual Agent AI Editorial Team</strong><p>Practical guidance for service businesses improving call response, qualification, booking, and customer follow-up.</p></div>

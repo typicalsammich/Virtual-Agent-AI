@@ -23,7 +23,7 @@ export default function Pricing() {
       <section className="pricingSimpleIntro">
         <p className="eyebrow">CUSTOM PRICING ESTIMATOR</p>
         <h1>Get a realistic starting range.</h1>
-        <p>Pricing depends on how many calls you receive, when you need coverage, and what the receptionist needs to accomplish. Adjust the three factors below for a practical planning estimate.</p>
+        <p>Pricing depends on how many calls you receive, when you need coverage, and what the AI Agent needs to accomplish. Adjust the three factors below for a practical planning estimate.</p>
       </section>
       <PricingEstimator />
     </main>

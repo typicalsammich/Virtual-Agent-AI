@@ -41,7 +41,7 @@ export default function Blog() {
         <div className="blogHeroIntro">
           <p className="eyebrow">VIRTUAL AGENT AI INSIGHTS</p>
           <h1>The systems behind <em>better conversations.</em></h1>
-          <p>Clear, practical guides for service businesses that want to answer faster, qualify consistently, book more work, and build a customer response system that holds up after hours.</p>
+          <p>Clear, practical guides for service businesses that want to answer faster, qualify consistently, book more work, and understand where an AI Agent fits into a customer response system.</p>
         </div>
         <a className="featuredPost" href={`/blog/${featured.slug}`}>
           <div className="featuredPostTop"><span>START HERE</span><b>{featured.readTime}</b></div>

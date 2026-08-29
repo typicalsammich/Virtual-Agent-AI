@@ -9,7 +9,7 @@ export default function Services() {
         <div className="servicesHeroCopy">
           <p className="eyebrow">AI RECEPTION BUILT FOR REVENUE</p>
           <h1>Every call answered.<br />Every opportunity<br /><em>moved forward.</em></h1>
-          <p className="servicesHeroLead">Our managed AI receptionist service handles the conversations that turn interest into business. It answers naturally, qualifies accurately, and completes the right next step without adding staff.</p>
+          <p className="servicesHeroLead">Our managed AI receptionist service uses a business-specific AI Agent to handle the conversations that turn interest into business. It answers naturally, qualifies accurately, and completes the right next step without adding staff.</p>
           <div className="servicesHeroActions"><a className="button" href="https://calendar.app.google/SDQkfwQwqctAsQd7A">See it handle your calls <span>↗</span></a><a className="servicesHeroCall" href="tel:7146955646">Call the AI <span>→</span></a></div>
           <div className="servicesHeroProof"><span><b>24/7</b> live coverage</span><span><b>&lt;30 sec</b> response</span><span><b>Fully managed</b> setup</span></div>
         </div>
