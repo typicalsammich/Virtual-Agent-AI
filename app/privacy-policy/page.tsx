@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { LegalPage } from "../components/LegalPage";
-const siteUrl = "https://virtualagentai.org";
+const siteUrl = "https://virtual-agent-ai.typical-sammich.chatgpt.site";
 export const metadata: Metadata = { title: "Privacy Policy", description: "Read the Virtual Agent AI privacy policy and learn how website inquiry information is handled.", alternates: { canonical: `${siteUrl}/privacy-policy` }, robots: { index: false, follow: true } };
 export default function Page() { return <LegalPage eyebrow="PRIVACY" title="Privacy Policy" updated="August 13, 2026">
   <h2>Information we collect</h2><p>When you contact Virtual Agent AI, we may receive the name, business name, email address, phone number, and message you choose to provide. Basic technical information may also be processed by the website hosting platform to operate, secure, and improve the site.</p>

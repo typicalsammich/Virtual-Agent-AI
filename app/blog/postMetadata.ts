@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import type { BlogPost } from "./posts";
 
-const siteUrl = "https://virtualagentai.org";
+const siteUrl = "https://virtual-agent-ai.typical-sammich.chatgpt.site";
 
 export function createPostMetadata(post: BlogPost): Metadata {
   const url = `${siteUrl}/blog/${post.slug}`;

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { SeoLandingPage, type SeoLandingData } from "../components/SeoLandingPage";
 
-const siteUrl = "https://virtualagentai.org";
+const siteUrl = "https://virtual-agent-ai.typical-sammich.chatgpt.site";
 export const metadata: Metadata = {
   title: "AI Receptionist for Small Business Calls",
   description: "Answer every business call 24/7 with an AI receptionist that qualifies leads, books appointments, routes callers, and sends instant summaries.",

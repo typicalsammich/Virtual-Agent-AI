@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { SeoLandingPage, type SeoLandingData } from "../../components/SeoLandingPage";
-const siteUrl = "https://virtualagentai.org";
+const siteUrl = "https://virtual-agent-ai.typical-sammich.chatgpt.site";
 export const metadata: Metadata = { title: "24/7 AI Call Answering Service", description: "Answer inbound business calls 24/7 with natural conversation, custom FAQs, lead capture, call routing, and instant summaries.", alternates: { canonical: `${siteUrl}/services/ai-call-answering` }, openGraph: { type: "website", url: `${siteUrl}/services/ai-call-answering`, title: "24/7 AI Call Answering Service", description: "Reliable business call coverage built around your services, hours, and routing rules.", siteName: "Virtual Agent AI" } };
 const data: SeoLandingData = {
   path: "/services/ai-call-answering", eyebrow: "24/7 AI CALL ANSWERING", title: "Every inbound call gets a clear, professional first response.", intro: "Our AI call answering service picks up when your team is busy, after hours, or handling another customer. It speaks naturally, uses approved business information, identifies why the person called, and completes the next action your workflow allows.", promise: "Immediate call coverage with consistent answers, organized intake, and fewer callers sent to voicemail.", serviceType: "24/7 AI Call Answering Service",

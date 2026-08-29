@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://virtualagentai.org/sitemap.xml
+Sitemap: https://virtual-agent-ai.typical-sammich.chatgpt.site/sitemap.xml

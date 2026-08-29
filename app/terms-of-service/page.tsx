@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { LegalPage } from "../components/LegalPage";
-const siteUrl = "https://virtualagentai.org";
+const siteUrl = "https://virtual-agent-ai.typical-sammich.chatgpt.site";
 export const metadata: Metadata = { title: "Website Terms of Service", description: "Review the terms that apply when using the Virtual Agent AI website.", alternates: { canonical: `${siteUrl}/terms-of-service` }, robots: { index: false, follow: true } };
 export default function Page() { return <LegalPage eyebrow="TERMS" title="Website Terms of Service" updated="August 13, 2026">
   <h2>Website use</h2><p>This website provides general information about Virtual Agent AI and its services. You may use the site for lawful business research and to contact the company. You may not interfere with site operation, attempt unauthorized access, or misuse the content or contact features.</p>

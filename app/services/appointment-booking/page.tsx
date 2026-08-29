@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { SeoLandingPage, type SeoLandingData } from "../../components/SeoLandingPage";
-const siteUrl = "https://virtualagentai.org";
+const siteUrl = "https://virtual-agent-ai.typical-sammich.chatgpt.site";
 export const metadata: Metadata = { title: "AI Appointment Booking by Phone", description: "Turn qualified inbound calls into booked appointments with conversational AI scheduling, live availability, business rules, and confirmations.", alternates: { canonical: `${siteUrl}/services/appointment-booking` }, openGraph: { type: "website", url: `${siteUrl}/services/appointment-booking`, title: "AI Appointment Booking by Phone", description: "Qualify callers and schedule the right appointment before the call ends.", siteName: "Virtual Agent AI" } };
 const data: SeoLandingData = {
   path: "/services/appointment-booking", eyebrow: "AI APPOINTMENT BOOKING", title: "Turn qualified phone calls into confirmed appointments while intent is high.", intro: "AI appointment booking keeps the caller in the conversation, applies your eligibility and scheduling rules, offers valid availability, and confirms the right appointment before the person hangs up.", promise: "Less scheduling back and forth, fewer abandoned inquiries, and more complete appointments on the calendar.", serviceType: "AI Appointment Booking Service",

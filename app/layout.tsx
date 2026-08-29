@@ -2,7 +2,7 @@
 import type { Metadata, Viewport } from "next";
 import { PageTransition } from "./components/PageTransition";
 import "./globals.css";
-const siteUrl = "https://virtualagentai.org";
+const siteUrl = "https://virtual-agent-ai.typical-sammich.chatgpt.site";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: { default: "24/7 AI Receptionist for Small Business | Virtual Agent AI", template: "%s | Virtual Agent AI" },

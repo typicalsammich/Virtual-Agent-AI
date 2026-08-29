@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { SeoLandingPage, type SeoLandingData } from "../../components/SeoLandingPage";
-const siteUrl = "https://virtualagentai.org";
+const siteUrl = "https://virtual-agent-ai.typical-sammich.chatgpt.site";
 export const metadata: Metadata = { title: "24/7 After-Hours AI Answering Service", description: "Answer calls after hours, on weekends, and during overflow with AI intake, appointment booking, urgent call routing, and team alerts.", alternates: { canonical: `${siteUrl}/services/after-hours-answering` }, openGraph: { type: "website", url: `${siteUrl}/services/after-hours-answering`, title: "24/7 After-Hours AI Answering Service", description: "Protect nights, weekends, and overflow calls with a defined response workflow.", siteName: "Virtual Agent AI" } };
 const data: SeoLandingData = {
   path: "/services/after-hours-answering", eyebrow: "AFTER-HOURS AI ANSWERING", title: "Keep valuable calls moving when the office is closed.", intro: "Our after-hours AI answering service responds during nights, weekends, holidays, lunch breaks, and overflow periods. It identifies the caller, captures the request, applies your urgency rules, and completes the approved booking or escalation path.", promise: "Fewer overnight opportunities lost, fewer unnecessary interruptions for on-call staff, and a clear record of every request.", serviceType: "After-Hours AI Answering Service",

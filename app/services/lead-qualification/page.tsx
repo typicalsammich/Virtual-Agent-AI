@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { SeoLandingPage, type SeoLandingData } from "../../components/SeoLandingPage";
-const siteUrl = "https://virtualagentai.org";
+const siteUrl = "https://virtual-agent-ai.typical-sammich.chatgpt.site";
 export const metadata: Metadata = { title: "AI Lead Qualification by Phone", description: "Qualify inbound leads by phone with custom questions for fit, intent, urgency, readiness, and the right sales or service next step.", alternates: { canonical: `${siteUrl}/services/lead-qualification` }, openGraph: { type: "website", url: `${siteUrl}/services/lead-qualification`, title: "AI Lead Qualification by Phone", description: "Capture the facts your team needs before a lead reaches the next step.", siteName: "Virtual Agent AI" } };
 const data: SeoLandingData = {
   path: "/services/lead-qualification", eyebrow: "AI LEAD QUALIFICATION", title: "Ask the right questions before your team spends time on the lead.", intro: "AI lead qualification uses a natural phone conversation to capture fit, intent, urgency, and readiness. Each caller receives a useful next step while your team gets the context needed to prioritize, book, transfer, or follow up.", promise: "Better prepared sales conversations, faster routing for valuable opportunities, and less time spent chasing incomplete leads.", serviceType: "AI Lead Qualification Service",

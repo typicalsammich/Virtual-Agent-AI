@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { SiteHeader } from "../components/SiteChrome";
 import { SiteFooter } from "../components/SiteFooter";
 
-const siteUrl = "https://virtualagentai.org";
+const siteUrl = "https://virtual-agent-ai.typical-sammich.chatgpt.site";
 
 export const metadata: Metadata = {
   title: "About Our Managed AI Receptionist Service",
