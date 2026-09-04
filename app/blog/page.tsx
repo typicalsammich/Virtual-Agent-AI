@@ -63,7 +63,7 @@ export default function Blog() {
         <p className="eyebrow">SEE IT IN A REAL CONVERSATION</p>
         <h2>Bring the call your team keeps missing.</h2>
         <p>We’ll build a live walkthrough around your business, your questions, and the outcome you want the caller to reach.</p>
-        <a className="button" href="https://calendar.app.google/SDQkfwQwqctAsQd7A">Book a live demo <span>↗</span></a>
+        <a className="button" href="/#contact">Book a live demo <span>↗</span></a>
       </section>
     </main>
     <SiteFooter />

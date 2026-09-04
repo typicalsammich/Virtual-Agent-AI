@@ -27,7 +27,7 @@ export function SiteHeader() {
   }, [menuOpen]);
 
   return <header className="siteHeader">
-    <a className="logo" href="/" onClick={() => setMenuOpen(false)}><b>V</b>irtual Agent AI</a>
+    <a className="logo brandLogo" href="/" onClick={() => setMenuOpen(false)}><img className="brandMarkImage" src="/favicon.png" alt="" aria-hidden="true" /><span>Virtual Agent AI</span></a>
     <nav className={menuOpen ? "mobileNavOpen" : ""} aria-label="Main navigation" id="main-navigation">
       {navigation.map(([label, href]) => {
         const active = href === "/" ? pathname === "/" : pathname.startsWith(href);
@@ -35,11 +35,11 @@ export function SiteHeader() {
       })}
       <div className="mobileNavActions">
         <a href="tel:7146955646"><PhoneIcon /> Call (714) 695-5646</a>
-        <a className="mobileBook" href="https://calendar.app.google/SDQkfwQwqctAsQd7A">Book a Demo <span>↗</span></a>
+        <a className="mobileBook" href="/#contact">Book a Demo <span>↗</span></a>
       </div>
     </nav>
     <a className="topPhone" href="tel:7146955646"><PhoneIcon />(714) 695-5646</a>
-    <a className="book" href="https://calendar.app.google/SDQkfwQwqctAsQd7A">Book a Demo</a>
+    <a className="book" href="/#contact">Book a Demo</a>
     <button className={menuOpen ? "mobileMenuButton open" : "mobileMenuButton"} type="button" aria-expanded={menuOpen} aria-controls="main-navigation" aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"} onClick={() => setMenuOpen((open) => !open)}>
       <span /><span /><span />
     </button>

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Virtual Agent AI answers business calls 24/7, qualifies leads, books appointments, routes urgent requests, and sends clear call summaries.",
   alternates: { canonical: siteUrl },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 } },
-  icons: { icon: "/favicon.svg" },
+  icons: { icon: [{ url: "/favicon.png", type: "image/png" }], shortcut: "/favicon.png", apple: "/favicon.png" },
   openGraph: { type: "website", siteName: "Virtual Agent AI", title: "24/7 AI Receptionist for Small Business | Virtual Agent AI", description: "Answer calls, qualify leads, book appointments, and route urgent requests with a managed AI receptionist.", url: siteUrl, locale: "en_US" },
   twitter: { card: "summary", title: "24/7 AI Receptionist for Small Business | Virtual Agent AI", description: "Answer calls, qualify leads, and book appointments around the clock." },
 };
@@ -26,7 +26,6 @@ export default function RootLayout({children}:{children:React.ReactNode}) {
         telephone: "+1-714-695-5646",
         email: "virtualagentai@gmail.com",
         description: "A managed AI receptionist service for businesses that need reliable call answering, lead qualification, appointment booking, and call routing.",
-        address: { "@type": "PostalAddress", addressLocality: "Menifee", addressRegion: "CA", addressCountry: "US" },
         areaServed: { "@type": "Country", name: "United States" },
         contactPoint: { "@type": "ContactPoint", telephone: "+1-714-695-5646", contactType: "sales", areaServed: "US", availableLanguage: "English" },
         sameAs: [

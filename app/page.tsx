@@ -14,7 +14,7 @@ export default function Home() {
           <p className="lead">Virtual Agent AI is a managed 24/7 AI receptionist and phone answering service that qualifies leads, books appointments, routes urgent calls, and follows up without adding another front-desk employee.</p>
           <div className="heroActions">
             <a className="button" href="/demo">See the AI in Action <span>→</span></a>
-            <a className="outline" href="https://calendar.app.google/SDQkfwQwqctAsQd7A">Book a Live Demo <span>→</span></a>
+            <a className="outline" href="#contact">Book a Live Demo <span>→</span></a>
           </div>
           <p className="fine">The AI is the mechanism. Revenue recovery and business efficiency are the outcome.</p>
         </div>
@@ -79,6 +79,20 @@ export default function Home() {
         </a>
       </section>
 
+      <section className="whyChoose">
+        <div className="whyChooseIntro"><p className="eyebrow">WHY CHOOSE US</p><h2>A managed AI phone system, built around your business.</h2><p>We do more than switch on software. We learn your call flow, shape the conversations, connect the right next steps, and keep improving the experience after launch.</p></div>
+        <div className="whyChooseGrid">
+          <article><span>01</span><h3>Built for your calls</h3><p>Your greeting, questions, routing rules, and booking process are configured around how your team actually works.</p></article>
+          <article><span>02</span><h3>Human-supported setup</h3><p>Our team handles implementation and testing so your AI agent sounds prepared before it answers customers.</p></article>
+          <article><span>03</span><h3>Clear handoffs</h3><p>Qualified details, appointments, and urgent requests reach the right person with useful context.</p></article>
+        </div>
+      </section>
+
+      <section className="serviceArea">
+        <div><p className="eyebrow">SERVICE AREA</p><h2>Built to answer calls wherever business happens.</h2></div>
+        <div><p>Virtual Agent AI serves businesses across the United States. Because the service works through your existing phone workflow, coverage is not limited to one city or office.</p><div className="serviceAreaTags"><span>Nationwide coverage</span><span>Local and multi-location teams</span><span>Remote implementation</span></div></div>
+      </section>
+
       <section className="experience">
         <div className="experienceShell">
           <div className="experienceCopy">
@@ -128,6 +142,7 @@ export default function Home() {
               <label><span>Phone number</span><input name="Phone number" type="tel" placeholder="(555) 000-0000" required /></label>
               <label><span>Email address</span><input name="Email address" type="email" placeholder="jane@acmecorp.com" required /></label>
               <label className="messageField"><span>What would you like the AI to handle?</span><textarea name="Message" placeholder="A few details about your call volume, business, and what you want to improve..." required /></label>
+              <fieldset className="callbackField"><legend>Would you like a phone call instead?</legend><label><input type="radio" name="Phone call requested" value="Yes" /> Yes, have Lamora call me</label><label><input type="radio" name="Phone call requested" value="No" defaultChecked /> No, email is fine</label></fieldset>
             </div>
             <button className="sendButton" type="submit"><span>Send message</span><b>↗</b></button>
             <p className="formPrivacy">Your information is only used to respond to this inquiry.</p>

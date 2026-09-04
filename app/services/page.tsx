@@ -10,7 +10,7 @@ export default function Services() {
           <p className="eyebrow">AI RECEPTION BUILT FOR REVENUE</p>
           <h1>Every call answered.<br />Every opportunity<br /><em>moved forward.</em></h1>
           <p className="servicesHeroLead">Our managed AI receptionist service uses a business-specific AI Agent to handle the conversations that turn interest into business. It answers naturally, qualifies accurately, and completes the right next step without adding staff.</p>
-          <div className="servicesHeroActions"><a className="button" href="https://calendar.app.google/SDQkfwQwqctAsQd7A">See it handle your calls <span>↗</span></a><a className="servicesHeroCall" href="tel:7146955646">Call the AI <span>→</span></a></div>
+          <div className="servicesHeroActions"><a className="button" href="/#contact">See it handle your calls <span>↗</span></a><a className="servicesHeroCall" href="tel:7146955646">Call the AI <span>→</span></a></div>
           <div className="servicesHeroProof"><span><b>24/7</b> live coverage</span><span><b>&lt;30 sec</b> response</span><span><b>Fully managed</b> setup</span></div>
         </div>
 
@@ -52,7 +52,7 @@ export default function Services() {
           <p className="eyebrow">BEYOND THE FIRST CALL</p>
           <h2>Build the system around the conversation.</h2>
           <p>Once every inquiry gets a fast response, we can help strengthen the channels that create demand and keep prospects moving.</p>
-          <a href="https://calendar.app.google/SDQkfwQwqctAsQd7A">Talk through your growth plan <span>↗</span></a>
+          <a href="/#contact">Talk through your growth plan <span>↗</span></a>
         </aside>
 
         <div className="growthPortfolio">
@@ -63,10 +63,10 @@ export default function Services() {
       </div>
     </section>
 
-    <section className="servicesCta"><p className="eyebrow">SEE YOUR WORKFLOW IN ACTION</p><h2>Bring us one real call scenario.<br />We’ll show you how the AI handles it.</h2><p>No generic script. Your services, your questions, your routing, and your customer experience.</p><div><a className="button" href="https://calendar.app.google/SDQkfwQwqctAsQd7A">Book a tailored demo <span>↗</span></a><a href="tel:7146955646">(714) 695-5646</a></div></section>
+    <section className="servicesCta"><p className="eyebrow">SEE YOUR WORKFLOW IN ACTION</p><h2>Bring us one real call scenario.<br />We’ll show you how the AI handles it.</h2><p>No generic script. Your services, your questions, your routing, and your customer experience.</p><div><a className="button" href="/#contact">Book a tailored demo <span>↗</span></a><a href="tel:7146955646">(714) 695-5646</a></div></section>
   </main><SiteFooter/></>;
 }
 
 function ServiceRow({n, href, title, description, features}:{n:string;href:string;title:string;description:string;features:string[]}) { return <article className="systemRow"><span>{n}</span><h3><a href={href}>{title} <b>↗</b></a></h3><p>{description}</p><div>{features.map(feature => <small key={feature}>✓ {feature}</small>)}</div></article>; }
 function ProcessStep({n, title, text}:{n:string;title:string;text:string}) { return <article className="processStep"><span>{n}</span><div><h3>{title}</h3><p>{text}</p></div></article>; }
-function GrowthPanel({className="", label, title, text, outcome, detail}:{className?:string;label:string;title:string;text:string;outcome:string;detail:string}) { return <a className={`growthPanel ${className}`} href="https://calendar.app.google/SDQkfwQwqctAsQd7A"><div className="growthPanelTop"><span>{label}</span><b>↗</b></div><h3>{title}</h3><p>{text}</p><div className="growthPanelBottom"><small>{detail}</small><strong><i>✓</i>{outcome}</strong></div></a>; }
+function GrowthPanel({className="", label, title, text, outcome, detail}:{className?:string;label:string;title:string;text:string;outcome:string;detail:string}) { return <a className={`growthPanel ${className}`} href="/#contact"><div className="growthPanelTop"><span>{label}</span><b>↗</b></div><h3>{title}</h3><p>{text}</p><div className="growthPanelBottom"><small>{detail}</small><strong><i>✓</i>{outcome}</strong></div></a>; }

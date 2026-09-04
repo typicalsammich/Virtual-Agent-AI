@@ -65,7 +65,7 @@ export function BlogArticle({ post }: { post: BlogPost }) {
           <aside className="articleToc" aria-label="On this page">
             <span>ON THIS PAGE</span>
             <ol>{post.sections.map((section, index) => <li key={section.id}><a href={`#${section.id}`}><b>0{index + 1}</b>{section.heading}</a></li>)}</ol>
-            <a className="articleTocCta" href="https://calendar.app.google/SDQkfwQwqctAsQd7A">See the AI in action <b>↗</b></a>
+            <a className="articleTocCta" href="/#contact">See the AI in action <b>↗</b></a>
           </aside>
 
           <div className="articleBody">
@@ -87,7 +87,7 @@ export function BlogArticle({ post }: { post: BlogPost }) {
               </section>
               {index === 2 && <aside className="articleInlineCta">
                 <div><span>PUT THE PLAYBOOK INTO PRACTICE</span><strong>See how Virtual Agent AI would handle a real call for your business.</strong></div>
-                <a href="https://calendar.app.google/SDQkfwQwqctAsQd7A">Book a live walkthrough <b>↗</b></a>
+                <a href="/#contact">Book a live walkthrough <b>↗</b></a>
               </aside>}
             </div>)}
 

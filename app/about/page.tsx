@@ -6,7 +6,7 @@ const siteUrl = "https://virtual-agent-ai.typical-sammich.chatgpt.site";
 
 export const metadata: Metadata = {
   title: "About Our Managed AI Receptionist Service",
-  description: "Meet Virtual Agent AI, a Menifee-based team building managed AI receptionist systems for service businesses across the United States.",
+  description: "Meet Virtual Agent AI, a team building managed AI receptionist systems for service businesses across the United States.",
   alternates: { canonical: `${siteUrl}/about` },
   openGraph: { type: "website", url: `${siteUrl}/about`, title: "About Virtual Agent AI", description: "Managed AI call answering built around real service business workflows.", siteName: "Virtual Agent AI" },
 };
@@ -40,7 +40,7 @@ export default function About() {
           <h1>Built for the moments your business can’t <em>afford to miss.</em></h1>
           <p className="aboutHeroLead">We help service businesses build an AI Agent that turns incoming calls into clear next steps, without asking a busy team to be everywhere at once.</p>
           <div className="aboutHeroActions">
-            <a className="button" href="https://calendar.app.google/SDQkfwQwqctAsQd7A">See the AI in action <span>↗</span></a>
+            <a className="button" href="/#contact">See the AI in action <span>↗</span></a>
             <a className="aboutTextLink" href="/services">Explore our services <span>→</span></a>
           </div>
         </div>
@@ -96,11 +96,11 @@ export default function About() {
       <section className="aboutReach">
         <div className="aboutReachHeading">
           <p className="eyebrow">LOCAL ROOTS. NATIONAL REACH.</p>
-          <h2>Based in Menifee.<br />Built for businesses nationwide.</h2>
+          <h2>One expert team.<br />Built for businesses nationwide.</h2>
           <p>We work with high-value service teams that depend on speed, trust, and a complete handoff to win the customer.</p>
         </div>
         <div className="aboutReachFacts">
-          <div><small>HOME BASE</small><strong>Menifee, California</strong></div>
+          <div><small>SERVICE AREA</small><strong>Businesses across the United States</strong></div>
           <div><small>SERVICE AREA</small><strong>Businesses nationwide</strong></div>
           <div><small>TRUST</small><strong>BBB Accredited · A− Rating</strong></div>
         </div>
@@ -115,7 +115,7 @@ export default function About() {
         <h2>Bring us your hardest call scenario.</h2>
         <p>We’ll show you how Virtual Agent AI can answer it, qualify it, and move it forward in a live walkthrough built around your business.</p>
         <div>
-          <a className="button" href="https://calendar.app.google/SDQkfwQwqctAsQd7A">Book a live demo <span>↗</span></a>
+          <a className="button" href="/#contact">Book a live demo <span>↗</span></a>
           <a href="tel:7146955646">Call the AI <span>→</span></a>
         </div>
       </section>

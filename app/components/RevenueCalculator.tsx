@@ -43,7 +43,7 @@ export function RevenueCalculator() {
           <div><small>PER MONTH</small><strong>{showResults ? String.fromCharCode(36) + monthly.toLocaleString() : "???"}</strong></div>
           <div><small>PER YEAR</small><strong>{showResults ? String.fromCharCode(36) + yearly.toLocaleString() : "???"}</strong></div>
         </div>
-        <a className="recoverButton" href="https://calendar.app.google/SDQkfwQwqctAsQd7A">Recover These Opportunities <span>→</span></a>
+        <a className="recoverButton" href="/#contact">Recover These Opportunities <span>→</span></a>
       </div>
     </div>
   </section>;

@@ -2,7 +2,7 @@ import { SiteHeader } from "./SiteChrome";
 import { SiteFooter } from "./SiteFooter";
 
 const siteUrl = "https://virtual-agent-ai.typical-sammich.chatgpt.site";
-const bookingUrl = "https://calendar.app.google/SDQkfwQwqctAsQd7A";
+const bookingUrl = "/#contact";
 
 export type SeoLandingData = {
   path: string;

@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 
-const BOOKING_URL = "https://calendar.app.google/SDQkfwQwqctAsQd7A";
+const BOOKING_URL = "/#contact";
 const coverageOptions = [
   { title: "After-hours", detail: "Evenings and weekends" },
   { title: "24/7 Coverage", detail: "Every call, day or night" },
@@ -12,21 +12,17 @@ const workflowOptions = [
   { title: "Book + Integrate Included", detail: "Schedule and sync your tools" },
 ];
 
-function roundToFifty(value: number) {
-  return Math.round(value / 50) * 50;
-}
-
 export function PricingEstimator() {
   const [calls, setCalls] = useState(300);
   const [coverage, setCoverage] = useState(0);
   const [workflow, setWorkflow] = useState(0);
 
   const estimate = useMemo(() => {
-    const baseline = roundToFifty(250 + calls * 0.55 + [180, 350][coverage] + [0, 430][workflow]);
+    const baseline = [249, 299][coverage] + Math.ceil(Math.max(0, calls - 100) / 100) * 25 + [0, 100][workflow];
     return {
-      average: baseline + 400,
-      low: roundToFifty(baseline * 0.85) + 400,
-      high: roundToFifty(baseline * 1.2) + 400,
+      average: baseline,
+      low: baseline,
+      high: baseline + (coverage === 0 ? 75 : 100) + (workflow === 1 ? 50 : 0),
     };
   }, [calls, coverage, workflow]);
 
@@ -72,7 +68,7 @@ export function PricingEstimator() {
     </div>
 
     <aside className="pricingEstimate" aria-live="polite">
-      <p className="eyebrow">ESTIMATED AVERAGE</p>
+      <p className="eyebrow">ESTIMATED STARTING PRICE</p>
       <strong>${estimate.average.toLocaleString()}<small>/month</small></strong>
       <p>Typical planning range: <b>${estimate.low.toLocaleString()} to ${estimate.high.toLocaleString()}/month</b></p>
       <span>This is an estimate, not a final quote. Your exact price is confirmed after a short review of your real call flow.</span>

@@ -247,7 +247,7 @@ export function DemoExperience() {
       <section className="demoConversion">
         <div className="demoConversionCopy"><p className="eyebrow">YOUR NEXT CALL IS THE BEST TEST</p><h2>Bring us the conversation your team cannot keep missing.</h2><p>We’ll turn it into a clear call blueprint using your services, questions, availability, and escalation rules.</p></div>
         <div className="demoConversionActions">
-          <a className="button" href="https://calendar.app.google/SDQkfwQwqctAsQd7A">Build my live walkthrough <span>↗</span></a>
+          <a className="button" href="/#contact">Build my live walkthrough <span>↗</span></a>
           <a href="tel:7146955646"><small>PREFER TO CALL?</small><strong>(714) 695-5646 <span>↗</span></strong></a>
           <p><span>✓</span> No commitment. Bring one scenario. Leave with a usable plan.</p>
         </div>
