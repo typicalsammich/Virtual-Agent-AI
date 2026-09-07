@@ -7,9 +7,10 @@ import { usePathname } from "next/navigation";
 const navigation = [
   ["Home", "/"],
   ["Services", "/services"],
-  ["About", "/about"],
+  ["Industries", "/industries"],
+  ["Locations", "/locations"],
+  ["Compare", "/compare"],
   ["Blog", "/blog"],
-  ["Demo", "/demo"],
   ["Pricing", "/pricing"],
 ] as const;
 
