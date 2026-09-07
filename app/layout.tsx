@@ -5,8 +5,9 @@ import "./globals.css";
 const siteUrl = "https://virtual-agent-ai.typical-sammich.chatgpt.site";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: { default: "24/7 AI Receptionist for Small Business | Virtual Agent AI", template: "%s | Virtual Agent AI" },
-  description: "Virtual Agent AI answers business calls 24/7, qualifies leads, books appointments, routes urgent requests, and sends clear call summaries.",
+  title: { default: "AI Receptionist & AI Phone Answering Service | Virtual Agent AI", template: "%s | Virtual Agent AI" },
+  description: "Virtual Agent AI is a managed 24/7 AI receptionist and AI phone answering service for businesses. Qualify leads, book appointments, take messages, transfer calls, and capture every opportunity.",
+  keywords: ["AI receptionist","AI receptionist service","AI phone answering service","AI answering service","AI virtual receptionist","virtual AI receptionist","AI phone agent","AI call answering service","24/7 AI receptionist","AI receptionist for business"],
   alternates: { canonical: siteUrl },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 } },
   icons: { icon: [{ url: "/favicon.png", type: "image/png" }], shortcut: "/favicon.png", apple: "/favicon.png" },

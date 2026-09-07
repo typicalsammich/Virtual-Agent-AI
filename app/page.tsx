@@ -10,8 +10,8 @@ export default function Home() {
       <section className="hero">
         <div className="heroText">
           <p className="eyebrow">THE AI REVENUE RECEPTIONIST</p>
-          <h1>Stop Losing Business to Missed Calls and Slow Follow-Up.</h1>
-          <p className="lead">Virtual Agent AI is a managed 24/7 AI receptionist and phone answering service that qualifies leads, books appointments, routes urgent calls, and follows up without adding another front-desk employee.</p>
+          <h1>24/7 AI Receptionist & AI Phone Answering for Businesses.</h1>
+          <p className="lead">Virtual Agent AI is a managed AI receptionist service and AI phone answering solution for businesses. Our virtual AI receptionist answers calls 24/7, qualifies leads, books appointments, takes messages, transfers important calls, and follows your business rules without adding another front-desk employee.</p>
           <div className="heroActions">
             <a className="button" href="/demo">See the AI in Action <span>→</span></a>
             <a className="outline" href="#contact">Book a Live Demo <span>→</span></a>
@@ -56,6 +56,16 @@ export default function Home() {
           <a href="/ai-agent-for-roofers"><span>AI AGENT</span><strong>For roofers</strong><b>↗</b></a>
           <a href="/ai-agent-for-dental-offices"><span>AI AGENT</span><strong>For dental offices</strong><b>↗</b></a>
         </nav>
+      </section>
+
+      <section className="seoLandingProcess homeAuthority">
+        <div className="seoLandingProcessIntro"><p className="eyebrow">AI RECEPTIONIST SOLUTIONS</p><h2>One AI phone answering system, built for the calls your business actually receives.</h2><p>Explore industry-specific workflows, local coverage, buyer guides, and comparisons built around AI receptionist and AI answering service use cases.</p></div>
+        <div className="seoLandingSteps">
+          <article><span>01</span><h3>By industry</h3><p><a href="/ai-receptionist-for-roofers">Roofers</a> · <a href="/ai-receptionist-for-hvac">HVAC</a> · <a href="/ai-receptionist-for-plumbers">Plumbers</a> · <a href="/ai-receptionist-for-law-firms">Law firms</a> · <a href="/ai-receptionist-for-dentists">Dentists</a> · <a href="/ai-receptionist-for-med-spas">Med spas</a> · <a href="/ai-receptionist-for-towing">Towing</a></p></article>
+          <article><span>02</span><h3>By market</h3><p><a href="/locations/california">California</a> · <a href="/locations/los-angeles">Los Angeles</a> · <a href="/locations/orange-county">Orange County</a> · <a href="/locations/san-diego">San Diego</a> · <a href="/locations/florida">Florida</a> · <a href="/locations/miami">Miami</a> · <a href="/locations/tampa">Tampa</a></p></article>
+          <article><span>03</span><h3>Buyer guides</h3><p><a href="/blog/how-much-does-ai-receptionist-cost-2026">AI receptionist cost</a> · <a href="/blog/ai-receptionist-vs-human-receptionist">AI vs human receptionist</a> · <a href="/blog/how-does-an-ai-receptionist-work">How it works</a> · <a href="/blog/best-ai-receptionist-for-small-business">Small-business guide</a></p></article>
+          <article><span>04</span><h3>Compare options</h3><p><a href="/compare/virtual-agent-ai-vs-smith-ai">Smith.ai</a> · <a href="/compare/virtual-agent-ai-vs-ruby">Ruby</a> · <a href="/compare/virtual-agent-ai-vs-dialzara">Dialzara</a> · <a href="/compare/virtual-agent-ai-vs-goodcall">Goodcall</a> · <a href="/blog/ai-receptionist-vs-answering-service">Answering services</a></p></article>
+        </div>
       </section>
 
       <section className="reviews">
