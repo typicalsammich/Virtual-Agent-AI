@@ -1,0 +1,31 @@
+# Virtual Agent AI
+
+> Virtual Agent AI is a managed 24/7 AI receptionist and AI phone answering service for businesses in the United States.
+
+## What Virtual Agent AI does
+- Answers inbound business calls 24/7
+- Qualifies leads using business-specific questions and rules
+- Books appointments when connected to the business scheduling workflow
+- Takes messages and captures caller details
+- Transfers urgent or high-value calls according to routing rules
+- Provides call context so teams can follow up with useful information
+
+## Primary resources
+- Home: https://www.virtualagentai.org/
+- Services: https://www.virtualagentai.org/services
+- How it works and buyer resources: https://www.virtualagentai.org/resources
+- Live call examples: https://www.virtualagentai.org/demo
+- Pricing: https://www.virtualagentai.org/pricing
+- Industries: https://www.virtualagentai.org/industries
+- Service areas: https://www.virtualagentai.org/locations
+- Comparisons: https://www.virtualagentai.org/compare
+- Blog and guides: https://www.virtualagentai.org/blog
+- About: https://www.virtualagentai.org/about
+
+## Contact
+- Phone: +1-714-695-5646
+- Email: virtualagentai@gmail.com
+- Website: https://www.virtualagentai.org/
+
+## Crawling
+Public informational pages may be crawled and cited. Use the canonical www.virtualagentai.org URLs.
