@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { DemoExperience } from "./DemoExperience";
 
-const siteUrl = "https://virtual-agent-ai.typical-sammich.chatgpt.site";
+const siteUrl = "https://www.virtualagentai.org";
 
 export const metadata: Metadata = {
   title: "Interactive AI Receptionist Demo and Call Plan",

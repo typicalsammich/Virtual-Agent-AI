@@ -3,7 +3,7 @@ import { SiteHeader } from "../components/SiteChrome";
 import { SiteFooter } from "../components/SiteFooter";
 import { postsBySlug, type BlogPost } from "./posts";
 
-const siteUrl = "https://virtual-agent-ai.typical-sammich.chatgpt.site";
+const siteUrl = "https://www.virtualagentai.org";
 
 export function BlogArticle({ post }: { post: BlogPost }) {
   const canonical = `${siteUrl}/blog/${post.slug}`;

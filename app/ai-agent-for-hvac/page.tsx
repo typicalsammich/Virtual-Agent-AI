@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { SeoLandingPage, type SeoLandingData } from "../components/SeoLandingPage";
-const siteUrl = "https://virtual-agent-ai.typical-sammich.chatgpt.site";
+const siteUrl = "https://www.virtualagentai.org";
 export const metadata: Metadata = { title: "AI Agent for HVAC Companies and Contractors", description: "An HVAC AI Agent that answers heating and cooling calls, qualifies service requests, books appointments, and protects nights and overflow.", alternates: { canonical: `${siteUrl}/ai-agent-for-hvac` }, openGraph: { type: "website", url: `${siteUrl}/ai-agent-for-hvac`, title: "AI Agent for HVAC Calls", description: "Answer more heating and cooling calls without interrupting the field team.", siteName: "Virtual Agent AI" } };
 const data: SeoLandingData = {
   path: "/ai-agent-for-hvac", eyebrow: "AI AGENT FOR HVAC COMPANIES", title: "Keep seasonal call spikes from turning into missed opportunities.", intro: "Virtual Agent AI configures an HVAC AI Agent around your heating, cooling, maintenance, and replacement workflows. It answers immediately, understands the request, checks location and service fit, then books, routes, or creates the correct follow-up.", promise: "Consistent call coverage during peak demand, evenings, weekends, and the moments your office cannot pick up.", serviceType: "AI Agent for HVAC Companies",

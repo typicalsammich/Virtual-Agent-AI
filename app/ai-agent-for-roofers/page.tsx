@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { SeoLandingPage, type SeoLandingData } from "../components/SeoLandingPage";
-const siteUrl = "https://virtual-agent-ai.typical-sammich.chatgpt.site";
+const siteUrl = "https://www.virtualagentai.org";
 export const metadata: Metadata = { title: "AI Agent for Roofers and Roofing Companies", description: "A roofing AI Agent for storm calls, inspection requests, repair leads, appointment booking, qualification, and after-hours response.", alternates: { canonical: `${siteUrl}/ai-agent-for-roofers` }, openGraph: { type: "website", url: `${siteUrl}/ai-agent-for-roofers`, title: "AI Agent for Roofing Leads", description: "Respond to more roofing opportunities while sales and production teams stay focused.", siteName: "Virtual Agent AI" } };
 const data: SeoLandingData = {
   path: "/ai-agent-for-roofers", eyebrow: "AI AGENT FOR ROOFING COMPANIES", title: "Respond to the roofing lead while intent is still high.", intro: "Virtual Agent AI builds a roofing AI Agent for inspection requests, active leaks, repair inquiries, storm demand, replacement estimates, and existing-customer calls. It gathers the property and project details your team needs before the follow-up begins.", promise: "Immediate response for property owners and better-qualified opportunities for estimators, sales representatives, and production teams.", serviceType: "AI Agent for Roofing Companies",

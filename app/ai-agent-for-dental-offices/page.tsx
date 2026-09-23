@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { SeoLandingPage, type SeoLandingData } from "../components/SeoLandingPage";
-const siteUrl = "https://virtual-agent-ai.typical-sammich.chatgpt.site";
+const siteUrl = "https://www.virtualagentai.org";
 export const metadata: Metadata = { title: "AI Agent for Dental Offices and Appointment Calls", description: "A dental AI Agent for new-patient calls, appointment requests, routine questions, overflow, and after-hours intake with clear escalation rules.", alternates: { canonical: `${siteUrl}/ai-agent-for-dental-offices` }, openGraph: { type: "website", url: `${siteUrl}/ai-agent-for-dental-offices`, title: "AI Agent for Dental Office Calls", description: "Help patients reach the right next step when the front desk is busy.", siteName: "Virtual Agent AI" } };
 const data: SeoLandingData = {
   path: "/ai-agent-for-dental-offices", eyebrow: "AI AGENT FOR DENTAL OFFICES", title: "Give every patient call a calm and organized first response.", intro: "Virtual Agent AI configures a dental-office AI Agent for new-patient inquiries, appointment requests, routine practice questions, overflow, and after-hours intake. The workflow stays within approved administrative information and escalates clinical or sensitive situations appropriately.", promise: "More consistent phone coverage without asking the front desk to abandon the patients already in the office.", serviceType: "AI Agent for Dental Offices",

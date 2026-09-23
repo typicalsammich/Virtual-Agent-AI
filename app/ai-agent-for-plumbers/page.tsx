@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { SeoLandingPage, type SeoLandingData } from "../components/SeoLandingPage";
-const siteUrl = "https://virtual-agent-ai.typical-sammich.chatgpt.site";
+const siteUrl = "https://www.virtualagentai.org";
 export const metadata: Metadata = { title: "AI Agent for Plumbers and Plumbing Companies", description: "A plumbing AI Agent that answers calls, identifies urgent jobs, checks service areas, books appointments, and sends dispatch-ready summaries 24/7.", alternates: { canonical: `${siteUrl}/ai-agent-for-plumbers` }, openGraph: { type: "website", url: `${siteUrl}/ai-agent-for-plumbers`, title: "AI Agent for Plumbing Calls", description: "Turn more plumbing calls into organized jobs and appointments.", siteName: "Virtual Agent AI" } };
 const data: SeoLandingData = {
   path: "/ai-agent-for-plumbers", eyebrow: "AI AGENT FOR PLUMBING COMPANIES", title: "Answer the plumbing call before the homeowner calls someone else.", intro: "Virtual Agent AI builds a plumbing AI Agent that answers new and existing customers at any hour. It identifies the issue, captures the property address, checks service fit, applies your urgency rules, and books or routes the next step.", promise: "Faster response for homeowners and cleaner job information for dispatch, technicians, and owners.", serviceType: "AI Agent for Plumbers",

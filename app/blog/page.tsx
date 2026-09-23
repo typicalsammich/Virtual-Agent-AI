@@ -4,7 +4,7 @@ import { SiteFooter } from "../components/SiteFooter";
 import { BlogLibrary } from "./BlogLibrary";
 import { blogPosts } from "./posts";
 
-const siteUrl = "https://virtual-agent-ai.typical-sammich.chatgpt.site";
+const siteUrl = "https://www.virtualagentai.org";
 
 export const metadata: Metadata = {
   title: "AI Receptionist Guides for Service Businesses",

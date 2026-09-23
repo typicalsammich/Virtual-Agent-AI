@@ -1,6 +1,14 @@
+import type { Metadata } from "next";
 import { SiteHeader } from "./components/SiteChrome";
 import { SiteFooter } from "./components/SiteFooter";
 import { RevenueCalculator } from "./components/RevenueCalculator";
+
+export const metadata: Metadata = {
+  title: "24/7 AI Receptionist for Business | Virtual Agent AI",
+  description: "Virtual Agent AI answers business calls 24/7, qualifies leads, books appointments, takes messages, and transfers important calls automatically.",
+  alternates: { canonical: "https://www.virtualagentai.org/" },
+  openGraph: { type: "website", url: "https://www.virtualagentai.org/", title: "24/7 AI Receptionist for Business | Virtual Agent AI", description: "Answer calls, qualify leads, book appointments, take messages, and transfer important calls 24/7.", images: ["/og-image.png"] },
+};
 
 export default function Home() {
   return (
@@ -56,6 +64,21 @@ export default function Home() {
           <a href="/ai-agent-for-roofers"><span>AI AGENT</span><strong>For roofers</strong><b>↗</b></a>
           <a href="/ai-agent-for-dental-offices"><span>AI AGENT</span><strong>For dental offices</strong><b>↗</b></a>
         </nav>
+      </section>
+
+      <section className="howItWorksDeep" id="how-it-works">
+        <div className="howItWorksIntro">
+          <p className="eyebrow">HOW IT WORKS</p>
+          <h2>From incoming call to a clear next step.</h2>
+          <p>Virtual Agent AI is configured around your real call flow, not a generic script. Here is what happens before launch and on every call.</p>
+        </div>
+        <div className="howItWorksSteps">
+          <article><span>01</span><div><h3>We map your call flow</h3><p>We learn your services, common questions, service area, hours, qualification rules, booking process, and when a caller should reach a person.</p><a href="/resources#setup">See the setup guide →</a></div></article>
+          <article><span>02</span><div><h3>The AI answers in your business voice</h3><p>Calls are answered 24/7 with the greeting and conversation logic built for your business. The agent can answer questions and collect the details you actually need.</p><a href="/demo">Hear real call examples →</a></div></article>
+          <article><span>03</span><div><h3>It takes the right action</h3><p>Depending on the call, the AI can qualify the lead, book an appointment, take a message, or transfer an urgent or high-value caller to your team.</p><a href="/services">Explore call handling →</a></div></article>
+          <article><span>04</span><div><h3>Your team gets the context</h3><p>Instead of a mystery missed call, your team receives the useful information captured during the conversation so the next step is clear.</p><a href="/blog/how-does-an-ai-receptionist-work">Read how AI receptionists work →</a></div></article>
+        </div>
+        <div className="howItWorksResourceBar"><div><strong>Want the details before booking?</strong><span>Browse plain-English guides on setup, pricing, call handling, transfers, scheduling, and choosing an AI receptionist.</span></div><a href="/resources">Guides &amp; Resources <b>↗</b></a></div>
       </section>
 
       <section className="seoLandingProcess homeAuthority">
@@ -129,6 +152,23 @@ export default function Home() {
             <div className="demoBriefFoot"><span>●</span> Built around your workflow, not a generic script.</div>
           </div>
         </div>
+      </section>
+
+      <section className="homeFaq" aria-labelledby="home-faq-title">
+        <div className="homeFaqIntro">
+          <p className="eyebrow">COMMON QUESTIONS</p>
+          <h2 id="home-faq-title">What businesses usually want to know first.</h2>
+          <p>Clear answers about what the AI receptionist does, how setup works, and what happens when a caller needs a person.</p>
+        </div>
+        <div className="homeFaqList">
+          <details open><summary>What does an AI receptionist actually do?<span>+</span></summary><p>Virtual Agent AI answers inbound calls, follows the call flow configured for your business, asks qualifying questions, captures caller details, books appointments when scheduling is connected, takes messages, and transfers calls based on your routing rules.</p></details>
+          <details><summary>Can it answer calls after hours and on weekends?<span>+</span></summary><p>Yes. The service is designed for 24/7 call coverage, so callers can receive a response outside normal office hours instead of reaching an unanswered line or waiting for the next business day.</p></details>
+          <details><summary>Will it sound like it knows my business?<span>+</span></summary><p>Setup is built around your services, common questions, service area, qualification criteria, booking process, and escalation rules. The goal is a call flow that reflects how your business actually handles customers rather than a generic script.</p></details>
+          <details><summary>What happens when a caller needs a human?<span>+</span></summary><p>The AI can transfer calls according to the rules you choose. Urgent, qualified, or high-value calls can be routed to the appropriate person, while other calls can be documented for follow-up with the context captured during the conversation.</p></details>
+          <details><summary>How long does setup take?<span>+</span></summary><p>Setup depends on the complexity of your call flow and integrations. The process starts by mapping what callers ask, what information needs to be collected, which calls should be transferred, and what actions the AI should take. The system is then tested before it handles live customer calls.</p></details>
+          <details><summary>Can I hear it before deciding?<span>+</span></summary><p>Yes. You can listen to call examples on the demo page or book a walkthrough using a scenario your business receives regularly. That makes it easier to judge the caller experience before moving forward.</p></details>
+        </div>
+        <div className="homeFaqFoot"><span>Information reviewed September 23, 2026.</span><a href="/resources">Explore all guides and resources →</a></div>
       </section>
 
       <section className="contact" id="contact">

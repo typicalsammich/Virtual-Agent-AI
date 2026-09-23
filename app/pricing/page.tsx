@@ -6,10 +6,10 @@ import { PricingEstimator } from "./PricingEstimator";
 export const metadata: Metadata = {
   title: "AI Receptionist Pricing and Cost Estimator",
   description: "Estimate AI receptionist pricing based on monthly call volume, after-hours coverage, lead qualification, appointment booking, and workflow complexity.",
-  alternates: { canonical: "https://virtual-agent-ai.typical-sammich.chatgpt.site/pricing" },
+  alternates: { canonical: "https://www.virtualagentai.org/pricing" },
   openGraph: {
     type: "website",
-    url: "https://virtual-agent-ai.typical-sammich.chatgpt.site/pricing",
+    url: "https://www.virtualagentai.org/pricing",
     title: "AI Receptionist Pricing and Cost Estimator",
     description: "Adjust three practical factors to estimate a monthly cost range for your AI receptionist.",
     siteName: "Virtual Agent AI",

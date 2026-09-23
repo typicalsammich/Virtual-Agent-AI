@@ -1,6 +1,9 @@
+import type { Metadata } from "next";
 import { SiteHeader } from "../components/SiteChrome";
 import { SiteFooter } from "../components/SiteFooter";
 import { IndustryFocus } from "./IndustryFocus";
+
+export const metadata: Metadata = { title: "AI Receptionist Services for Business", description: "Explore 24/7 AI call answering, lead qualification, appointment booking, call transfers, and after-hours answering from Virtual Agent AI.", alternates: { canonical: "https://www.virtualagentai.org/services" }, openGraph: { type: "website", url: "https://www.virtualagentai.org/services", title: "AI Receptionist Services for Business | Virtual Agent AI", description: "AI call answering, qualification, booking, transfers, and after-hours coverage for businesses.", images: ["/og-image.png"] } };
 
 export default function Services() {
   return <><SiteHeader/><main className="servicesPage">

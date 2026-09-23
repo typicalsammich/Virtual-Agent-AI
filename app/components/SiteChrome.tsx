@@ -10,12 +10,12 @@ const navigation = [
   ["Industries", "/industries"],
   ["Locations", "/locations"],
   ["Compare", "/compare"],
-  ["Blog", "/blog"],
+  ["Resources", "/resources"],
   ["Pricing", "/pricing"],
 ] as const;
 
 function PhoneIcon() {
-  return <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.6 10.8c1.5 3 3.9 5.4 6.9 6.9l2.3-2.3c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V21c0 .6-.4 1-1 1C10.4 22 2 13.6 2 3.3c0-.6.4-1 1-1h4.2c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1l-1.9 2.6Z"/></svg>;
+  return <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.5 3 3.9 5.4 6.9 6.9l2.3-2.3c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V21c0 .6-.4 1-1 1C10.4 22 2 13.6 2 3.3c0-.6.4-1 1-1h4.2c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1l-1.9 2.6Z"/></svg>;
 }
 
 export function SiteHeader() {
@@ -28,7 +28,7 @@ export function SiteHeader() {
   }, [menuOpen]);
 
   return <header className="siteHeader">
-    <a className="logo brandLogo" href="/" onClick={() => setMenuOpen(false)}><img className="brandMarkImage" src="/favicon.png" alt="" aria-hidden="true" /><span>Virtual Agent AI</span></a>
+    <a className="logo brandLogo" href="/" onClick={() => setMenuOpen(false)}><img className="brandMarkImage" src="/favicon.svg" alt="Virtual Agent AI logo" /><span>Virtual Agent AI</span></a>
     <nav className={menuOpen ? "mobileNavOpen" : ""} aria-label="Main navigation" id="main-navigation">
       {navigation.map(([label, href]) => {
         const active = href === "/" ? pathname === "/" : pathname.startsWith(href);
