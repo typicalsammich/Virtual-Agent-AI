@@ -28,7 +28,7 @@ export function SiteHeader() {
   }, [menuOpen]);
 
   return <header className="siteHeader">
-    <a className="logo brandLogo" href="/" onClick={() => setMenuOpen(false)}><img className="brandMarkImage" src="/virtual-agent-ai-mark.png" alt="Virtual Agent AI logo" /><span>Virtual Agent AI</span></a>
+    <a className="logo brandLogo" href="/" onClick={() => setMenuOpen(false)}><img className="brandMarkImage" src="/virtual-agent-ai-logo-transparent.png" alt="Virtual Agent AI logo" /><span>Virtual Agent AI</span></a>
     <nav className={menuOpen ? "mobileNavOpen" : ""} aria-label="Main navigation" id="main-navigation">
       {navigation.map(([label, href]) => {
         const active = href === "/" ? pathname === "/" : pathname.startsWith(href);
