@@ -498,3 +498,35 @@ h2{font-size:clamp(34px,3.7vw,54px);line-height:1.08;letter-spacing:-3.2px;margi
 .copyBlogButton{margin-top:18px;display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(52,211,153,.38);background:rgba(16,185,129,.08);color:#dffcf0;border-radius:10px;padding:10px 14px;font:700 12px/1.2 inherit;letter-spacing:.02em;cursor:pointer;transition:.18s ease}
 .copyBlogButton:hover{border-color:rgba(52,211,153,.72);background:rgba(16,185,129,.15);transform:translateY(-1px)}
 .copyBlogButton span{color:#34d399;font-size:14px}
+
+/* Services discovery: desktop dropdown + mobile accordion */
+.siteHeader nav .servicesNav{position:relative}
+.servicesNavTriggerRow{display:flex;align-items:center}
+.siteHeader nav .servicesNavTriggerRow>a{position:relative;padding:9px 9px 9px 12px;border-radius:999px 0 0 999px;transition:.2s ease}
+.siteHeader nav .servicesNavTriggerRow>a:hover{color:#fff;background:#111a1e}
+.siteHeader nav .servicesNavTriggerRow>a.active{color:var(--green);background:#0d2a21}
+.servicesNavToggle{width:24px;height:34px;display:grid;place-items:center;padding:0;border:0;border-radius:0 999px 999px 0;background:transparent;color:#7890a7;transition:.2s ease}
+.servicesNavToggle span{display:block;font-size:14px;line-height:1;transition:transform .2s ease}
+.servicesNav:hover .servicesNavToggle,.servicesNav:focus-within .servicesNavToggle{color:#fff;background:#111a1e}
+.servicesDropdown{position:absolute;top:calc(100% + 13px);left:50%;width:590px;padding:20px;border:1px solid #29433c;border-radius:16px;background:#0b1113f7;box-shadow:0 28px 80px #000c;backdrop-filter:blur(18px);opacity:0;visibility:hidden;transform:translate(-50%,8px);transition:opacity .18s ease,transform .18s ease,visibility .18s;z-index:1100}
+.servicesNav:hover .servicesDropdown,.servicesNav:focus-within .servicesDropdown{opacity:1;visibility:visible;transform:translate(-50%,0)}
+.servicesDropdown::before{content:"";position:absolute;left:0;right:0;top:-16px;height:18px}
+.servicesDropdownHead{display:flex;align-items:end;justify-content:space-between;padding:1px 4px 14px;border-bottom:1px solid #233630}.servicesDropdownHead small{color:var(--green);font:9px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:1.2px}.servicesDropdownHead strong{font-size:13px;color:#dce7e3}
+.servicesDropdownGrid{display:grid;grid-template-columns:1fr 1fr;gap:5px;padding:12px 0}
+.siteHeader nav .servicesDropdownGrid a{display:flex;align-items:center;justify-content:space-between;padding:11px 12px;border:1px solid transparent;border-radius:8px;color:#9eb1aa;font-size:11px;font-weight:650}.siteHeader nav .servicesDropdownGrid a:hover,.siteHeader nav .servicesDropdownGrid a.currentService{border-color:#29483e;background:#10221d;color:#fff}.servicesDropdownGrid b{color:var(--green);font-size:11px}
+.siteHeader nav .servicesViewAll{display:flex;justify-content:space-between;padding:13px 12px 4px;border-top:1px solid #233630;border-radius:0;color:var(--green);font-size:11px;font-weight:800}.siteHeader nav .servicesViewAll:hover{background:transparent;color:#42dda2}
+.otherServices{display:grid;grid-template-columns:.72fr 1.28fr;gap:60px;padding:90px 6.5%;border-top:1px solid #27383a;background:#09100f}.otherServicesIntro h2{max-width:500px;font-size:clamp(30px,3vw,45px);letter-spacing:-2.4px}.otherServicesIntro>a{display:inline-flex;margin-top:12px;color:var(--green);font-size:12px;font-weight:800}.otherServicesIntro>a span{margin-left:10px}.otherServicesGrid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #315047}.otherServicesGrid>a{min-height:76px;display:flex;align-items:center;justify-content:space-between;padding:18px;border-bottom:1px solid #315047;color:#c8d5d0;font-size:13px;font-weight:700;transition:.2s ease}.otherServicesGrid>a:nth-child(odd){border-right:1px solid #315047}.otherServicesGrid>a:hover{padding-left:24px;background:#10231d;color:#fff}.otherServicesGrid b{color:var(--green)}
+@media(max-width:760px){
+  .siteHeader nav.mobileNavOpen .servicesNav{border-bottom:1px solid #263b37}
+  .servicesNavTriggerRow{min-height:50px}
+  .siteHeader nav .servicesNavTriggerRow>a{flex:1;min-height:50px;display:flex;align-items:center;padding:12px 4px;border-radius:0;color:#b8c8c2;font-size:15px;font-weight:650}
+  .siteHeader nav .servicesNavTriggerRow>a.active{padding-left:13px;border-radius:6px;background:#102a22;color:var(--green)}
+  .servicesNavToggle{width:48px;height:48px;border-radius:8px;color:#9eb1aa;background:#0d1718}
+  .servicesNavToggle span{font-size:20px}.mobileServicesOpen .servicesNavToggle span{transform:rotate(180deg)}
+  .servicesDropdown{position:static;width:auto;padding:0 0 12px;border:0;border-radius:0;background:transparent;box-shadow:none;backdrop-filter:none;opacity:1;visibility:visible;transform:none;display:none}
+  .mobileServicesOpen .servicesDropdown{display:block}
+  .servicesDropdownHead{display:none}.servicesDropdownGrid{grid-template-columns:1fr;padding:5px 0;gap:2px}
+  .siteHeader nav .servicesDropdownGrid a{min-height:42px;padding:9px 12px 9px 18px;border:0;border-left:1px solid #29483e;border-radius:0;font-size:12px}.siteHeader nav .servicesDropdownGrid a:hover,.siteHeader nav .servicesDropdownGrid a.currentService{border-left-color:var(--green);background:#10221d}
+  .siteHeader nav .servicesViewAll{padding:12px 12px 4px 18px;border-top:0;border-left:1px solid #29483e}
+  .otherServices{grid-template-columns:1fr;gap:34px;padding:65px 22px}.otherServicesGrid{grid-template-columns:1fr}.otherServicesGrid>a:nth-child(odd){border-right:0}.otherServicesGrid>a{min-height:64px;padding:15px 12px}
+}
