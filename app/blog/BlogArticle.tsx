@@ -66,7 +66,7 @@ export function BlogArticle({ post }: { post: BlogPost }) {
           <aside className="articleToc" aria-label="On this page">
             <span>ON THIS PAGE</span>
             <ol>{post.sections.map((section, index) => <li key={section.id}><a href={`#${section.id}`}><b>0{index + 1}</b>{section.heading}</a></li>)}</ol>
-            <a className="articleTocCta" href="/#contact">See the AI in action <b>↗</b></a>
+            <a className="articleTocCta" href="/#contact">See the AI in action <b></b></a>
           </aside>
 
           <div className="articleBody">
@@ -88,7 +88,7 @@ export function BlogArticle({ post }: { post: BlogPost }) {
               </section>
               {index === 2 && <aside className="articleInlineCta">
                 <div><span>PUT THE PLAYBOOK INTO PRACTICE</span><strong>See how Virtual Agent AI would handle a real call for your business.</strong></div>
-                <a href="/#contact">Book a live walkthrough <b>↗</b></a>
+                <a href="/#contact">Book a live walkthrough <b></b></a>
               </aside>}
             </div>)}
 
@@ -116,19 +116,19 @@ export function BlogArticle({ post }: { post: BlogPost }) {
               <span>INDEPENDENT RESOURCES</span>
               <p>For broader guidance on responsible AI use and truthful business information, review these primary sources.</p>
               <div>
-                <a href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank" rel="noreferrer">NIST AI Risk Management Framework <b>↗</b></a>
-                <a href="https://www.ftc.gov/industry/technology/artificial-intelligence" target="_blank" rel="noreferrer">Federal Trade Commission AI guidance <b>↗</b></a>
-                <a href="https://support.google.com/business/answer/3038177?hl=en" target="_blank" rel="noreferrer">Google Business Profile guidelines <b>↗</b></a>
+                <a href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank" rel="noreferrer">NIST AI Risk Management Framework <b></b></a>
+                <a href="https://www.ftc.gov/industry/technology/artificial-intelligence" target="_blank" rel="noreferrer">Federal Trade Commission AI guidance <b></b></a>
+                <a href="https://support.google.com/business/answer/3038177?hl=en" target="_blank" rel="noreferrer">Google Business Profile guidelines <b></b></a>
               </div>
             </aside>
           </div>
         </div>
 
         <section className="relatedArticles">
-          <div className="relatedHeading"><div><p className="eyebrow">KEEP READING</p><h2>Related insights</h2></div><a href="/blog">View all articles →</a></div>
+          <div className="relatedHeading"><div><p className="eyebrow">KEEP READING</p><h2>Related insights</h2></div><a href="/blog">View all articles </a></div>
           <div className="relatedGrid">{post.related.map((slug, index) => {
             const related = postsBySlug[slug];
-            return <a href={`/blog/${related.slug}`} key={related.slug}><span>0{index + 1}</span><small>{related.category}</small><h3>{related.title}</h3><p>{related.excerpt}</p><b>Read article ↗</b></a>;
+            return <a href={`/blog/${related.slug}`} key={related.slug}><span>0{index + 1}</span><small>{related.category}</small><h3>{related.title}</h3><p>{related.excerpt}</p><b>Read article </b></a>;
           })}</div>
         </section>
       </article>

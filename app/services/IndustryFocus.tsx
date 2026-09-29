@@ -78,7 +78,7 @@ export function IndustryFocus() {
     <div className="industryFocusIntro">
       <p className="eyebrow">BUILT FOR HIGH-VALUE SERVICE BUSINESSES</p>
       <h2>See how it works<br />for your industry.</h2>
-      <div className="industryPickerCopy"><p>Select a business type to see a realistic call, what the AI captures, and the next step it can complete.</p><label htmlFor="industry-select">CHOOSE YOUR INDUSTRY</label><div className="industrySelectWrap"><select id="industry-select" value={selectedIndustry} onChange={(event) => setSelectedIndustry(event.target.value as IndustryOption)}>{(Object.keys(industryOptions) as IndustryOption[]).map((key) => <option key={key} value={key}>{industryOptions[key].name}</option>)}</select><span>⌄</span></div></div>
+      <div className="industryPickerCopy"><p>Select a business type to see a realistic call, what the AI captures, and the next step it can complete.</p><label htmlFor="industry-select">CHOOSE YOUR INDUSTRY</label><div className="industrySelectWrap"><select id="industry-select" value={selectedIndustry} onChange={(event) => setSelectedIndustry(event.target.value as IndustryOption)}>{(Object.keys(industryOptions) as IndustryOption[]).map((key) => <option key={key} value={key}>{industryOptions[key].name}</option>)}</select><span></span></div></div>
     </div>
 
     <div className="industrySpotlight" key={selectedIndustry} aria-live="polite">
@@ -92,7 +92,7 @@ export function IndustryFocus() {
       <div className="industryResponse">
         <article><small>WHAT THE AI CAPTURES</small><p>{industry.captures}</p></article>
         <article><small>NEXT STEP</small><p>{industry.next}</p></article>
-        <div className="industryResult"><span>✓</span><div><small>BUSINESS OUTCOME</small><strong>{industry.result}</strong></div></div>
+        <div className="industryResult"><span></span><div><small>BUSINESS OUTCOME</small><strong>{industry.result}</strong></div></div>
       </div>
     </div>
   </div>;
@@ -130,7 +130,7 @@ function CallAudio({ src, transcript, title }: { src: string; transcript: Transc
       onEnded={() => setPlaying(false)}
     />
     <div className="customAudioPlayer">
-      <button type="button" className="audioPlayButton" onClick={togglePlayback} aria-label={playing ? "Pause call audio" : "Play call audio"}>{playing ? "❚❚" : "▶"}</button>
+      <button type="button" className="audioPlayButton" onClick={togglePlayback} aria-label={playing ? "Pause call audio" : "Play call audio"}>{playing ? "❚❚" : ""}</button>
       <span className="audioTime">{formatTime(currentTime)}</span>
       <input
         className="audioProgress"

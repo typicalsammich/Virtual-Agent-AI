@@ -13,7 +13,7 @@ export default function Services() {
           <p className="eyebrow">AI RECEPTION BUILT FOR REVENUE</p>
           <h1>Every call answered.<br />Every opportunity<br /><em>moved forward.</em></h1>
           <p className="servicesHeroLead">Our managed AI receptionist service uses a business-specific AI Agent to handle the conversations that turn interest into business. It answers naturally, qualifies accurately, and completes the right next step without adding staff.</p>
-          <div className="servicesHeroActions"><a className="button" href="/#contact">See it handle your calls <span>↗</span></a><a className="servicesHeroCall" href="tel:7146955646">Call the AI <span>→</span></a></div>
+          <div className="servicesHeroActions"><a className="button" href="/#contact">See it handle your calls <span></span></a><a className="servicesHeroCall" href="tel:7146955646">Call the AI <span></span></a></div>
           <div className="servicesHeroProof"><span><b>24/7</b> live coverage</span><span><b>&lt;30 sec</b> response</span><span><b>Fully managed</b> setup</span></div>
         </div>
 
@@ -39,6 +39,25 @@ export default function Services() {
       </div>
     </section>
 
+    <section className="allServicesDirectory" id="all-services">
+      <div className="allServicesIntro">
+        <p className="eyebrow">ALL SERVICES</p>
+        <h2>Explore every Virtual Agent AI service.</h2>
+        <p>Choose a service to see exactly what it includes, how it works, and where it fits into your customer journey.</p>
+      </div>
+      <div className="allServicesGrid">
+        <ServiceCard href="/services/ai-call-answering" category="VOICE AI" title="AI Call Answering" text="Answer inbound calls around the clock with a business-specific AI agent." />
+        <ServiceCard href="/services/lead-qualification" category="INTAKE" title="Lead Qualification" text="Ask the right questions, capture useful details, and identify the right next step." />
+        <ServiceCard href="/services/appointment-booking" category="CONVERSION" title="Appointment Booking" text="Move qualified callers directly into your scheduling workflow." />
+        <ServiceCard href="/services/after-hours-answering" category="COVERAGE" title="After-Hours Answering" text="Keep evenings, weekends, and overflow calls from turning into missed opportunities." />
+        <ServiceCard href="/services/ai-call-center" category="SCALE" title="AI Call Center" text="Handle larger call volumes with repeatable AI-powered routing and workflows." />
+        <ServiceCard href="/services/lead-generation-follow-up" category="PIPELINE" title="Lead Generation & Follow-Up" text="Create opportunities and keep prospects moving with coordinated follow-up." />
+        <ServiceCard href="/services/social-media-marketing" category="DEMAND" title="Social Media Marketing" text="Build a consistent social presence around your offer and audience." />
+        <ServiceCard href="/services/paid-ad-campaigns" category="ACQUISITION" title="Paid Ad Campaigns" text="Connect targeted traffic to clear offers and measurable next steps." />
+        <ServiceCard href="/services/seo-websites" category="SEARCH" title="SEO Websites" text="Build a faster path from search visibility to calls, leads, and appointments." />
+      </div>
+    </section>
+
     <section className="implementation">
       <div className="implementationIntro"><p className="eyebrow">MANAGED FROM DAY ONE</p><h2>Built around your business.<br />Not handed to you as software.</h2></div>
       <div className="implementationTrack">
@@ -55,7 +74,7 @@ export default function Services() {
           <p className="eyebrow">BEYOND THE FIRST CALL</p>
           <h2>Build the system around the conversation.</h2>
           <p>Once every inquiry gets a fast response, we can help strengthen the channels that create demand and keep prospects moving.</p>
-          <a href="/#contact">Talk through your growth plan <span>↗</span></a>
+          <a href="/#contact">Talk through your growth plan <span></span></a>
         </aside>
 
         <div className="growthPortfolio">
@@ -68,10 +87,11 @@ export default function Services() {
       </div>
     </section>
 
-    <section className="servicesCta"><p className="eyebrow">SEE YOUR WORKFLOW IN ACTION</p><h2>Bring us one real call scenario.<br />We’ll show you how the AI handles it.</h2><p>No generic script. Your services, your questions, your routing, and your customer experience.</p><div><a className="button" href="/#contact">Book a tailored demo <span>↗</span></a><a href="tel:7146955646">(714) 695-5646</a></div></section>
+    <section className="servicesCta"><p className="eyebrow">SEE YOUR WORKFLOW IN ACTION</p><h2>Bring us one real call scenario.<br />We’ll show you how the AI handles it.</h2><p>No generic script. Your services, your questions, your routing, and your customer experience.</p><div><a className="button" href="/#contact">Book a tailored demo <span></span></a><a href="tel:7146955646">(714) 695-5646</a></div></section>
   </main><SiteFooter/></>;
 }
 
-function ServiceRow({n, href, title, description, features}:{n:string;href:string;title:string;description:string;features:string[]}) { return <article className="systemRow"><span>{n}</span><h3><a href={href}>{title} <b>↗</b></a></h3><p>{description}</p><div>{features.map(feature => <small key={feature}>✓ {feature}</small>)}</div></article>; }
+function ServiceCard({href, category, title, text}:{href:string;category:string;title:string;text:string}) { return <a className="allServicesCard" href={href}><small>{category}</small><h3>{title}</h3><p>{text}</p><span>View service</span></a>; }
+function ServiceRow({n, href, title, description, features}:{n:string;href:string;title:string;description:string;features:string[]}) { return <article className="systemRow"><span>{n}</span><h3><a href={href}>{title} <b></b></a></h3><p>{description}</p><div>{features.map(feature => <small key={feature}> {feature}</small>)}</div></article>; }
 function ProcessStep({n, title, text}:{n:string;title:string;text:string}) { return <article className="processStep"><span>{n}</span><div><h3>{title}</h3><p>{text}</p></div></article>; }
-function GrowthPanel({className="", href, label, title, text, outcome, detail}:{className?:string;href:string;label:string;title:string;text:string;outcome:string;detail:string}) { return <a className={`growthPanel ${className}`} href={href}><div className="growthPanelTop"><span>{label}</span><b>↗</b></div><h3>{title}</h3><p>{text}</p><div className="growthPanelBottom"><small>{detail}</small><strong><i>✓</i>{outcome}</strong></div></a>; }
+function GrowthPanel({className="", href, label, title, text, outcome, detail}:{className?:string;href:string;label:string;title:string;text:string;outcome:string;detail:string}) { return <a className={`growthPanel ${className}`} href={href}><div className="growthPanelTop"><span>{label}</span><b></b></div><h3>{title}</h3><p>{text}</p><div className="growthPanelBottom"><small>{detail}</small><strong><i></i>{outcome}</strong></div></a>; }

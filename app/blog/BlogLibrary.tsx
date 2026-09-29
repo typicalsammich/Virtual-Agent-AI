@@ -70,7 +70,7 @@ export function BlogLibrary({ posts }: { posts: BlogPost[] }) {
         <p>{post.excerpt}</p>
         <div className="blogCardBottom">
           <small>{post.readTime}</small>
-          <strong>Read guide <span>↗</span></strong>
+          <strong>Read guide <span></span></strong>
         </div>
       </a>)}
     </div>

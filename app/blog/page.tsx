@@ -48,34 +48,34 @@ export default function Blog() {
           <small>{featured.category}</small>
           <h2>{featured.title}</h2>
           <p>{featured.excerpt}</p>
-          <strong>Read the complete guide <span>↗</span></strong>
+          <strong>Read the complete guide <span></span></strong>
         </a>
       </section>
 
       <BlogLibrary posts={blogPosts} />
 
       <section className="seoLandingRelated"><span>COMMERCIAL AI RECEPTIONIST GUIDES</span><nav>
-        <a href="/blog/how-much-does-ai-receptionist-cost-2026">AI receptionist cost in 2026 <b>↗</b></a>
-        <a href="/blog/ai-receptionist-vs-human-receptionist">AI vs human receptionist <b>↗</b></a>
-        <a href="/blog/ai-receptionist-vs-virtual-receptionist">AI vs virtual receptionist <b>↗</b></a>
-        <a href="/blog/best-ai-receptionist-for-small-business">Best AI receptionist for small business <b>↗</b></a>
-        <a href="/blog/how-does-an-ai-receptionist-work">How an AI receptionist works <b>↗</b></a>
-        <a href="/blog/can-ai-receptionist-book-appointments">Can AI book appointments? <b>↗</b></a>
-        <a href="/blog/can-ai-receptionist-transfer-calls">Can AI transfer calls? <b>↗</b></a>
-        <a href="/blog/ai-receptionist-for-24-7-businesses">AI receptionist for 24/7 businesses <b>↗</b></a>
-        <a href="/blog/ai-agents-vs-ai-assistants-vs-chatbots">AI agents vs assistants vs chatbots <b>↗</b></a>
+        <a href="/blog/how-much-does-ai-receptionist-cost-2026">AI receptionist cost in 2026 <b></b></a>
+        <a href="/blog/ai-receptionist-vs-human-receptionist">AI vs human receptionist <b></b></a>
+        <a href="/blog/ai-receptionist-vs-virtual-receptionist">AI vs virtual receptionist <b></b></a>
+        <a href="/blog/best-ai-receptionist-for-small-business">Best AI receptionist for small business <b></b></a>
+        <a href="/blog/how-does-an-ai-receptionist-work">How an AI receptionist works <b></b></a>
+        <a href="/blog/can-ai-receptionist-book-appointments">Can AI book appointments? <b></b></a>
+        <a href="/blog/can-ai-receptionist-transfer-calls">Can AI transfer calls? <b></b></a>
+        <a href="/blog/ai-receptionist-for-24-7-businesses">AI receptionist for 24/7 businesses <b></b></a>
+        <a href="/blog/ai-agents-vs-ai-assistants-vs-chatbots">AI agents vs assistants vs chatbots <b></b></a>
       </nav></section>
 
       <section className="blogSeoStatement">
         <div><p className="eyebrow">ONE CONNECTED SYSTEM</p><h2>Traffic matters.<br />What happens after the call matters more.</h2></div>
-        <div><p>Useful content can bring the right customer to your business. A complete response workflow helps make sure that customer is answered, understood, and moved toward a real next step.</p><a href="/services">Explore the AI receptionist system <span>→</span></a></div>
+        <div><p>Useful content can bring the right customer to your business. A complete response workflow helps make sure that customer is answered, understood, and moved toward a real next step.</p><a href="/services">Explore the AI receptionist system <span></span></a></div>
       </section>
 
       <section className="blogCta">
         <p className="eyebrow">SEE IT IN A REAL CONVERSATION</p>
         <h2>Bring the call your team keeps missing.</h2>
         <p>We’ll build a live walkthrough around your business, your questions, and the outcome you want the caller to reach.</p>
-        <a className="button" href="/#contact">Book a live demo <span>↗</span></a>
+        <a className="button" href="/#contact">Book a live demo <span></span></a>
       </section>
     </main>
     <SiteFooter />

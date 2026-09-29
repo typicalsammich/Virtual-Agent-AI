@@ -21,8 +21,8 @@ export default function Home() {
           <h1>24/7 AI Receptionist & AI Phone Answering for Businesses.</h1>
           <p className="lead">Virtual Agent AI is a managed AI receptionist service and AI phone answering solution for businesses. Our virtual AI receptionist answers calls 24/7, qualifies leads, books appointments, takes messages, transfers important calls, and follows your business rules without adding another front-desk employee.</p>
           <div className="heroActions">
-            <a className="button" href="/demo">See the AI in Action <span>→</span></a>
-            <a className="outline" href="#contact">Book a Live Demo <span>→</span></a>
+            <a className="button" href="/demo">See the AI in Action <span></span></a>
+            <a className="outline" href="#contact">Book a Live Demo <span></span></a>
           </div>
           <p className="fine">The AI is the mechanism. Revenue recovery and business efficiency are the outcome.</p>
         </div>
@@ -53,16 +53,16 @@ export default function Home() {
           <FeatureCard icon="bell" title="Notifies Your Team" problem="Owners and staff do not know what happened during a call." outcome="Every conversation is summarized and sent to the right people immediately." />
         </div>
         <nav className="homeSearchLinks" aria-label="Popular AI receptionist solutions">
-          <a href="/ai-receptionist-for-small-business"><span>AI RECEPTIONIST</span><strong>For small businesses</strong><b>↗</b></a>
-          <a href="/ai-answering-service-for-home-services"><span>AI ANSWERING</span><strong>For home services</strong><b>↗</b></a>
-          <a href="/ai-receptionist-for-law-firms"><span>LEGAL INTAKE</span><strong>For law firms</strong><b>↗</b></a>
-          <a href="/services/after-hours-answering"><span>24/7 COVERAGE</span><strong>After-hours answering</strong><b>↗</b></a>
+          <a href="/ai-receptionist-for-small-business"><span>AI RECEPTIONIST</span><strong>For small businesses</strong><b></b></a>
+          <a href="/ai-answering-service-for-home-services"><span>AI ANSWERING</span><strong>For home services</strong><b></b></a>
+          <a href="/ai-receptionist-for-law-firms"><span>LEGAL INTAKE</span><strong>For law firms</strong><b></b></a>
+          <a href="/services/after-hours-answering"><span>24/7 COVERAGE</span><strong>After-hours answering</strong><b></b></a>
         </nav>
         <nav className="homeSearchLinks" aria-label="AI Agent solutions by industry">
-          <a href="/ai-agent-for-plumbers"><span>AI AGENT</span><strong>For plumbers</strong><b>↗</b></a>
-          <a href="/ai-agent-for-hvac"><span>AI AGENT</span><strong>For HVAC companies</strong><b>↗</b></a>
-          <a href="/ai-agent-for-roofers"><span>AI AGENT</span><strong>For roofers</strong><b>↗</b></a>
-          <a href="/ai-agent-for-dental-offices"><span>AI AGENT</span><strong>For dental offices</strong><b>↗</b></a>
+          <a href="/ai-agent-for-plumbers"><span>AI AGENT</span><strong>For plumbers</strong><b></b></a>
+          <a href="/ai-agent-for-hvac"><span>AI AGENT</span><strong>For HVAC companies</strong><b></b></a>
+          <a href="/ai-agent-for-roofers"><span>AI AGENT</span><strong>For roofers</strong><b></b></a>
+          <a href="/ai-agent-for-dental-offices"><span>AI AGENT</span><strong>For dental offices</strong><b></b></a>
         </nav>
       </section>
 
@@ -73,12 +73,12 @@ export default function Home() {
           <p>Virtual Agent AI is configured around your real call flow, not a generic script. Here is what happens before launch and on every call.</p>
         </div>
         <div className="howItWorksSteps">
-          <article><span>01</span><div><h3>We map your call flow</h3><p>We learn your services, common questions, service area, hours, qualification rules, booking process, and when a caller should reach a person.</p><a href="/resources#setup">See the setup guide →</a></div></article>
-          <article><span>02</span><div><h3>The AI answers in your business voice</h3><p>Calls are answered 24/7 with the greeting and conversation logic built for your business. The agent can answer questions and collect the details you actually need.</p><a href="/demo">Hear real call examples →</a></div></article>
-          <article><span>03</span><div><h3>It takes the right action</h3><p>Depending on the call, the AI can qualify the lead, book an appointment, take a message, or transfer an urgent or high-value caller to your team.</p><a href="/services">Explore call handling →</a></div></article>
-          <article><span>04</span><div><h3>Your team gets the context</h3><p>Instead of a mystery missed call, your team receives the useful information captured during the conversation so the next step is clear.</p><a href="/blog/how-does-an-ai-receptionist-work">Read how AI receptionists work →</a></div></article>
+          <article><span>01</span><div><h3>We map your call flow</h3><p>We learn your services, common questions, service area, hours, qualification rules, booking process, and when a caller should reach a person.</p><a href="/resources#setup">See the setup guide </a></div></article>
+          <article><span>02</span><div><h3>The AI answers in your business voice</h3><p>Calls are answered 24/7 with the greeting and conversation logic built for your business. The agent can answer questions and collect the details you actually need.</p><a href="/demo">Hear real call examples </a></div></article>
+          <article><span>03</span><div><h3>It takes the right action</h3><p>Depending on the call, the AI can qualify the lead, book an appointment, take a message, or transfer an urgent or high-value caller to your team.</p><a href="/services">Explore call handling </a></div></article>
+          <article><span>04</span><div><h3>Your team gets the context</h3><p>Instead of a mystery missed call, your team receives the useful information captured during the conversation so the next step is clear.</p><a href="/blog/how-does-an-ai-receptionist-work">Read how AI receptionists work </a></div></article>
         </div>
-        <div className="howItWorksResourceBar"><div><strong>Want the details before booking?</strong><span>Browse plain-English guides on setup, pricing, call handling, transfers, scheduling, and choosing an AI receptionist.</span></div><a href="/resources">Guides &amp; Resources <b>↗</b></a></div>
+        <div className="howItWorksResourceBar"><div><strong>Want the details before booking?</strong><span>Browse plain-English guides on setup, pricing, call handling, transfers, scheduling, and choosing an AI receptionist.</span></div><a href="/resources">Guides &amp; Resources <b></b></a></div>
       </section>
 
       <section className="seoLandingProcess homeAuthority">
@@ -108,7 +108,7 @@ export default function Home() {
           <ReviewCard initials="LS" quote="The 24/7 calling support has been a game changer. We never miss leads anymore." name="Local Service Pro" role="Home Services" />
         </div>
         <a className="googleReviews" href="https://www.google.com/maps?cid=0x41aac8fe32c01059:0xeaf9d3f5cde90090" target="_blank" rel="noreferrer">
-          <span className="googleMark">G</span><span>View all reviews on Google</span><b>↗</b>
+          <span className="googleMark">G</span><span>View all reviews on Google</span><b></b>
         </a>
       </section>
 
@@ -133,10 +133,10 @@ export default function Home() {
             <h2>See how your next call could be handled.</h2>
             <p className="experienceLead">Hear the AI answer, qualify, and move a real customer conversation forward, then see how it would be tailored to your business.</p>
             <div className="experienceActions">
-              <a className="button" href="/demo">Hear the AI in Action <span>→</span></a>
+              <a className="button" href="/demo">Hear the AI in Action <span></span></a>
               <a className="experiencePhone" href="tel:7146955646"><PhoneIcon /><span>Call the AI</span></a>
             </div>
-            <div className="experienceTrust"><span>✓ No commitment</span><span>✓ Built for your business</span><span>✓ 15-minute walkthrough</span></div>
+            <div className="experienceTrust"><span> No commitment</span><span> Built for your business</span><span> 15-minute walkthrough</span></div>
           </div>
 
           <div className="demoBrief">
@@ -168,7 +168,7 @@ export default function Home() {
           <details><summary>How long does setup take?<span>+</span></summary><p>Setup depends on the complexity of your call flow and integrations. The process starts by mapping what callers ask, what information needs to be collected, which calls should be transferred, and what actions the AI should take. The system is then tested before it handles live customer calls.</p></details>
           <details><summary>Can I hear it before deciding?<span>+</span></summary><p>Yes. You can listen to call examples on the demo page or book a walkthrough using a scenario your business receives regularly. That makes it easier to judge the caller experience before moving forward.</p></details>
         </div>
-        <div className="homeFaqFoot"><span>Information reviewed September 23, 2026.</span><a href="/resources">Explore all guides and resources →</a></div>
+        <div className="homeFaqFoot"><span>Information reviewed September 23, 2026.</span><a href="/resources">Explore all guides and resources </a></div>
       </section>
 
       <section className="contact" id="contact">
@@ -194,7 +194,7 @@ export default function Home() {
               <label className="messageField"><span>What would you like the AI to handle?</span><textarea name="Message" placeholder="A few details about your call volume, business, and what you want to improve..." required /></label>
               <fieldset className="callbackField"><legend>Would you like a phone call instead?</legend><label><input type="radio" name="Phone call requested" value="Yes" /> Yes, have Lamora call me</label><label><input type="radio" name="Phone call requested" value="No" defaultChecked /> No, email is fine</label></fieldset>
             </div>
-            <button className="sendButton" type="submit"><span>Send message</span><b>↗</b></button>
+            <button className="sendButton" type="submit"><span>Send message</span><b></b></button>
             <p className="formPrivacy">Your information is only used to respond to this inquiry.</p>
           </form>
         </div>
@@ -214,7 +214,7 @@ function Stat({ value, label }: { value: string; label: string }) {
 
 function ReviewCard({ initials, quote, name, role }: { initials: string; quote: string; name: string; role: string }) {
   return <article className="reviewCard">
-    <div className="reviewTop"><span className="stars">★★★★★</span><span className="verified">✓ Verified</span></div>
+    <div className="reviewTop"><span className="stars">★★★★★</span><span className="verified"> Verified</span></div>
     <blockquote>“{quote}”</blockquote>
     <div className="reviewer">
       <span className="reviewAvatar">{initials}</span>

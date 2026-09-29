@@ -40,8 +40,8 @@ export default function About() {
           <h1>Built for the moments your business can’t <em>afford to miss.</em></h1>
           <p className="aboutHeroLead">We help service businesses build an AI Agent that turns incoming calls into clear next steps, without asking a busy team to be everywhere at once.</p>
           <div className="aboutHeroActions">
-            <a className="button" href="/#contact">See the AI in action <span>↗</span></a>
-            <a className="aboutTextLink" href="/services">Explore our services <span>→</span></a>
+            <a className="button" href="/#contact">See the AI in action <span></span></a>
+            <a className="aboutTextLink" href="/services">Explore our services <span></span></a>
           </div>
         </div>
 
@@ -115,8 +115,8 @@ export default function About() {
         <h2>Bring us your hardest call scenario.</h2>
         <p>We’ll show you how Virtual Agent AI can answer it, qualify it, and move it forward in a live walkthrough built around your business.</p>
         <div>
-          <a className="button" href="/#contact">Book a live demo <span>↗</span></a>
-          <a href="tel:7146955646">Call the AI <span>→</span></a>
+          <a className="button" href="/#contact">Book a live demo <span></span></a>
+          <a href="tel:7146955646">Call the AI <span></span></a>
         </div>
       </section>
     </main>

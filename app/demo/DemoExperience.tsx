@@ -183,7 +183,7 @@ export function DemoExperience() {
             <a className="button" href="#call-plan">Build my call plan <span>↓</span></a>
             <a className="demoTextLink" href="#how-it-works">See the complete handoff <span>↘</span></a>
           </div>
-          <div className="demoHeroTrust"><span>✓ Built around your workflow</span><span>✓ No generic recording</span><span>✓ No commitment</span></div>
+          <div className="demoHeroTrust"><span> Built around your workflow</span><span> No generic recording</span><span> No commitment</span></div>
         </div>
         <div className="demoHeroProof" aria-label="What the experience covers">
           <div className="demoProofHead"><span><i /> YOUR CALL BLUEPRINT</span><b>4 PARTS</b></div>
@@ -205,14 +205,14 @@ export function DemoExperience() {
 
         <div className="callPlanControls">
           <label htmlFor="demoIndustry">Choose your industry</label>
-          <div className="demoSelectWrap"><select id="demoIndustry" value={industryIndex} onChange={(event) => { const next = Number(event.target.value); setIndustryIndex(next); startDifferentCall(next); }}>{industries.map((item, index) => <option value={index} key={item.name}>{item.name}</option>)}</select><span>⌄</span></div>
+          <div className="demoSelectWrap"><select id="demoIndustry" value={industryIndex} onChange={(event) => { const next = Number(event.target.value); setIndustryIndex(next); startDifferentCall(next); }}>{industries.map((item, index) => <option value={index} key={item.name}>{item.name}</option>)}</select><span></span></div>
           <fieldset><legend>Choose the main outcome</legend><div>{goals.map((item) => <button type="button" key={item.key} className={goalKey === item.key ? "active" : ""} aria-pressed={goalKey === item.key} onClick={() => { setGoalKey(item.key); startDifferentCall(); }}><i /><span><strong>{item.label}</strong><small>{item.buttonCopy}</small></span></button>)}</div></fieldset>
         </div>
 
         <div className="callPlanWorkspace" key={`${industryIndex}-${goalKey}-${callRun}`}>
           <div className="callConversation">
             <div className="liveCallHeader">
-              <div><span className="phoneMark">☎</span><span><small>INBOUND PHONE CALL</small><strong>{industry.name} caller</strong></span></div>
+              <div><span className="phoneMark"></span><span><small>INBOUND PHONE CALL</small><strong>{industry.name} caller</strong></span></div>
               <div className="liveCallStatus"><i /><b>LIVE</b><time>{callTime}</time></div>
             </div>
             <div className="audioActivity" aria-hidden="true"><span>CALL AUDIO</span><div>{Array.from({ length: 26 }, (_, index) => <i key={index} style={{ animationDelay: `${(index % 7) * -0.12}s` }} />)}</div></div>
@@ -229,7 +229,7 @@ export function DemoExperience() {
             <div className="callOutcomeHead"><span>LIVE HANDOFF PREVIEW</span><b>{callComplete ? "READY" : "BUILDING"}</b></div>
             <p className="selectedGoal"><small>PRIMARY GOAL</small><strong>{goal.label}</strong><span>{goal.outcome}</span></p>
             <div className="capturedDetails">{industry.captured.map(([label, value]) => <div key={label}><small>{label}</small><strong>{value}</strong></div>)}</div>
-            <div className="callResult"><span>✓</span><div><small>{goal.action}</small><strong>{industry.result}</strong></div></div>
+            <div className="callResult"><span></span><div><small>{goal.action}</small><strong>{industry.result}</strong></div></div>
           </div>
         </div>
       </section>
@@ -247,9 +247,9 @@ export function DemoExperience() {
       <section className="demoConversion">
         <div className="demoConversionCopy"><p className="eyebrow">YOUR NEXT CALL IS THE BEST TEST</p><h2>Bring us the conversation your team cannot keep missing.</h2><p>We’ll turn it into a clear call blueprint using your services, questions, availability, and escalation rules.</p></div>
         <div className="demoConversionActions">
-          <a className="button" href="/#contact">Build my live walkthrough <span>↗</span></a>
-          <a href="tel:7146955646"><small>PREFER TO CALL?</small><strong>(714) 695-5646 <span>↗</span></strong></a>
-          <p><span>✓</span> No commitment. Bring one scenario. Leave with a usable plan.</p>
+          <a className="button" href="/#contact">Build my live walkthrough <span></span></a>
+          <a href="tel:7146955646"><small>PREFER TO CALL?</small><strong>(714) 695-5646 <span></span></strong></a>
+          <p><span></span> No commitment. Bring one scenario. Leave with a usable plan.</p>
         </div>
       </section>
     </main>
