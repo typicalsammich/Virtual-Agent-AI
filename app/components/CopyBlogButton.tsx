@@ -17,6 +17,6 @@ export function CopyBlogButton({ target = ".articleBody" }: { target?: string })
   }
 
   return <button type="button" className="copyBlogButton" onClick={copyArticle} aria-live="polite">
-    <span aria-hidden="true">{copied ? "✓" : "▣"}</span>{copied ? "Copied entire article" : "Copy entire article"}
+    <span aria-hidden="true">{copied ? "" : "▣"}</span>{copied ? "Copied entire article" : "Copy entire article"}
   </button>;
 }

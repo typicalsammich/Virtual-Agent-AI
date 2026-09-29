@@ -65,7 +65,7 @@ export function SeoLandingPage({ data }: { data: SeoLandingData }) {
           <p className="eyebrow">{data.eyebrow}</p>
           <h1>{data.title}</h1>
           <p>{data.intro}</p>
-          <div className="seoLandingActions"><a className="button" href={bookingUrl}>Book a tailored walkthrough <span>↗</span></a><a href="tel:7146955646">Call (714) 695-5646</a></div>
+          <div className="seoLandingActions"><a className="button" href={bookingUrl}>Book a tailored walkthrough <span></span></a><a href="tel:7146955646">Call (714) 695-5646</a></div>
         </div>
         <aside>
           <small>THE BUSINESS OUTCOME</small>
@@ -85,7 +85,7 @@ export function SeoLandingPage({ data }: { data: SeoLandingData }) {
 
       <section className="seoLandingFit">
         <div><p className="eyebrow">PRACTICAL FIT</p><h2>{data.fitTitle}</h2><p>{data.fitText}</p></div>
-        <ul>{data.fitPoints.map((point) => <li key={point}><span>✓</span>{point}</li>)}</ul>
+        <ul>{data.fitPoints.map((point) => <li key={point}><span></span>{point}</li>)}</ul>
       </section>
 
       <section className="seoLandingAgentGuide">
@@ -105,10 +105,10 @@ export function SeoLandingPage({ data }: { data: SeoLandingData }) {
 
       <section className="seoLandingRelated">
         <span>EXPLORE RELATED SOLUTIONS</span>
-        <nav aria-label="Related AI receptionist services">{data.related.map((link) => <a key={link.href} href={link.href}>{link.label}<b>↗</b></a>)}</nav>
+        <nav aria-label="Related AI receptionist services">{data.related.map((link) => <a key={link.href} href={link.href}>{link.label}<b></b></a>)}</nav>
       </section>
 
-      <section className="seoLandingCta"><p className="eyebrow">TURN THE NEXT CALL INTO A NEXT STEP</p><h2>See how this would work for your business.</h2><p>Bring one real call scenario. We will map the questions, routing, booking rules, and team handoff around the way your business already operates.</p><a className="button" href={bookingUrl}>Book a 15-minute call <span>↗</span></a></section>
+      <section className="seoLandingCta"><p className="eyebrow">TURN THE NEXT CALL INTO A NEXT STEP</p><h2>See how this would work for your business.</h2><p>Bring one real call scenario. We will map the questions, routing, booking rules, and team handoff around the way your business already operates.</p><a className="button" href={bookingUrl}>Book a 15-minute call <span></span></a></section>
     </main>
     <SiteFooter />
   </>;

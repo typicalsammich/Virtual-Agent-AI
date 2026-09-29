@@ -72,7 +72,7 @@ export function PricingEstimator() {
       <strong>${estimate.average.toLocaleString()}<small>/month</small></strong>
       <p>Typical planning range: <b>${estimate.low.toLocaleString()} to ${estimate.high.toLocaleString()}/month</b></p>
       <span>This is an estimate, not a final quote. Your exact price is confirmed after a short review of your real call flow.</span>
-      <a className="button" href={BOOKING_URL}>Book a pricing call <b>↗</b></a>
+      <a className="button" href={BOOKING_URL}>Book a pricing call <b></b></a>
     </aside>
   </section>;
 }

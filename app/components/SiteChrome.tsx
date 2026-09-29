@@ -49,14 +49,14 @@ export function SiteHeader() {
       <div className={`servicesNav ${servicesOpen ? "mobileServicesOpen" : ""}`}>
         <div className="servicesNavTriggerRow">
           <a className={servicesActive ? "active" : ""} href="/services" aria-current={servicesActive ? "page" : undefined} onClick={() => setMenuOpen(false)}>Services</a>
-          <button type="button" className="servicesNavToggle" aria-label="Show services" aria-expanded={servicesOpen} onClick={() => setServicesOpen(v => !v)}><span>⌄</span></button>
+          <button type="button" className="servicesNavToggle" aria-label="Show services" aria-expanded={servicesOpen} onClick={() => setServicesOpen(v => !v)}><span></span></button>
         </div>
         <div className="servicesDropdown">
           <div className="servicesDropdownHead"><small>WHAT WE DO</small><strong>Explore all services</strong></div>
           <div className="servicesDropdownGrid">
-            {services.map(([label, href]) => <a key={href} href={href} className={pathname === href ? "currentService" : ""} onClick={closeMenu}><span>{label}</span><b>↗</b></a>)}
+            {services.map(([label, href]) => <a key={href} href={href} className={pathname === href ? "currentService" : ""} onClick={closeMenu}><span>{label}</span><b></b></a>)}
           </div>
-          <a className="servicesViewAll" href="/services" onClick={closeMenu}>View all services <span>→</span></a>
+          <a className="servicesViewAll" href="/services" onClick={closeMenu}>View all services <span></span></a>
         </div>
       </div>
       {navigation.slice(1).map(([label, href]) => {
@@ -65,7 +65,7 @@ export function SiteHeader() {
       })}
       <div className="mobileNavActions">
         <a href="tel:7146955646"><PhoneIcon /> Call (714) 695-5646</a>
-        <a className="mobileBook" href="/#contact">Book a Demo <span>↗</span></a>
+        <a className="mobileBook" href="/#contact">Book a Demo <span></span></a>
       </div>
     </nav>
     <a className="topPhone" href="tel:7146955646"><PhoneIcon />(714) 695-5646</a>
