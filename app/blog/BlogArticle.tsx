@@ -2,6 +2,7 @@
 import { SiteHeader } from "../components/SiteChrome";
 import { SiteFooter } from "../components/SiteFooter";
 import { postsBySlug, type BlogPost } from "./posts";
+import { CopyBlogButton } from "../components/CopyBlogButton";
 
 const siteUrl = "https://www.virtualagentai.org";
 
@@ -54,7 +55,7 @@ export function BlogArticle({ post }: { post: BlogPost }) {
               </div>
               <div className="articleHeroSummary">
                 <p className="articleDek">{post.excerpt}</p>
-                <div className="articleMeta"><span>Virtual Agent AI Editorial Team</span><span>{post.published}</span><span>{post.readTime}</span></div>
+                <div className="articleMeta"><span>Virtual Agent AI Editorial Team</span><span>{post.published}</span><span>{post.readTime}</span></div><CopyBlogButton />
               </div>
             </div>
             <div className="articleHeroFoot"><span>Practical guide for service businesses</span><a href="#article-content">Start reading <b>↓</b></a></div>

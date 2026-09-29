@@ -59,9 +59,11 @@ export default function Services() {
         </aside>
 
         <div className="growthPortfolio">
-          <GrowthPanel className="growthPanelPrimary" label="PIPELINE" title="Lead Generation & Follow-Up" text="Create a steadier flow of opportunities, then keep each one moving with coordinated phone, text, and email follow-up." outcome="More qualified conversations" detail="OUTREACH · NURTURE · REACTIVATION"/>
-          <GrowthPanel label="DEMAND" title="Social & Paid Campaigns" text="Turn clear offers into managed campaigns built to reach the right local customers." outcome="More targeted inquiries" detail="CONTENT · PAID MEDIA · REPORTING"/>
-          <GrowthPanel label="FOUNDATION" title="SEO Websites" text="Give prospects a faster, clearer path from search to contact with stronger local visibility." outcome="More discoverable online" detail="WEB · LOCAL SEO · CONVERSION"/>
+          <GrowthPanel className="growthPanelPrimary" href="/services/lead-generation-follow-up" label="PIPELINE" title="Lead Generation & Follow-Up" text="Create a steadier flow of opportunities, then keep each one moving with coordinated phone, text, and email follow-up." outcome="More qualified conversations" detail="OUTREACH · NURTURE · REACTIVATION"/>
+          <GrowthPanel href="/services/social-media-marketing" label="DEMAND" title="Social Media Marketing" text="Build a consistent social presence with content and campaigns designed around your offer, audience, and sales process." outcome="More targeted attention" detail="CONTENT · STRATEGY · REPORTING"/>
+          <GrowthPanel href="/services/seo-websites" label="FOUNDATION" title="SEO Websites" text="Give prospects a faster, clearer path from search to contact with stronger local visibility." outcome="More discoverable online" detail="WEB · LOCAL SEO · CONVERSION"/>
+          <GrowthPanel href="/services/paid-ad-campaigns" label="ACQUISITION" title="Paid Ad Campaigns" text="Launch and refine paid campaigns that connect the right audience to a clear offer and measurable next step." outcome="More qualified demand" detail="ADS · LANDING PAGES · REPORTING"/>
+          <GrowthPanel href="/services/ai-call-center" label="SCALE" title="AI Call Center" text="Handle higher call volume with AI agents configured for inbound conversations, qualification, routing, and repeatable customer workflows." outcome="More calls handled at once" detail="VOICE · ROUTING · WORKFLOWS"/>
         </div>
       </div>
     </section>
@@ -72,4 +74,4 @@ export default function Services() {
 
 function ServiceRow({n, href, title, description, features}:{n:string;href:string;title:string;description:string;features:string[]}) { return <article className="systemRow"><span>{n}</span><h3><a href={href}>{title} <b>↗</b></a></h3><p>{description}</p><div>{features.map(feature => <small key={feature}>✓ {feature}</small>)}</div></article>; }
 function ProcessStep({n, title, text}:{n:string;title:string;text:string}) { return <article className="processStep"><span>{n}</span><div><h3>{title}</h3><p>{text}</p></div></article>; }
-function GrowthPanel({className="", label, title, text, outcome, detail}:{className?:string;label:string;title:string;text:string;outcome:string;detail:string}) { return <a className={`growthPanel ${className}`} href="/#contact"><div className="growthPanelTop"><span>{label}</span><b>↗</b></div><h3>{title}</h3><p>{text}</p><div className="growthPanelBottom"><small>{detail}</small><strong><i>✓</i>{outcome}</strong></div></a>; }
+function GrowthPanel({className="", href, label, title, text, outcome, detail}:{className?:string;href:string;label:string;title:string;text:string;outcome:string;detail:string}) { return <a className={`growthPanel ${className}`} href={href}><div className="growthPanelTop"><span>{label}</span><b>↗</b></div><h3>{title}</h3><p>{text}</p><div className="growthPanelBottom"><small>{detail}</small><strong><i>✓</i>{outcome}</strong></div></a>; }

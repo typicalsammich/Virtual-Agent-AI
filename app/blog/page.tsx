@@ -63,6 +63,7 @@ export default function Blog() {
         <a href="/blog/can-ai-receptionist-book-appointments">Can AI book appointments? <b>↗</b></a>
         <a href="/blog/can-ai-receptionist-transfer-calls">Can AI transfer calls? <b>↗</b></a>
         <a href="/blog/ai-receptionist-for-24-7-businesses">AI receptionist for 24/7 businesses <b>↗</b></a>
+        <a href="/blog/ai-agents-vs-ai-assistants-vs-chatbots">AI agents vs assistants vs chatbots <b>↗</b></a>
       </nav></section>
 
       <section className="blogSeoStatement">
