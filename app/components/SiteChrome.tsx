@@ -4,9 +4,20 @@
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
+const services = [
+  ["AI Call Answering", "/services/ai-call-answering"],
+  ["Lead Qualification", "/services/lead-qualification"],
+  ["Appointment Booking", "/services/appointment-booking"],
+  ["After-Hours Answering", "/services/after-hours-answering"],
+  ["AI Call Center", "/services/ai-call-center"],
+  ["Lead Generation & Follow-Up", "/services/lead-generation-follow-up"],
+  ["Social Media Marketing", "/services/social-media-marketing"],
+  ["Paid Ad Campaigns", "/services/paid-ad-campaigns"],
+  ["SEO Websites", "/services/seo-websites"],
+] as const;
+
 const navigation = [
   ["Home", "/"],
-  ["Services", "/services"],
   ["Industries", "/industries"],
   ["Locations", "/locations"],
   ["Compare", "/compare"],
@@ -21,18 +32,36 @@ function PhoneIcon() {
 export function SiteHeader() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
 
   useEffect(() => {
     document.body.classList.toggle("mobileMenuOpen", menuOpen);
     return () => document.body.classList.remove("mobileMenuOpen");
   }, [menuOpen]);
 
+  const closeMenu = () => { setMenuOpen(false); setServicesOpen(false); };
+  const servicesActive = pathname.startsWith("/services");
+
   return <header className="siteHeader">
-    <a className="logo brandLogo" href="/" onClick={() => setMenuOpen(false)}><img className="brandMarkImage" src="/virtual-agent-ai-logo-transparent.png" alt="Virtual Agent AI logo" /><span>Virtual Agent AI</span></a>
+    <a className="logo brandLogo" href="/" onClick={closeMenu}><img className="brandMarkImage" src="/virtual-agent-ai-logo-transparent.png" alt="Virtual Agent AI logo" /><span>Virtual Agent AI</span></a>
     <nav className={menuOpen ? "mobileNavOpen" : ""} aria-label="Main navigation" id="main-navigation">
-      {navigation.map(([label, href]) => {
-        const active = href === "/" ? pathname === "/" : pathname.startsWith(href);
-        return <a key={href} className={active ? "active" : ""} href={href} aria-current={active ? "page" : undefined} onClick={() => setMenuOpen(false)}>{label}</a>;
+      <a className={pathname === "/" ? "active" : ""} href="/" aria-current={pathname === "/" ? "page" : undefined} onClick={closeMenu}>Home</a>
+      <div className={`servicesNav ${servicesOpen ? "mobileServicesOpen" : ""}`}>
+        <div className="servicesNavTriggerRow">
+          <a className={servicesActive ? "active" : ""} href="/services" aria-current={servicesActive ? "page" : undefined} onClick={() => setMenuOpen(false)}>Services</a>
+          <button type="button" className="servicesNavToggle" aria-label="Show services" aria-expanded={servicesOpen} onClick={() => setServicesOpen(v => !v)}><span>⌄</span></button>
+        </div>
+        <div className="servicesDropdown">
+          <div className="servicesDropdownHead"><small>WHAT WE DO</small><strong>Explore all services</strong></div>
+          <div className="servicesDropdownGrid">
+            {services.map(([label, href]) => <a key={href} href={href} className={pathname === href ? "currentService" : ""} onClick={closeMenu}><span>{label}</span><b>↗</b></a>)}
+          </div>
+          <a className="servicesViewAll" href="/services" onClick={closeMenu}>View all services <span>→</span></a>
+        </div>
+      </div>
+      {navigation.slice(1).map(([label, href]) => {
+        const active = pathname.startsWith(href);
+        return <a key={href} className={active ? "active" : ""} href={href} aria-current={active ? "page" : undefined} onClick={closeMenu}>{label}</a>;
       })}
       <div className="mobileNavActions">
         <a href="tel:7146955646"><PhoneIcon /> Call (714) 695-5646</a>
@@ -44,6 +73,6 @@ export function SiteHeader() {
     <button className={menuOpen ? "mobileMenuButton open" : "mobileMenuButton"} type="button" aria-expanded={menuOpen} aria-controls="main-navigation" aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"} onClick={() => setMenuOpen((open) => !open)}>
       <span /><span /><span />
     </button>
-    <button className={menuOpen ? "mobileNavBackdrop open" : "mobileNavBackdrop"} type="button" aria-label="Close navigation menu" tabIndex={menuOpen ? 0 : -1} onClick={() => setMenuOpen(false)} />
+    <button className={menuOpen ? "mobileNavBackdrop open" : "mobileNavBackdrop"} type="button" aria-label="Close navigation menu" tabIndex={menuOpen ? 0 : -1} onClick={closeMenu} />
   </header>;
 }
