@@ -1182,7 +1182,6 @@ export const blogPosts: BlogPost[] = [
     authorBlurb: "Practical guidance based on building and improving phone answering, lead qualification, appointment booking, and customer follow-up systems for service businesses.",
     related: ["ai-receptionist-for-hvac-companies", "ai-receptionist-for-plumbers", "after-hours-answering-home-services"]
   },
-,
   {
       "slug": "ai-receptionist-pricing-what-should-a-business-pay-for",
       "category": "BUYER’S GUIDE",
@@ -1769,4 +1768,4 @@ export const blogPosts: BlogPost[] = [
 
 ];
 
-export const postsBySlug = Object.fromEntries(blogPosts.map((post) => [post.slug, post])) as Record<string, BlogPost>; 
+export const postsBySlug = Object.fromEntries(blogPosts.map((post) => [post.slug, post])) as Record<string, BlogPost>;
