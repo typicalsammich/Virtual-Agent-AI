@@ -556,7 +556,7 @@ export const blogPosts: BlogPost[] = [
         "Automation becomes useful when employees stop spending attention on conversations that never needed much judgment in the first place."
       ]
     },
-    authorNote: "Practical guidance based on building and improving phone answering, lead qualification, appointment booking, and customer follow-up systems for service businesses.",
+    authorBlurb: "Practical guidance based on building and improving phone answering, lead qualification, appointment booking, and customer follow-up systems for service businesses.",
     related: ["ai-call-answering-how-it-works-for-service-businesses", "what-is-an-ai-receptionist", "ai-receptionist-vs-answering-service"]
   },
   {
