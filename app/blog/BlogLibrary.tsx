@@ -3,23 +3,27 @@
 import { useMemo, useState } from "react";
 import type { BlogPost } from "./posts";
 
-type TopicKey = "all" | "ai-receptionists" | "call-coverage" | "appointment-booking" | "lead-qualification";
+type TopicKey = "all" | "ai-receptionists" | "ai-call-centers" | "call-coverage" | "appointment-booking" | "lead-qualification" | "lead-generation";
 
 const topics: { key: TopicKey; label: string }[] = [
   { key: "all", label: "All articles" },
   { key: "ai-receptionists", label: "AI receptionists" },
+  { key: "ai-call-centers", label: "AI call centers" },
   { key: "call-coverage", label: "Call coverage" },
   { key: "appointment-booking", label: "Appointment booking" },
   { key: "lead-qualification", label: "Lead qualification" },
+  { key: "lead-generation", label: "Lead generation" },
 ];
 
 const postTopics: Record<string, Exclude<TopicKey, "all">> = {
   "what-is-an-ai-receptionist": "ai-receptionists",
+  "what-is-an-ai-call-center": "ai-call-centers",
   "ai-receptionist-vs-answering-service": "ai-receptionists",
   "stop-missing-business-calls": "call-coverage",
   "after-hours-answering-service": "call-coverage",
   "ai-appointment-scheduling": "appointment-booking",
   "ai-lead-qualification": "lead-qualification",
+  "ai-lead-generation-for-service-businesses": "lead-generation",
 };
 
 export function BlogLibrary({ posts }: { posts: BlogPost[] }) {

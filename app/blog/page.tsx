@@ -55,10 +55,13 @@ export default function Blog() {
       <BlogLibrary posts={blogPosts} />
 
       <section className="seoLandingRelated"><span>COMMERCIAL AI RECEPTIONIST GUIDES</span><nav>
+        <a href="/blog/what-is-an-ai-call-center">What is an AI call center? <b></b></a>
+        <a href="/blog/ai-lead-generation-for-service-businesses">AI lead generation for service businesses <b></b></a>
         <a href="/blog/how-much-does-ai-receptionist-cost-2026">AI receptionist cost in 2026 <b></b></a>
         <a href="/blog/ai-receptionist-vs-human-receptionist">AI vs human receptionist <b></b></a>
         <a href="/blog/ai-receptionist-vs-virtual-receptionist">AI vs virtual receptionist <b></b></a>
         <a href="/blog/best-ai-receptionist-for-small-business">Best AI receptionist for small business <b></b></a>
+        <a href="/blog/ai-receptionist-for-small-business-is-it-worth-it">AI receptionist for small business: is it worth it? <b></b></a>
         <a href="/blog/how-does-an-ai-receptionist-work">How an AI receptionist works <b></b></a>
         <a href="/blog/can-ai-receptionist-book-appointments">Can AI book appointments? <b></b></a>
         <a href="/blog/can-ai-receptionist-transfer-calls">Can AI transfer calls? <b></b></a>
