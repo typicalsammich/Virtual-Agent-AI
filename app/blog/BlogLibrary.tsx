@@ -3,33 +3,34 @@
 import { useMemo, useState } from "react";
 import type { BlogPost } from "./posts";
 
-type TopicKey = "all" | "ai-receptionists" | "ai-call-centers" | "call-coverage" | "appointment-booking" | "lead-qualification" | "lead-generation";
+type TopicKey = "all" | "ai-receptionists" | "call-operations" | "lead-growth" | "industry-guides" | "websites-seo" | "revenue-marketing" | "buyer-guides";
 
 const topics: { key: TopicKey; label: string }[] = [
   { key: "all", label: "All articles" },
   { key: "ai-receptionists", label: "AI receptionists" },
-  { key: "ai-call-centers", label: "AI call centers" },
-  { key: "call-coverage", label: "Call coverage" },
-  { key: "appointment-booking", label: "Appointment booking" },
-  { key: "lead-qualification", label: "Lead qualification" },
-  { key: "lead-generation", label: "Lead generation" },
+  { key: "call-operations", label: "Calls & booking" },
+  { key: "lead-growth", label: "Leads & follow-up" },
+  { key: "industry-guides", label: "Industry guides" },
+  { key: "websites-seo", label: "Websites & SEO" },
+  { key: "revenue-marketing", label: "Revenue & ads" },
+  { key: "buyer-guides", label: "Buyer guides" },
 ];
 
-const postTopics: Record<string, Exclude<TopicKey, "all">> = {
-  "what-is-an-ai-receptionist": "ai-receptionists",
-  "what-is-an-ai-call-center": "ai-call-centers",
-  "ai-receptionist-vs-answering-service": "ai-receptionists",
-  "stop-missing-business-calls": "call-coverage",
-  "after-hours-answering-service": "call-coverage",
-  "ai-appointment-scheduling": "appointment-booking",
-  "ai-lead-qualification": "lead-qualification",
-  "ai-lead-generation-for-service-businesses": "lead-generation",
-};
+function topicForPost(post: BlogPost): Exclude<TopicKey, "all"> {
+  if (post.category === "INDUSTRY GUIDES") return "industry-guides";
+  if (post.category === "WEBSITES & LANDING PAGES") return "websites-seo";
+  if (post.category === "BUYER’S GUIDE") return "buyer-guides";
+  if (["LEAD QUALIFICATION", "LEAD GENERATION & FOLLOW-UP"].includes(post.category)) return "lead-growth";
+  if (["REVENUE OPERATIONS"].includes(post.category)) return "revenue-marketing";
+  if (["AI CALL ANSWERING", "AI CALL CENTERS", "24/7 CALL COVERAGE", "APPOINTMENT BOOKING"].includes(post.category)) return "call-operations";
+  return "ai-receptionists";
+}
+
 
 export function BlogLibrary({ posts }: { posts: BlogPost[] }) {
   const [activeTopic, setActiveTopic] = useState<TopicKey>("all");
   const visiblePosts = useMemo(
-    () => activeTopic === "all" ? posts : posts.filter((post) => postTopics[post.slug] === activeTopic),
+    () => activeTopic === "all" ? posts : posts.filter((post) => topicForPost(post) === activeTopic),
     [activeTopic, posts],
   );
   const activeLabel = topics.find((topic) => topic.key === activeTopic)?.label ?? "All articles";
@@ -45,7 +46,7 @@ export function BlogLibrary({ posts }: { posts: BlogPost[] }) {
 
     <div className="blogFilterBar" role="tablist" aria-label="Filter articles by topic">
       {topics.map((topic) => {
-        const count = topic.key === "all" ? posts.length : posts.filter((post) => postTopics[post.slug] === topic.key).length;
+        const count = topic.key === "all" ? posts.length : posts.filter((post) => topicForPost(post) === topic.key).length;
         return <button
           key={topic.key}
           type="button"

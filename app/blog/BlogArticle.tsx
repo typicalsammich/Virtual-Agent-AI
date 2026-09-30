@@ -3,10 +3,13 @@ import { SiteHeader } from "../components/SiteChrome";
 import { SiteFooter } from "../components/SiteFooter";
 import { postsBySlug, type BlogPost } from "./posts";
 import { CopyBlogButton } from "../components/CopyBlogButton";
+import { getRelatedBlogSlugs, getServiceLinks } from "./topicClusters";
 
 const siteUrl = "https://www.virtualagentai.org";
 
 export function BlogArticle({ post }: { post: BlogPost }) {
+  const serviceLinks = getServiceLinks(post.slug);
+  const relatedSlugs = getRelatedBlogSlugs(post.slug, post.related);
   const canonical = `${siteUrl}/blog/${post.slug}`;
   const articleSchema = {
     "@context": "https://schema.org",
@@ -77,6 +80,11 @@ export function BlogArticle({ post }: { post: BlogPost }) {
               <ul>{post.takeaways.map((item) => <li key={item}>{item}</li>)}</ul>
             </section>
 
+            <aside className="articleClusterLinks" aria-label="Related Virtual Agent AI services">
+              <div><span>RELATED SERVICES</span><strong>Put this guide into practice.</strong></div>
+              <nav>{serviceLinks.map((link) => <a href={link.href} key={link.href}><b>{link.label}</b>{link.description && <small>{link.description}</small>}<i></i></a>)}</nav>
+            </aside>
+
             {post.sections.map((section, index) => <div key={section.id}>
               <section className="articleSection" id={section.id}>
                 <span className="articleSectionNumber">0{index + 1}</span>
@@ -128,7 +136,7 @@ export function BlogArticle({ post }: { post: BlogPost }) {
 
         <section className="relatedArticles">
           <div className="relatedHeading"><div><p className="eyebrow">KEEP READING</p><h2>Related insights</h2></div><a href="/blog">View all articles </a></div>
-          <div className="relatedGrid">{post.related.map((slug, index) => {
+          <div className="relatedGrid">{relatedSlugs.map((slug, index) => {
             const related = postsBySlug[slug];
             return <a href={`/blog/${related.slug}`} key={related.slug}><span>0{index + 1}</span><small>{related.category}</small><h3>{related.title}</h3><p>{related.excerpt}</p><b>Read article </b></a>;
           })}</div>

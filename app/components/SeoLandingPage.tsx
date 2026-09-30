@@ -20,6 +20,7 @@ export type SeoLandingData = {
   fitPoints: string[];
   faqs: { question: string; answer: string }[];
   related: { href: string; label: string }[];
+  relatedGuides?: { href: string; label: string }[];
 };
 
 export function SeoLandingPage({ data }: { data: SeoLandingData }) {
@@ -107,6 +108,11 @@ export function SeoLandingPage({ data }: { data: SeoLandingData }) {
         <span>EXPLORE RELATED SOLUTIONS</span>
         <nav aria-label="Related AI receptionist services">{data.related.map((link) => <a key={link.href} href={link.href}>{link.label}<b></b></a>)}</nav>
       </section>
+
+      {data.relatedGuides && <section className="seoLandingRelated serviceGuideLinks">
+        <span>LEARN MORE IN THE RESPONSE PLAYBOOK</span>
+        <nav aria-label="Related guides">{data.relatedGuides.map((link) => <a key={link.href} href={link.href}>{link.label}<b></b></a>)}</nav>
+      </section>}
 
       <section className="seoLandingCta"><p className="eyebrow">TURN THE NEXT CALL INTO A NEXT STEP</p><h2>See how this would work for your business.</h2><p>Bring one real call scenario. We will map the questions, routing, booking rules, and team handoff around the way your business already operates.</p><a className="button" href={bookingUrl}>Book a 15-minute call <span></span></a></section>
     </main>
