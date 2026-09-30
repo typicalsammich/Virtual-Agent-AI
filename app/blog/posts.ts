@@ -1769,4 +1769,4 @@ export const blogPosts: BlogPost[] = [
 
 ];
 
-export const postsBySlug = Object.fromEntries(blogPosts.map((post) => [post.slug, post])) as Record<string, BlogPost>;
+export const postsBySlug = Object.fromEntries(blogPosts.map((post) => [post.slug, post])) as Record<string, BlogPost>; 
