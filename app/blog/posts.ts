@@ -24,106 +24,203 @@ export type BlogPost = {
   sections: BlogSection[];
   faqs: { question: string; answer: string }[];
   related: string[];
+  fieldNote?: { heading: string; paragraphs: string[] };
+  authorBlurb?: string;
 };
 
 export const blogPosts: BlogPost[] = [
   {
-    slug: "what-is-an-ai-receptionist",
-    category: "AI RECEPTIONIST GUIDE",
-    title: "What Is an AI Receptionist? A Practical Guide for Service Businesses",
-    seoTitle: "What Is an AI Receptionist? Complete Business Guide",
-    description: "Learn how an AI receptionist answers calls, qualifies leads, books appointments, and supports service businesses around the clock.",
-    excerpt: "A plain-English guide to how AI receptionists work, what they can handle, and how to decide whether one fits your business.",
-    focusKeyword: "AI receptionist",
-    keywords: ["AI receptionist", "virtual AI receptionist", "AI phone answering service", "AI receptionist for small business", "automated receptionist"],
-    readTime: "9 min read",
-    published: "August 13, 2026",
-    publishedISO: "2026-08-13",
-    intro: "An AI receptionist is a phone-based system that can respond to inbound calls, identify the purpose of the conversation, gather relevant information, and execute appropriate next steps like booking an appointment or requesting an urgent response. The most effective solutions conduct a natural conversation that draws on the business's rules, services, and availability.",
-    takeaways: [
-      "AI receptionists support natural conversation plus business-specific next steps.",
-      "Their biggest value is in resolving repetitive, time-sensitive, or frequently missed conversations.",
-      "Their implementation defines what the AI may do, when to request escalation, and what the team should receive as follow-up.",
-      "Their purpose is not to automate every conversation, but rather to ensure that every conversation achieves a next step.",
+    "slug": "what-is-an-ai-receptionist",
+    "category": "AI RECEPTIONIST GUIDE",
+    "title": "What Is an AI Receptionist? A Practical Guide for Service Businesses",
+    "seoTitle": "What Is an AI Receptionist? Complete Business Guide",
+    "description": "Learn how an AI receptionist answers calls, handles real caller situations, books appointments, qualifies inquiries, and supports service businesses.",
+    "excerpt": "A practical look at how AI receptionists handle real phone calls, where they help, what they should collect, and how to test one before launch.",
+    "focusKeyword": "AI receptionist",
+    "keywords": [
+      "AI receptionist",
+      "virtual AI receptionist",
+      "AI phone answering service",
+      "AI receptionist for small business",
+      "automated receptionist"
     ],
-    sections: [
-      {
-        id: "how-it-works",
-        heading: "How does an AI receptionist work?",
-        paragraphs: [
-          "When a customer calls, the AI receptionist answers using a greeting designed for the business's brand. Speech recognition technology captures the caller's intent in a form the system can analyze. A conversation model then executes an approved next step, asking relevant questions and responding based on the business's services, policies, schedules, and routing rules.",
-          "The conversation's content is as important as its tone. While a polished greeting is valuable, it is not useful if the system is unable to distinguish between a routine quote request and an emergency. The true value of AI receptionist services is in linking the conversation to an actionable step and recording for follow-up by the team.",
-        ],
-        steps: [
-          { title: "Answer", text: "Pick up immediately with the right business greeting and tone." },
-          { title: "Understand", text: "Identify the caller's intent, urgency, location, and relevant details." },
-          { title: "Act", text: "Book, qualify, route, transfer, or create a clear follow-up task." },
-          { title: "Report", text: "Send the team a usable summary instead of an unstructured voicemail." },
-        ],
-      },
-      {
-        id: "different-from-phone-menu",
-        heading: "AI receptionist vs. phone menu, voicemail, and chatbot",
-        paragraphs: [
-          "Traditional interactive voice response systems prompt customers to press numbers and navigate a fixed tree. Voicemail will record a message, but does not route an actionable request. Website chatbots initiate the conversation only when a prospect is already on the website. An AI receptionist manages the phone, which is the channel many high-value service customers still choose when they are ready to act.",
-          "Unlike a rigid phone menu, a conversational AI can resolve the caller's issue even when the conversation is in their own words. Unlike voicemail, it can ask clarifying questions while the customer is still present. Unlike a web chatbot, it can respond to customers who found the company through maps, a referral, a vehicle, a yard sign, or an existing relationship.",
-        ],
-      },
-      {
-        id: "what-it-can-do",
-        heading: "What can an AI receptionist handle?",
-        paragraphs: [
-          "The use cases depend on the business. A law firm may want to triage new clients and consultation requests. A plumbing company may need to qualify service areas, triage emergencies, and dispatch. A mortgage office may want to qualify the borrower's intent, type of loan, and appointment routing.",
-        ],
-        bullets: [
-          "Answer common questions using approved business information",
-          "Capture names, contact details, service needs, and locations",
-          "Qualify leads against clear fit and urgency criteria",
-          "Book appointments using real availability and scheduling rules",
-          "Transfer urgent or high-value calls to the correct person",
-          "Trigger text, email, or team notifications after the call",
-          "Handle routine outbound follow-up when the workflow allows it",
-        ],
-      },
-      {
-        id: "best-fit",
-        heading: "Which businesses benefit most from an AI receptionist?",
-        paragraphs: [
-          "The businesses that benefit most from an AI receptionist are those where a single new customer represents a meaningful revenue opportunity, response time affects the sales process, and employees cannot stop their current task to answer every call. Home services, law firms, financial services, healthcare practices, automotive businesses, real estate teams, and other appointment-based operations often operate this way.",
-          "Call volume does not need to be overwhelming, since a smaller business may feel more impact from a missed opportunity. The deciding factor is whether important calls arrive when the team is busy, away from the desk, or otherwise unavailable.",
-        ],
-      },
-      {
-        id: "evaluation-checklist",
-        heading: "How to evaluate an AI receptionist service",
-        paragraphs: [
-          "Start with the experience you want the caller to have, then work backward into the features. Ask the provider to demonstrate a realistic scenario from your business, rather than a generic script. Pay attention to whether the system asks useful follow-up questions, manages interruptions naturally, and knows when to stop improvising and escalate.",
-        ],
-        bullets: [
-          "Can the greeting, voice, questions, and vocabulary match the business?",
-          "Can the system use service areas, hours, calendars, and routing rules?",
-          "What happens when the caller asks something outside the approved scope?",
-          "How are urgent calls, complaints, and sensitive situations escalated?",
-          "What summary, recording, or structured data does the team receive?",
-          "Who monitors performance and updates the workflow after launch?",
-        ],
-      },
-      {
-        id: "implementation",
-        heading: "A practical implementation plan",
-        paragraphs: [
-          "AI receptionist implementations benefit from starting small: a focused call type, not every possible conversation. Document the greeting, the questions a strong employee would ask, the actions the receptionist may take, and the exceptions that require a human. Practice on common, unusual, and emotionally charged calls before going live.",
-          "After launch, measure the outcome. Identify unclear questions, unnecessary transfers, incomplete summaries, and booking friction. An AI receptionist should grow as the business learns which conversations require stricter rules and which can be handled more fully.",
-        ],
-      },
+    "readTime": "10 min read",
+    "published": "August 13, 2026",
+    "publishedISO": "2026-08-13",
+    "intro": "An AI receptionist answers the phone when your business cannot. But answering is only the first part.\n\nSomeone might call a plumbing company at 8:30 at night because water is coming through their ceiling. Another person might call the same number the next morning just to ask whether the company services their ZIP code. Those calls should not be handled the same way.\n\nThat is where an AI receptionist becomes useful. It can listen to what the caller needs, ask for missing details, answer questions using information from the business, and then decide what should happen next. That might be booking an appointment, transferring the call, collecting information for a callback, or alerting someone about an urgent request.",
+    "takeaways": [
+      "AI receptionists can answer incoming phone calls and respond based on information and rules provided by the business.",
+      "They can handle common jobs such as answering questions, collecting lead information, checking service areas, booking appointments, and transferring certain calls.",
+      "Good setup matters more than simply having a realistic voice.",
+      "Not every call should be automated. Some conversations need a person, and the receptionist should be able to recognize those situations."
     ],
-    faqs: [
-      { question: "Can an AI receptionist answer calls 24/7?", answer: "Yes. A properly configured AI receptionist can answer calls at any hour, including nights, weekends, holidays, overflow periods, and lunch breaks. The business decides which actions are available after hours." },
-      { question: "Can an AI receptionist book appointments?", answer: "Yes. It can connect to an approved calendar or scheduling workflow, offer eligible times, collect required details, and confirm the appointment while the caller is still engaged." },
-      { question: "Will callers know they are speaking with AI?", answer: "Disclosure requirements and business preferences vary. The safest approach is to be transparent while keeping the greeting natural and focused on helping the caller." },
-      { question: "Is an AI receptionist the same as a call center?", answer: "No. A call center generally uses human agents across many accounts. An AI receptionist uses a configured conversational system to handle approved calls and workflows for a specific business." },
+    "sections": [
+      {
+        "id": "how-it-works",
+        "heading": "How does an AI receptionist work?",
+        "paragraphs": [
+          "A customer calls the same phone number they normally would. The receptionist answers, listens to what they say, and responds based on the information it has been given about that business.",
+          "From there, the conversation can go in different directions.",
+          "Take a plumbing call. Someone says their water heater is leaking. The receptionist may need the customer's name, address, phone number, and a little more information about the leak. If the company has rules for urgent calls, those rules can determine what happens next.",
+          "A different caller might only ask, \"Do you guys come out to Kissimmee?\"",
+          "That call does not need an entire intake process. Check the service area, answer the question, then continue if the customer wants service.",
+          "This sounds obvious, but it matters when these systems are being set up. We have found that trying to make every caller follow the same sequence of questions makes conversations worse.",
+          "People don't talk in order.",
+          "A caller might open with, \"Hey, I'm Mike, I'm over on Oak Street and my kitchen sink has been backing up since yesterday. Do you have anybody today?\"",
+          "He already gave several pieces of information before the receptionist asked a single question. Asking for all of it again would feel strange.",
+          "The system needs to recognize what it already knows and concentrate on what is still missing."
+        ],
+        "steps": [
+          {
+            "title": "Answer",
+            "text": "Pick up the call using the greeting and tone the business wants."
+          },
+          {
+            "title": "Understand",
+            "text": "Work out why the person called and what information is still needed."
+          },
+          {
+            "title": "Act",
+            "text": "Book the appointment, transfer the call, qualify the request, or prepare it for follow-up."
+          },
+          {
+            "title": "Report",
+            "text": "Give the team the useful details from the conversation, not just an audio file they have to listen through later."
+          }
+        ]
+      },
+      {
+        "id": "different-from-phone-menu",
+        "heading": "AI receptionist vs. phone menu, voicemail, and chatbot",
+        "paragraphs": [
+          "You've probably called a business and heard, \"Press 1 for sales. Press 2 for service.\"",
+          "That is a phone menu. It works when the caller's problem fits one of the options.",
+          "Voicemail is even simpler. It records whatever the caller decides to say and leaves somebody at the business to deal with it later.",
+          "Neither one really has a conversation.",
+          "An AI receptionist can.",
+          "Say a homeowner leaves this voicemail:",
+          "\"I need somebody to come out today. Please call me back.\"",
+          "Useful? A little.",
+          "The business still doesn't know what happened, where the property is, whether the job is inside its service area, or how urgent it actually is.",
+          "If someone is still on the phone, those questions can be answered right then.",
+          "A website chatbot solves a different problem. It can help people already browsing the company's website, but plenty of customers never reach the website before calling. They may have tapped the phone button on Google, gotten the number from a neighbor, seen it on a truck, or already had it saved.",
+          "For businesses that generate real revenue over the phone, that distinction matters."
+        ]
+      },
+      {
+        "id": "what-it-can-do",
+        "heading": "What can an AI receptionist handle?",
+        "paragraphs": [
+          "This depends heavily on the business.",
+          "For a plumber, knowing the service address may be essential. A law firm has a completely different intake process. An auto repair shop may care about the vehicle, the problem, and when the customer can bring it in.",
+          "There isn't much value in asking questions just because the technology can ask them.",
+          "In fact, we usually want the opposite.",
+          "What does the business actually need from this caller?",
+          "If four answers are enough for an employee to take over, collect those four. Turning a simple service request into a ten-question interview makes the technology more noticeable, not less.",
+          "Common uses include answering basic questions about the business, taking down contact and service information, checking whether an address is within the service area, qualifying new inquiries, booking available appointments, transferring selected calls, and notifying the team when somebody needs attention.",
+          "After-hours answering is another common use.",
+          "The rules can change once the office closes. Maybe routine requests wait until morning while an active leak triggers an immediate notification. That is a business decision, not something the receptionist should make up during the call."
+        ]
+      },
+      {
+        "id": "best-fit",
+        "heading": "Which businesses benefit most from an AI receptionist?",
+        "paragraphs": [
+          "Picture a plumber underneath a sink when his phone rings.",
+          "Stopping halfway through the job to answer is inconvenient. Ignoring the call might mean losing a customer. Hiring someone to sit by the phone all day may not make financial sense yet.",
+          "That middle ground is where phone automation can be particularly useful.",
+          "The same problem appears in HVAC, electrical work, roofing, towing, automotive repair, real estate, legal offices, and plenty of appointment-based businesses. The person best qualified to answer the call is often busy doing the work customers are paying them to do.",
+          "Large call volume is not required.",
+          "Five missed calls can matter more to a small company than fifty do to a larger operation, especially when one of those calls could have become a substantial job.",
+          "The better question is not \"How many calls do we get?\"",
+          "Ask what happens when nobody answers them."
+        ]
+      },
+      {
+        "id": "evaluation-checklist",
+        "heading": "How to evaluate an AI receptionist service",
+        "paragraphs": [
+          "Try to break it.",
+          "Seriously.",
+          "A polished demonstration where someone says exactly what the receptionist expects proves very little. Customers won't have the script.",
+          "Start talking before it finishes a sentence. Give half an address. Call a water heater a \"big tank thing in the garage.\" Ask a question that has nothing to do with the original reason for calling. Correct your phone number after giving the wrong one.",
+          "Then listen to what happens.",
+          "Does it recover, or does the whole conversation fall apart?",
+          "There are a few other things worth checking. See whether it understands the company's actual services and service area. Test what happens outside business hours. Try to schedule a time that is unavailable. Ask something it was never given an answer to. Find out what causes a transfer.",
+          "Then inspect what the business receives after you hang up.",
+          "That last part gets overlooked.",
+          "Suppose the call itself sounds fantastic, but the employee gets a message that says:",
+          "\"John called about plumbing. Please follow up.\"",
+          "Now someone still has to figure out what John wanted.",
+          "A useful summary might tell them that John Smith called about a leaking water heater at a specific address, the leak started that morning, his water is currently shut off, and he wants the earliest available appointment.",
+          "The employee can start the callback already knowing what's going on."
+        ]
+      },
+      {
+        "id": "implementation",
+        "heading": "A practical implementation plan",
+        "paragraphs": [
+          "Start with the calls you already get.",
+          "Pull up a handful of recent inquiries or think through the questions customers ask every week. What does your team normally need to know? What can be answered immediately? What requires somebody from the business?",
+          "Build around that first.",
+          "Trying to predict every conversation before the first real call usually creates a mess of rules for situations that may never happen.",
+          "Real callers will find the gaps for you.",
+          "We've seen why testing matters in tiny moments. Somebody gives one phone number and corrects it ten seconds later. A caller answers three questions at once. Someone asks for a service by a name the company never uses internally.",
+          "Those are normal conversations.",
+          "So test normal conversations badly.",
+          "Interrupt. Ramble a little. Change an answer. Use everyday words. Ask something weird. Have somebody unfamiliar with the setup call without telling them what they're supposed to say.",
+          "That last test is especially useful. The person who built the receptionist already knows how it works, so they can accidentally make every test easier than a customer's call will be.",
+          "Once real calls start coming through, listen for friction.",
+          "Maybe people keep misunderstanding one question. Change the question.",
+          "Maybe the receptionist keeps asking for information customers already provided. Fix that.",
+          "Maybe routine calls are being transferred too often. Tighten the transfer rule.",
+          "You learn more from those details than from repeatedly testing the perfect call."
+        ]
+      }
     ],
-    related: ["ai-receptionist-vs-answering-service", "ai-appointment-scheduling", "ai-lead-qualification"],
+    "faqs": [
+      {
+        "question": "Can an AI receptionist answer calls 24/7?",
+        "answer": "Yes. Calls can be answered at night, on weekends, during lunch, on holidays, or while everyone at the business is busy. That doesn't mean every action needs to remain available around the clock. A company could allow appointment requests after hours but reserve live transfers for emergencies. Another may simply collect everything needed for a morning callback."
+      },
+      {
+        "question": "Can an AI receptionist book appointments?",
+        "answer": "Yes, when it is connected to the business's scheduling setup. There is an important difference between taking an appointment request and actually booking one. Real booking requires knowing which times are available and which rules apply to that type of appointment. If Tuesday at 2:00 is unavailable, the receptionist shouldn't promise Tuesday at 2:00."
+      },
+      {
+        "question": "Will callers know they are speaking with AI?",
+        "answer": "Businesses should follow the disclosure and consent requirements that apply to their location and use of the technology. Being transparent does not require turning the opening into a speech. The caller still came for a reason. Help them with it."
+      },
+      {
+        "question": "Is an AI receptionist the same as a call center?",
+        "answer": "No. A traditional call center has human representatives answering calls. An AI receptionist uses software configured with information and instructions for a particular business. Both can answer the phone, but they do it differently."
+      }
+    ],
+    "fieldNote": {
+      "heading": "A practical AI receptionist setup check",
+      "paragraphs": [
+        "Here's one of the simplest ways we think about a new setup at Virtual Agent AI.",
+        "Forget the call script for a minute.",
+        "Imagine it's 4:45 PM and you're busy. Your phone buzzes with a summary of a call you missed.",
+        "What would you need to see in that message to know exactly what to do next?",
+        "For a home service company, maybe it's the caller's name, phone number, address, problem, urgency, and preferred appointment time.",
+        "Good. Now you know what information needs to come out of the call.",
+        "This also exposes unnecessary questions pretty quickly. If nobody on the team uses a piece of information afterward, why are you making every customer provide it?",
+        "Then test the ugly calls.",
+        "Have somebody say, \"My number is 555-1234. Sorry, wait, that's my old number.\"",
+        "Have another person give the address before they're asked.",
+        "Have somebody interrupt halfway through a question.",
+        "These aren't clever stress tests. People actually talk like this.",
+        "We don't consider the first version finished once it can complete one clean demonstration. Real calls show where customers hesitate, what the team wishes it had collected, and which rules looked sensible on paper but don't help much on the phone.",
+        "That's the useful part. You can fix what actually happens instead of guessing what might happen."
+      ]
+    },
+    "authorBlurb": "Practical guidance based on building and improving phone answering, lead qualification, appointment booking, and customer follow-up systems for service businesses.",
+    "related": [
+      "ai-receptionist-vs-answering-service",
+      "ai-appointment-scheduling",
+      "ai-lead-qualification"
+    ]
   },
   {
     slug: "ai-receptionist-vs-answering-service",
