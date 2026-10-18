@@ -1,12 +1,16 @@
-Virtual Agent AI — Blog Content & Library Patch
+Virtual Agent AI — Service schema fix (Task 7)
 
-Contains 14 changed source files: 12 rewritten standalone articles, the blog listing, and the BlogLibrary component.
-The existing 26 article records in app/blog/posts.ts remain untouched.
-The thirteenth standalone guide (AI agents vs assistants vs chatbots) was retained without rewriting.
-All 13 standalone guides are now included in the blog library filters.
-No existing URLs, stylesheets, or shared page layouts were changed.
+Replace app/components/SeoContentPage.tsx at its exact repository path.
 
-Apply to the merged October 18 source package, not an older ZIP.
-Run npm install and npm run build in your project before deployment.
-Review copy for accuracy and business-specific capabilities before publishing.
-No pricing figures, customer testimonials, or performance statistics were invented.
+Adds Service JSON-LD to pages rendered by SeoContentPage only when data.path starts with /services/.
+Preserves existing WebPage and FAQPage schemas, visible content and styling.
+Blog pages do not receive Service schema.
+
+After deployment, test:
+https://www.virtualagentai.org/services/ai-call-center
+https://www.virtualagentai.org/services/lead-generation-follow-up
+https://www.virtualagentai.org/services/social-media-marketing
+https://www.virtualagentai.org/services/paid-ad-campaigns
+https://www.virtualagentai.org/services/seo-websites
+
+Note: This patch is based on the full website ZIP supplied in this chat.
