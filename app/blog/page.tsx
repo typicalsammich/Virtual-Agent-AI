@@ -9,7 +9,6 @@ const siteUrl = "https://www.virtualagentai.org";
 export const metadata: Metadata = {
   title: "AI Receptionist Guides for Service Businesses",
   description: "Practical guides to AI receptionists, 24/7 call answering, lead qualification, appointment scheduling, and missed-call recovery for service businesses.",
-  keywords: ["AI receptionist blog", "virtual agent AI", "AI call answering", "AI appointment scheduling", "AI lead qualification"],
   alternates: { canonical: `${siteUrl}/blog` },
   robots: { index: true, follow: true },
   openGraph: {

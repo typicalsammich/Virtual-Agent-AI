@@ -8,7 +8,6 @@ export function createPostMetadata(post: BlogPost): Metadata {
   return {
     title: post.seoTitle,
     description: post.description,
-    keywords: post.keywords,
     alternates: { canonical: url },
     robots: { index: true, follow: true },
     openGraph: {

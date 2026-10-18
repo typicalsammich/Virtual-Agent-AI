@@ -7,7 +7,6 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: { default: "Virtual Agent AI | 24/7 AI Receptionist & Phone Answering", template: "%s | Virtual Agent AI" },
   description: "Virtual Agent AI answers business calls 24/7, qualifies leads, books appointments, takes messages, and transfers important calls automatically.",
-  keywords: ["AI receptionist","AI receptionist service","AI phone answering service","AI answering service","AI virtual receptionist","virtual AI receptionist","AI phone agent","AI call answering service","24/7 AI receptionist","AI receptionist for business"],
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 } },
   icons: { icon: [{ url: "/favicon.png", type: "image/png" }], shortcut: "/favicon.png", apple: "/favicon.png" },
   openGraph: { type: "website", siteName: "Virtual Agent AI", title: "Virtual Agent AI | 24/7 AI Receptionist & Phone Answering", description: "Answer calls, qualify leads, book appointments, take messages, and transfer important calls 24/7.", url: siteUrl, locale: "en_US", images: [{ url: "/og-image.png", width: 1024, height: 1024, alt: "Virtual Agent AI" }] },
