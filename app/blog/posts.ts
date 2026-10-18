@@ -1633,7 +1633,7 @@ export const blogPosts: BlogPost[] = [
     "category": "WEBSITES & LANDING PAGES",
     "title": "Local SEO for Service Businesses: What Actually Matters",
     "seoTitle": "Local SEO for Service Businesses: What Actually Matters",
-    "description": "Learn what actually matters for local SEO for service businesses, including Google Business Profile, useful service and location pages, reviews, technical SEO, and lead tracking.",
+    "description": "Learn the local SEO essentials for service businesses: Google Business Profile, service pages, reviews, technical fixes, and tracking qualified leads.",
     "excerpt": "A practical guide to local SEO for service businesses, from accurate business information and useful local pages to reviews, Google Business Profile, and measuring real leads.",
     "focusKeyword": "local SEO for service businesses",
     "keywords": [

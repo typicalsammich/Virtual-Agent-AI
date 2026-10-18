@@ -1,0 +1,87 @@
+VIRTUAL AGENT AI - META DESCRIPTION FIXES
+
+Updated page files: 20
+These files are based on the latest About Us ZIP with the previously supplied SEO title patch merged in.
+Replace files at the same paths in GitHub. No visible page text, page titles, or layout changes intended.
+
+BEFORE -> AFTER:
+
+app/page.tsx
+OLD: description: "Virtual Agent AI answers business calls 24/7, qualifies leads, books appointments, routes urgent calls, and gives your team clear call summaries. Hear the AI in action."
+NEW: description: "AI receptionist for businesses: answer calls 24/7, qualify leads, book appointments, and route urgent requests. Hear Virtual Agent AI in action."
+
+app/ai-receptionist-for-auto-repair/page.tsx
+OLD: "description": "24/7 AI receptionist for auto repair businesses. Answer calls, qualify callers, book diagnostic and service appointments, transfer urgent calls, and capture messages."
+NEW: description: "AI receptionist for auto repair shops. Answer service calls 24/7, capture vehicle details, schedule appointments, and route urgent repair inquiries."
+
+app/blog/what-does-an-ai-receptionist-do/page.tsx
+OLD: "description": "What Does an AI Receptionist Actually Do. A practical guide to capabilities, cost factors, setup, and what businesses should compare before choosing an AI phone answering solution."
+NEW: description: "What does an AI receptionist do? Explore call answering, lead qualification, appointment booking, transfers, and the limits of automated phone support."
+
+app/blog/can-ai-receptionist-transfer-calls/page.tsx
+OLD: "description": "Can an AI Receptionist Transfer Calls. A practical guide to capabilities, cost factors, setup, and what businesses should compare before choosing an AI phone answering solution."
+NEW: description: "Can an AI receptionist transfer calls to a person? Learn how live transfers, escalation rules, and urgent call routing work for businesses."
+
+app/blog/can-ai-receptionist-handle-multiple-businesses/page.tsx
+OLD: "description": "Can an AI Receptionist Handle Multiple Businesses. A practical guide to capabilities, cost factors, setup, and what businesses should compare before choosing an AI phone answering solution."
+NEW: description: "Can one AI receptionist handle multiple businesses? Learn how separate phone numbers, knowledge bases, call flows, and routing rules can work."
+
+app/blog/can-ai-receptionist-take-messages/page.tsx
+OLD: "description": "Can an AI Receptionist Take Messages. A practical guide to capabilities, cost factors, setup, and what businesses should compare before choosing an AI phone answering solution."
+NEW: description: "Can an AI receptionist take messages? See what caller details it can capture, how summaries are delivered, and when calls need human follow-up."
+
+app/blog/ai-receptionist-for-24-7-businesses/page.tsx
+OLD: "description": "AI Receptionist for 24/7 Businesses. A practical guide to capabilities, cost factors, setup, and what businesses should compare before choosing an AI phone answering solution."
+NEW: description: "Explore how a 24/7 AI receptionist handles overnight calls, weekend inquiries, urgent requests, and appointment booking without a staffed desk."
+
+app/blog/best-ai-receptionist-for-small-business/page.tsx
+OLD: "description": "Best AI Receptionist for Small Business: What to Look For. A practical guide to capabilities, cost factors, setup, and what businesses should compare before choosing an AI phone answering solution."
+NEW: description: "Compare AI receptionist options for small businesses. Learn what to check for call quality, booking, integrations, pricing, and support."
+
+app/blog/ai-receptionist-vs-human-receptionist/page.tsx
+OLD: "description": "AI Receptionist vs Human Receptionist: Which Is Better. A practical guide to capabilities, cost factors, setup, and what businesses should compare before choosing an AI phone answering solution."
+NEW: description: "AI receptionist vs human receptionist: compare availability, cost, call handling, customer experience, and when a human handoff still matters."
+
+app/blog/ai-receptionist-vs-virtual-receptionist/page.tsx
+OLD: "description": "AI Receptionist vs Virtual Receptionist. A practical guide to capabilities, cost factors, setup, and what businesses should compare before choosing an AI phone answering solution."
+NEW: description: "AI receptionist vs virtual receptionist: compare automated and human-supported answering, pricing, scheduling, transfers, and service fit."
+
+app/blog/how-much-does-ai-receptionist-cost-2026/page.tsx
+OLD: "description": "How Much Does an AI Receptionist Cost in 2026. A practical guide to capabilities, cost factors, setup, and what businesses should compare before choosing an AI phone answering solution."
+NEW: description: "How much does an AI receptionist cost in 2026? Compare setup fees, monthly pricing, call volume, integrations, and what affects total cost."
+
+app/blog/how-much-does-ai-answering-service-cost/page.tsx
+OLD: "description": "How Much Does an AI Answering Service Cost. A practical guide to capabilities, cost factors, setup, and what businesses should compare before choosing an AI phone answering solution."
+NEW: description: "How much does an AI answering service cost? Understand monthly plans, setup fees, call usage, integrations, and pricing questions to ask."
+
+app/blog/can-ai-receptionist-book-appointments/page.tsx
+OLD: "description": "Can an AI Receptionist Book Appointments. A practical guide to capabilities, cost factors, setup, and what businesses should compare before choosing an AI phone answering solution."
+NEW: description: "Can an AI receptionist book appointments? Learn how scheduling rules, calendar availability, confirmations, and exceptions work during calls."
+
+app/compare/virtual-agent-ai-vs-dialzara/page.tsx
+OLD: "description": "Compare Virtual Agent AI and Dialzara across phone answering, booking, transfers, customization, integrations, scalability, setup, languages, support, and pricing questions."
+NEW: description: "Virtual Agent AI vs Dialzara: compare AI phone answering, lead intake, appointment booking, transfers, setup, and questions to ask each provider."
+
+app/compare/virtual-agent-ai-vs-goodcall/page.tsx
+OLD: "description": "Compare Virtual Agent AI and Goodcall across phone answering, booking, transfers, customization, integrations, scalability, setup, languages, support, and pricing questions."
+NEW: description: "Virtual Agent AI vs Goodcall: compare AI call handling, appointment booking, customization, integrations, and which questions matter before choosing."
+
+app/compare/virtual-agent-ai-vs-smith-ai/page.tsx
+OLD: "description": "Compare Virtual Agent AI and Smith.ai across phone answering, booking, transfers, customization, integrations, scalability, setup, languages, support, and pricing questions."
+NEW: description: "Virtual Agent AI vs Smith.ai: compare phone answering, lead qualification, scheduling, transfers, setup, and pricing considerations."
+
+app/compare/virtual-agent-ai-vs-human-answering-service/page.tsx
+OLD: "description": "Compare Virtual Agent AI and Human Answering Service across phone answering, booking, transfers, customization, integrations, scalability, setup, languages, support, and pricing questions."
+NEW: description: "Virtual Agent AI vs a human answering service: compare 24/7 coverage, caller experience, appointment booking, handoffs, and costs."
+
+app/compare/virtual-agent-ai-vs-ruby/page.tsx
+OLD: "description": "Compare Virtual Agent AI and Ruby across phone answering, booking, transfers, customization, integrations, scalability, setup, languages, support, and pricing questions."
+NEW: description: "Virtual Agent AI vs Ruby: compare AI and human receptionist approaches to call answering, lead intake, scheduling, and business coverage."
+
+app/ai-receptionist-for-hvac/page.tsx
+OLD: "description": "24/7 AI receptionist for hvac businesses. Answer calls, qualify callers, book service calls and comfort consultations, transfer urgent calls, and capture messages."
+NEW: description: "AI receptionist for HVAC companies. Answer heating and cooling calls 24/7, identify urgent requests, book service visits, and capture customer details."
+
+app/locations/san-bernardino/page.tsx
+OLD: "description": "24/7 AI receptionist and answering service for San Bernardino, CA businesses. Qualify leads, book appointments, route important calls, and capture every inquiry."
+NEW: description: "AI receptionist for San Bernardino businesses. Answer calls 24/7, qualify leads, book appointments, and route requests based on your service area."
