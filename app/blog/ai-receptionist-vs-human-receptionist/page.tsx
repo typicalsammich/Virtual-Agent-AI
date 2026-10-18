@@ -1,3 +1,63 @@
 import {SeoContentPage,contentMetadata} from '../../components/SeoContentPage';
-const data={"path": "/blog/ai-receptionist-vs-human-receptionist", "title": "AI Receptionist vs Human Receptionist: Which Is Better? | Virtual Agent AI", "seoTitle": "AI Receptionist vs Human Receptionist", description: "AI receptionist vs human receptionist: compare availability, cost, call handling, customer experience, and when a human handoff still matters.", "eyebrow": "AI RECEPTIONIST GUIDE", "lead": "AI Receptionist vs Human Receptionist: Which Is Better? This guide focuses on the practical buying questions: what the system can handle, where human escalation still matters, and what to verify before choosing a provider.", "sections": [{"title": "Start with the call outcome", "body": "The useful question is not whether a system can talk. It is whether it can consistently answer with approved information and move callers to the correct next step."}, {"title": "Match capabilities to your workflow", "body": "Compare qualification, scheduling, transfers, messages, business-hours logic, integrations, languages, reporting, and escalation requirements against the calls you actually receive."}, {"title": "Understand the setup work", "body": "A strong implementation needs accurate business information, clear call rules, testing, exception handling, and ongoing refinement. Generic scripts are rarely enough for complex calls."}, {"title": "Evaluate cost in context", "body": "Compare the total service and implementation cost with call volume, staffing coverage, missed opportunities, and the value of faster response. Ask providers what is included and what can change the price."}], "bullets": ["Inbound call answering", "Qualification and intake", "Appointment booking", "Transfers and escalation", "Messages, summaries, and notifications"], "faqs": [{"q": "Can AI answer business calls 24/7?", "a": "Yes, an AI receptionist can provide around-the-clock coverage when configured for the business and supported by clear escalation rules."}, {"q": "Can it hand a call to a person?", "a": "Yes. Live transfer rules can be configured for urgent, sensitive, high-value, or otherwise appropriate calls."}, {"q": "What should I test in a demo?", "a": "Use real caller scenarios, including routine questions, unusual requests, scheduling, interruptions, and situations that should be escalated."}], "related": [{"href": "/pricing", "label": "Pricing"}, {"href": "/demo", "label": "Listen to demos"}, {"href": "/ai-receptionist-for-small-business", "label": "AI receptionist for small business"}]};
-export const metadata=contentMetadata(data); export default function Page(){return <SeoContentPage data={data}/>};
+const data={
+  "path": "/blog/ai-receptionist-vs-human-receptionist",
+  "title": "AI Receptionist vs Human Receptionist: Which Is Better? | Virtual Agent AI",
+  "seoTitle": "AI Receptionist vs Human Receptionist",
+  "description": "AI receptionist vs human receptionist: compare availability, cost, call handling, customer experience, and when a human handoff still matters.",
+  "eyebrow": "STAFFING COMPARISON",
+  "lead": "A skilled employee can read complex emotional situations, resolve exceptions, and coordinate unusual requests. This guide explains the practical decisions, handoffs, and tests that matter before putting the workflow in front of real callers.",
+  "sections": [
+    {
+      "title": "Where a person is stronger",
+      "body": "A skilled employee can read complex emotional situations, resolve exceptions, and coordinate unusual requests. For a caller disputing an invoice or describing a sensitive problem, an immediate human handoff can be more valuable than automation."
+    },
+    {
+      "title": "Where AI coverage can help",
+      "body": "An AI receptionist can consistently answer routine calls when staff are busy or the office is closed. It can gather contact information, service type, and preferred appointment time. Its usefulness depends on correct configuration, reliable integrations, and an escalation plan."
+    },
+    {
+      "title": "Compare the full operating model",
+      "body": "A human receptionist brings wages, scheduling, training, and coverage limits. AI brings subscription and setup costs, testing, integration work, and ongoing oversight. Compare both against actual call patterns rather than assuming either option is always cheaper."
+    },
+    {
+      "title": "Consider a hybrid setup",
+      "body": "Many businesses benefit from people handling complicated conversations while AI handles overflow and after-hours intake. Decide which calls transfer immediately, which become a callback, and which can be completed without staff involvement."
+    }
+  ],
+  "bullets": [
+    "Where a person is stronger",
+    "Where AI coverage can help",
+    "Compare the full operating model",
+    "Consider a hybrid setup"
+  ],
+  "faqs": [
+    {
+      "q": "What is the most important setup step?",
+      "a": "Write down the actual caller scenarios and the approved outcome for each one, including exceptions that require a person."
+    },
+    {
+      "q": "Can a caller still reach a person?",
+      "a": "Yes, if the business configures a working transfer or callback path. Test that fallback during and outside staffed hours."
+    },
+    {
+      "q": "How can we tell whether it works?",
+      "a": "Review call outcomes, qualified inquiries, successful handoffs, and errors using your own call data rather than relying on a scripted demo."
+    }
+  ],
+  "related": [
+    {
+      "href": "/pricing",
+      "label": "Pricing"
+    },
+    {
+      "href": "/demo",
+      "label": "Listen to demos"
+    },
+    {
+      "href": "/ai-receptionist-for-small-business",
+      "label": "AI receptionist for small business"
+    }
+  ]
+};
+export const metadata=contentMetadata(data);
+export default function Page(){return <SeoContentPage data={data}/>};

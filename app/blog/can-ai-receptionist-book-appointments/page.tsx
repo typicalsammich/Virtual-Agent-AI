@@ -1,3 +1,63 @@
 import {SeoContentPage,contentMetadata} from '../../components/SeoContentPage';
-const data={"path": "/blog/can-ai-receptionist-book-appointments", "title": "Can an AI Receptionist Book Appointments? Yes — Here’s How", "seoTitle": "Can AI Receptionists Book Appointments?", description: "Can an AI receptionist book appointments? Learn how scheduling rules, calendar availability, confirmations, and exceptions work during calls.", "eyebrow": "AI RECEPTIONIST GUIDE", "lead": "Can an AI Receptionist Book Appointments? This guide focuses on the practical buying questions: what the system can handle, where human escalation still matters, and what to verify before choosing a provider.", "sections": [{"title": "Start with the call outcome", "body": "The useful question is not whether a system can talk. It is whether it can consistently answer with approved information and move callers to the correct next step."}, {"title": "Match capabilities to your workflow", "body": "Compare qualification, scheduling, transfers, messages, business-hours logic, integrations, languages, reporting, and escalation requirements against the calls you actually receive."}, {"title": "Understand the setup work", "body": "A strong implementation needs accurate business information, clear call rules, testing, exception handling, and ongoing refinement. Generic scripts are rarely enough for complex calls."}, {"title": "Evaluate cost in context", "body": "Compare the total service and implementation cost with call volume, staffing coverage, missed opportunities, and the value of faster response. Ask providers what is included and what can change the price."}], "bullets": ["Inbound call answering", "Qualification and intake", "Appointment booking", "Transfers and escalation", "Messages, summaries, and notifications"], "faqs": [{"q": "Can AI answer business calls 24/7?", "a": "Yes, an AI receptionist can provide around-the-clock coverage when configured for the business and supported by clear escalation rules."}, {"q": "Can it hand a call to a person?", "a": "Yes. Live transfer rules can be configured for urgent, sensitive, high-value, or otherwise appropriate calls."}, {"q": "What should I test in a demo?", "a": "Use real caller scenarios, including routine questions, unusual requests, scheduling, interruptions, and situations that should be escalated."}], "related": [{"href": "/pricing", "label": "Pricing"}, {"href": "/demo", "label": "Listen to demos"}, {"href": "/ai-receptionist-for-small-business", "label": "AI receptionist for small business"}]};
-export const metadata=contentMetadata(data); export default function Page(){return <SeoContentPage data={data}/>};
+const data={
+  "path": "/blog/can-ai-receptionist-book-appointments",
+  "title": "Can an AI Receptionist Book Appointments? Yes — Here’s How",
+  "seoTitle": "Can AI Receptionists Book Appointments?",
+  "description": "Can an AI receptionist book appointments? Learn how scheduling rules, calendar availability, confirmations, and exceptions work during calls.",
+  "eyebrow": "APPOINTMENT WORKFLOWS",
+  "lead": "An AI should check a connected calendar or approved scheduling system before confirming a time. This guide explains the practical decisions, handoffs, and tests that matter before putting the workflow in front of real callers.",
+  "sections": [
+    {
+      "title": "Booking requires real availability",
+      "body": "An AI should check a connected calendar or approved scheduling system before confirming a time. If it cannot access availability, it should collect a request and explain that a person will confirm it later."
+    },
+    {
+      "title": "Collect only booking-critical details",
+      "body": "For a service visit, the essentials may be name, callback number, address, job type, and preferred time. For a consultation, contact information and meeting type may be enough. Asking too many questions can drive callers away."
+    },
+    {
+      "title": "Handle changes and exceptions",
+      "body": "Test reschedules, cancellations, duplicate requests, unavailable time slots, and appointments outside service hours. Confirm how time zones, buffers, travel windows, and staff assignments are applied."
+    },
+    {
+      "title": "Verify confirmation and follow-up",
+      "body": "Decide whether the caller receives a text or email confirmation and whether staff see the booking in their existing workflow. A spoken promise is not a completed booking unless the appointment is recorded successfully."
+    }
+  ],
+  "bullets": [
+    "Booking requires real availability",
+    "Collect only booking-critical details",
+    "Handle changes and exceptions",
+    "Verify confirmation and follow-up"
+  ],
+  "faqs": [
+    {
+      "q": "What is the most important setup step?",
+      "a": "Write down the actual caller scenarios and the approved outcome for each one, including exceptions that require a person."
+    },
+    {
+      "q": "Can a caller still reach a person?",
+      "a": "Yes, if the business configures a working transfer or callback path. Test that fallback during and outside staffed hours."
+    },
+    {
+      "q": "How can we tell whether it works?",
+      "a": "Review call outcomes, qualified inquiries, successful handoffs, and errors using your own call data rather than relying on a scripted demo."
+    }
+  ],
+  "related": [
+    {
+      "href": "/pricing",
+      "label": "Pricing"
+    },
+    {
+      "href": "/demo",
+      "label": "Listen to demos"
+    },
+    {
+      "href": "/ai-receptionist-for-small-business",
+      "label": "AI receptionist for small business"
+    }
+  ]
+};
+export const metadata=contentMetadata(data);
+export default function Page(){return <SeoContentPage data={data}/>};

@@ -3,6 +3,8 @@
 import { useMemo, useState } from "react";
 import type { BlogPost } from "./posts";
 
+export type StandaloneBlogCard = {slug:string;title:string;excerpt:string;category:string;readTime:string};
+type LibraryCard = Pick<BlogPost,"slug"|"title"|"excerpt"|"category"|"readTime">;
 type TopicKey = "all" | "ai-receptionists" | "call-operations" | "lead-growth" | "industry-guides" | "websites-seo" | "revenue-marketing" | "buyer-guides";
 
 const topics: { key: TopicKey; label: string }[] = [
@@ -16,7 +18,7 @@ const topics: { key: TopicKey; label: string }[] = [
   { key: "buyer-guides", label: "Buyer guides" },
 ];
 
-function topicForPost(post: BlogPost): Exclude<TopicKey, "all"> {
+function topicForPost(post: LibraryCard): Exclude<TopicKey, "all"> {
   if (post.category === "INDUSTRY GUIDES") return "industry-guides";
   if (post.category === "WEBSITES & LANDING PAGES") return "websites-seo";
   if (post.category === "BUYER’S GUIDE") return "buyer-guides";
@@ -27,11 +29,12 @@ function topicForPost(post: BlogPost): Exclude<TopicKey, "all"> {
 }
 
 
-export function BlogLibrary({ posts }: { posts: BlogPost[] }) {
+export function BlogLibrary({ posts, extraPosts = [] }: { posts: BlogPost[]; extraPosts?: StandaloneBlogCard[] }) {
+  const allPosts: LibraryCard[] = [...posts, ...extraPosts];
   const [activeTopic, setActiveTopic] = useState<TopicKey>("all");
   const visiblePosts = useMemo(
-    () => activeTopic === "all" ? posts : posts.filter((post) => topicForPost(post) === activeTopic),
-    [activeTopic, posts],
+    () => activeTopic === "all" ? allPosts : allPosts.filter((post) => topicForPost(post) === activeTopic),
+    [activeTopic, posts, extraPosts],
   );
   const activeLabel = topics.find((topic) => topic.key === activeTopic)?.label ?? "All articles";
 
@@ -46,7 +49,7 @@ export function BlogLibrary({ posts }: { posts: BlogPost[] }) {
 
     <div className="blogFilterBar" role="tablist" aria-label="Filter articles by topic">
       {topics.map((topic) => {
-        const count = topic.key === "all" ? posts.length : posts.filter((post) => topicForPost(post) === topic.key).length;
+        const count = topic.key === "all" ? allPosts.length : allPosts.filter((post) => topicForPost(post) === topic.key).length;
         return <button
           key={topic.key}
           type="button"

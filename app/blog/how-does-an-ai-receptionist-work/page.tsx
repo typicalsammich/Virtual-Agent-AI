@@ -1,3 +1,63 @@
 import {SeoContentPage,contentMetadata} from '../../components/SeoContentPage';
-const data={"path": "/blog/how-does-an-ai-receptionist-work", "title": "How Does an AI Receptionist Work? 4 Steps + Examples", "seoTitle": "How Does an AI Receptionist Work?", "description": "See how an AI receptionist answers calls, qualifies leads, books appointments, transfers callers, and hands useful context to your team.", "eyebrow": "AI RECEPTIONIST GUIDE", "lead": "How Does an AI Receptionist Work? This guide focuses on the practical buying questions: what the system can handle, where human escalation still matters, and what to verify before choosing a provider.", "sections": [{"title": "Start with the call outcome", "body": "The useful question is not whether a system can talk. It is whether it can consistently answer with approved information and move callers to the correct next step."}, {"title": "Match capabilities to your workflow", "body": "Compare qualification, scheduling, transfers, messages, business-hours logic, integrations, languages, reporting, and escalation requirements against the calls you actually receive."}, {"title": "Understand the setup work", "body": "A strong implementation needs accurate business information, clear call rules, testing, exception handling, and ongoing refinement. Generic scripts are rarely enough for complex calls."}, {"title": "Evaluate cost in context", "body": "Compare the total service and implementation cost with call volume, staffing coverage, missed opportunities, and the value of faster response. Ask providers what is included and what can change the price."}], "bullets": ["Inbound call answering", "Qualification and intake", "Appointment booking", "Transfers and escalation", "Messages, summaries, and notifications"], "faqs": [{"q": "Can AI answer business calls 24/7?", "a": "Yes, an AI receptionist can provide around-the-clock coverage when configured for the business and supported by clear escalation rules."}, {"q": "Can it hand a call to a person?", "a": "Yes. Live transfer rules can be configured for urgent, sensitive, high-value, or otherwise appropriate calls."}, {"q": "What should I test in a demo?", "a": "Use real caller scenarios, including routine questions, unusual requests, scheduling, interruptions, and situations that should be escalated."}], "related": [{"href": "/pricing", "label": "Pricing"}, {"href": "/demo", "label": "Listen to demos"}, {"href": "/ai-receptionist-for-small-business", "label": "AI receptionist for small business"}]};
-export const metadata=contentMetadata(data); export default function Page(){return <SeoContentPage data={data}/>};
+const data={
+  "path": "/blog/how-does-an-ai-receptionist-work",
+  "title": "How Does an AI Receptionist Work? 4 Steps + Examples",
+  "seoTitle": "How Does an AI Receptionist Work?",
+  "description": "See how an AI receptionist answers calls, qualifies leads, books appointments, transfers callers, and hands useful context to your team.",
+  "eyebrow": "TECHNOLOGY EXPLAINED",
+  "lead": "When someone calls, speech recognition or speech-processing components help the system interpret the request. This guide explains the practical decisions, handoffs, and tests that matter before putting the workflow in front of real callers.",
+  "sections": [
+    {
+      "title": "The caller speaks to a voice system",
+      "body": "When someone calls, speech recognition or speech-processing components help the system interpret the request. A conversational model uses the business’s approved information and instructions to decide what to say next."
+    },
+    {
+      "title": "Business rules determine the next action",
+      "body": "The receptionist may answer a service-area question, gather contact details, check a calendar, transfer the call, or create a follow-up task. Those actions require configured tools and permissions; the AI should not claim to have booked or sent something unless the action succeeds."
+    },
+    {
+      "title": "Good conversations handle interruptions",
+      "body": "Real callers give information out of order, change topics, or ask for a person. A well-tested setup remembers relevant details within the conversation, asks only for what is missing, and knows when to stop automating."
+    },
+    {
+      "title": "Reliability comes from testing and review",
+      "body": "Teams should test noisy calls, uncommon names, wrong numbers, unavailable calendars, and questions outside the approved knowledge base. Record failure cases, adjust instructions, and keep a human fallback for important exceptions."
+    }
+  ],
+  "bullets": [
+    "The caller speaks to a voice system",
+    "Business rules determine the next action",
+    "Good conversations handle interruptions",
+    "Reliability comes from testing and review"
+  ],
+  "faqs": [
+    {
+      "q": "What is the most important setup step?",
+      "a": "Write down the actual caller scenarios and the approved outcome for each one, including exceptions that require a person."
+    },
+    {
+      "q": "Can a caller still reach a person?",
+      "a": "Yes, if the business configures a working transfer or callback path. Test that fallback during and outside staffed hours."
+    },
+    {
+      "q": "How can we tell whether it works?",
+      "a": "Review call outcomes, qualified inquiries, successful handoffs, and errors using your own call data rather than relying on a scripted demo."
+    }
+  ],
+  "related": [
+    {
+      "href": "/pricing",
+      "label": "Pricing"
+    },
+    {
+      "href": "/demo",
+      "label": "Listen to demos"
+    },
+    {
+      "href": "/ai-receptionist-for-small-business",
+      "label": "AI receptionist for small business"
+    }
+  ]
+};
+export const metadata=contentMetadata(data);
+export default function Page(){return <SeoContentPage data={data}/>};

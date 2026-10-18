@@ -1,3 +1,63 @@
 import {SeoContentPage,contentMetadata} from '../../components/SeoContentPage';
-const data={"path": "/blog/what-does-an-ai-receptionist-do", "title": "What Does an AI Receptionist Do? 7 Real Call Tasks", "seoTitle": "What Does an AI Receptionist Do?", description: "What does an AI receptionist do? Explore call answering, lead qualification, appointment booking, transfers, and the limits of automated phone support.", "eyebrow": "AI RECEPTIONIST GUIDE", "lead": "What Does an AI Receptionist Actually Do? This guide focuses on the practical buying questions: what the system can handle, where human escalation still matters, and what to verify before choosing a provider.", "sections": [{"title": "Start with the call outcome", "body": "The useful question is not whether a system can talk. It is whether it can consistently answer with approved information and move callers to the correct next step."}, {"title": "Match capabilities to your workflow", "body": "Compare qualification, scheduling, transfers, messages, business-hours logic, integrations, languages, reporting, and escalation requirements against the calls you actually receive."}, {"title": "Understand the setup work", "body": "A strong implementation needs accurate business information, clear call rules, testing, exception handling, and ongoing refinement. Generic scripts are rarely enough for complex calls."}, {"title": "Evaluate cost in context", "body": "Compare the total service and implementation cost with call volume, staffing coverage, missed opportunities, and the value of faster response. Ask providers what is included and what can change the price."}], "bullets": ["Inbound call answering", "Qualification and intake", "Appointment booking", "Transfers and escalation", "Messages, summaries, and notifications"], "faqs": [{"q": "Can AI answer business calls 24/7?", "a": "Yes, an AI receptionist can provide around-the-clock coverage when configured for the business and supported by clear escalation rules."}, {"q": "Can it hand a call to a person?", "a": "Yes. Live transfer rules can be configured for urgent, sensitive, high-value, or otherwise appropriate calls."}, {"q": "What should I test in a demo?", "a": "Use real caller scenarios, including routine questions, unusual requests, scheduling, interruptions, and situations that should be escalated."}], "related": [{"href": "/pricing", "label": "Pricing"}, {"href": "/demo", "label": "Listen to demos"}, {"href": "/ai-receptionist-for-small-business", "label": "AI receptionist for small business"}]};
-export const metadata=contentMetadata(data); export default function Page(){return <SeoContentPage data={data}/>};
+const data={
+  "path": "/blog/what-does-an-ai-receptionist-do",
+  "title": "What Does an AI Receptionist Do? 7 Real Call Tasks",
+  "seoTitle": "What Does an AI Receptionist Do?",
+  "description": "What does an AI receptionist do? Explore call answering, lead qualification, appointment booking, transfers, and the limits of automated phone support.",
+  "eyebrow": "CAPABILITIES EXPLAINED",
+  "lead": "A receptionist can explain approved hours, service areas, basic offerings, and next steps. This guide explains the practical decisions, handoffs, and tests that matter before putting the workflow in front of real callers.",
+  "sections": [
+    {
+      "title": "Answer routine business questions",
+      "body": "A receptionist can explain approved hours, service areas, basic offerings, and next steps. It should avoid inventing prices, guarantees, or policies when those details have not been supplied."
+    },
+    {
+      "title": "Collect the information a team needs",
+      "body": "For a new service request, it may record the caller’s name, number, address, service type, and preferred callback time. The questions should vary by industry and by whether the caller is a new or existing customer."
+    },
+    {
+      "title": "Route calls and arrange follow-up",
+      "body": "Depending on integrations and permissions, the system may transfer a call, request an appointment, create a lead record, or notify an employee. Every action needs a fallback if the destination is unavailable."
+    },
+    {
+      "title": "Know what it should not do",
+      "body": "An AI receptionist should not replace expert judgment on emergencies, sensitive disputes, or specialized advice. The business should define escalation triggers, review transcripts, and keep human oversight for consequential decisions."
+    }
+  ],
+  "bullets": [
+    "Answer routine business questions",
+    "Collect the information a team needs",
+    "Route calls and arrange follow-up",
+    "Know what it should not do"
+  ],
+  "faqs": [
+    {
+      "q": "What is the most important setup step?",
+      "a": "Write down the actual caller scenarios and the approved outcome for each one, including exceptions that require a person."
+    },
+    {
+      "q": "Can a caller still reach a person?",
+      "a": "Yes, if the business configures a working transfer or callback path. Test that fallback during and outside staffed hours."
+    },
+    {
+      "q": "How can we tell whether it works?",
+      "a": "Review call outcomes, qualified inquiries, successful handoffs, and errors using your own call data rather than relying on a scripted demo."
+    }
+  ],
+  "related": [
+    {
+      "href": "/pricing",
+      "label": "Pricing"
+    },
+    {
+      "href": "/demo",
+      "label": "Listen to demos"
+    },
+    {
+      "href": "/ai-receptionist-for-small-business",
+      "label": "AI receptionist for small business"
+    }
+  ]
+};
+export const metadata=contentMetadata(data);
+export default function Page(){return <SeoContentPage data={data}/>};

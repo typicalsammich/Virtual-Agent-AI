@@ -1,3 +1,63 @@
 import {SeoContentPage,contentMetadata} from '../../components/SeoContentPage';
-const data={"path": "/blog/best-ai-receptionist-for-small-business", "title": "Best AI Receptionist for Small Business: 9 Things to Compare", "seoTitle": "Best AI Receptionist for Small Business", description: "Compare AI receptionist options for small businesses. Learn what to check for call quality, booking, integrations, pricing, and support.", "eyebrow": "AI RECEPTIONIST GUIDE", "lead": "Best AI Receptionist for Small Business: What to Look For This guide focuses on the practical buying questions: what the system can handle, where human escalation still matters, and what to verify before choosing a provider.", "sections": [{"title": "Start with the call outcome", "body": "The useful question is not whether a system can talk. It is whether it can consistently answer with approved information and move callers to the correct next step."}, {"title": "Match capabilities to your workflow", "body": "Compare qualification, scheduling, transfers, messages, business-hours logic, integrations, languages, reporting, and escalation requirements against the calls you actually receive."}, {"title": "Understand the setup work", "body": "A strong implementation needs accurate business information, clear call rules, testing, exception handling, and ongoing refinement. Generic scripts are rarely enough for complex calls."}, {"title": "Evaluate cost in context", "body": "Compare the total service and implementation cost with call volume, staffing coverage, missed opportunities, and the value of faster response. Ask providers what is included and what can change the price."}], "bullets": ["Inbound call answering", "Qualification and intake", "Appointment booking", "Transfers and escalation", "Messages, summaries, and notifications"], "faqs": [{"q": "Can AI answer business calls 24/7?", "a": "Yes, an AI receptionist can provide around-the-clock coverage when configured for the business and supported by clear escalation rules."}, {"q": "Can it hand a call to a person?", "a": "Yes. Live transfer rules can be configured for urgent, sensitive, high-value, or otherwise appropriate calls."}, {"q": "What should I test in a demo?", "a": "Use real caller scenarios, including routine questions, unusual requests, scheduling, interruptions, and situations that should be escalated."}], "related": [{"href": "/pricing", "label": "Pricing"}, {"href": "/demo", "label": "Listen to demos"}, {"href": "/ai-receptionist-for-small-business", "label": "AI receptionist for small business"}]};
-export const metadata=contentMetadata(data); export default function Page(){return <SeoContentPage data={data}/>};
+const data={
+  "path": "/blog/best-ai-receptionist-for-small-business",
+  "title": "Best AI Receptionist for Small Business: 9 Things to Compare",
+  "seoTitle": "Best AI Receptionist for Small Business",
+  "description": "Compare AI receptionist options for small businesses. Learn what to check for call quality, booking, integrations, pricing, and support.",
+  "eyebrow": "BUYER CHECKLIST",
+  "lead": "A contractor who misses calls while on jobs needs a different system from a clinic that receives appointment changes all day. This guide explains the practical decisions, handoffs, and tests that matter before putting the workflow in front of real callers.",
+  "sections": [
+    {
+      "title": "Start with your missed-call problem",
+      "body": "A contractor who misses calls while on jobs needs a different system from a clinic that receives appointment changes all day. Write down the five most common reasons customers call before evaluating products."
+    },
+    {
+      "title": "Demand a realistic demonstration",
+      "body": "Test an interrupted caller, a customer who changes their mind, an out-of-area request, and a question the AI cannot answer. A polished scripted demo is not evidence that a product handles your actual calls."
+    },
+    {
+      "title": "Inspect the handoff and records",
+      "body": "Check whether the system can send readable summaries, identify urgent requests, transfer appropriately, and avoid double-booking. Ask where call recordings and customer information are stored and who can access them."
+    },
+    {
+      "title": "Choose by total value, not a ranking badge",
+      "body": "Compare setup effort, ongoing support, integrations, usage limits, cancellation policies, and whether the team will actually use the resulting leads. The best option is the one that reliably completes your specific workflow."
+    }
+  ],
+  "bullets": [
+    "Start with your missed-call problem",
+    "Demand a realistic demonstration",
+    "Inspect the handoff and records",
+    "Choose by total value, not a ranking badge"
+  ],
+  "faqs": [
+    {
+      "q": "What is the most important setup step?",
+      "a": "Write down the actual caller scenarios and the approved outcome for each one, including exceptions that require a person."
+    },
+    {
+      "q": "Can a caller still reach a person?",
+      "a": "Yes, if the business configures a working transfer or callback path. Test that fallback during and outside staffed hours."
+    },
+    {
+      "q": "How can we tell whether it works?",
+      "a": "Review call outcomes, qualified inquiries, successful handoffs, and errors using your own call data rather than relying on a scripted demo."
+    }
+  ],
+  "related": [
+    {
+      "href": "/pricing",
+      "label": "Pricing"
+    },
+    {
+      "href": "/demo",
+      "label": "Listen to demos"
+    },
+    {
+      "href": "/ai-receptionist-for-small-business",
+      "label": "AI receptionist for small business"
+    }
+  ]
+};
+export const metadata=contentMetadata(data);
+export default function Page(){return <SeoContentPage data={data}/>};
