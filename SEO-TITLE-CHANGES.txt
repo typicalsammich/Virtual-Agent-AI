@@ -1,0 +1,193 @@
+Only SEO titles were adjusted. Page content, layout, and descriptions remain unchanged.
+
+app/ai-receptionist-for-property-management/page.tsx
+OLD: AI Receptionist for Property Management Businesses | Virtual Agent AI
+NEW: AI Receptionist for Property Management | Virtual Agent AI
+
+app/locations/fresno/page.tsx
+OLD: AI Receptionist & Answering Service in Fresno, CA
+NEW: AI Receptionist in Fresno | Virtual Agent AI
+
+app/locations/tampa/page.tsx
+OLD: AI Receptionist & Answering Service in Tampa, FL
+NEW: AI Receptionist in Tampa | Virtual Agent AI
+
+app/locations/san-diego/page.tsx
+OLD: AI Receptionist & Answering Service in San Diego, CA
+NEW: AI Receptionist in San Diego | Virtual Agent AI
+
+app/locations/sacramento/page.tsx
+OLD: AI Receptionist & Answering Service in Sacramento, CA
+NEW: AI Receptionist in Sacramento | Virtual Agent AI
+
+app/locations/orange-county/page.tsx
+OLD: AI Receptionist & Answering Service in Orange County, CA
+NEW: AI Receptionist in Orange County | Virtual Agent AI
+
+app/locations/san-jose/page.tsx
+OLD: AI Receptionist & Answering Service in San Jose, CA
+NEW: AI Receptionist in San Jose | Virtual Agent AI
+
+app/locations/jacksonville/page.tsx
+OLD: AI Receptionist & Answering Service in Jacksonville, FL
+NEW: AI Receptionist in Jacksonville | Virtual Agent AI
+
+app/locations/california/page.tsx
+OLD: AI Receptionist & Answering Service in California, CA
+NEW: AI Receptionist in California | Virtual Agent AI
+
+app/locations/orlando/page.tsx
+OLD: AI Receptionist & Answering Service in Orlando, FL
+NEW: AI Receptionist in Orlando | Virtual Agent AI
+
+app/locations/los-angeles/page.tsx
+OLD: AI Receptionist & Answering Service in Los Angeles, CA
+NEW: AI Receptionist in Los Angeles | Virtual Agent AI
+
+app/locations/florida/page.tsx
+OLD: AI Receptionist & Answering Service in Florida, FL
+NEW: AI Receptionist in Florida | Virtual Agent AI
+
+app/locations/san-bernardino/page.tsx
+OLD: AI Receptionist & Answering Service in San Bernardino, CA
+NEW: AI Receptionist in San Bernardino | Virtual Agent AI
+
+app/locations/miami/page.tsx
+OLD: AI Receptionist & Answering Service in Miami, FL
+NEW: AI Receptionist in Miami | Virtual Agent AI
+
+app/locations/riverside/page.tsx
+OLD: AI Receptionist & Answering Service in Riverside, CA
+NEW: AI Receptionist in Riverside | Virtual Agent AI
+
+app/compare/virtual-agent-ai-vs-dialzara/page.tsx
+OLD: Virtual Agent AI vs Dialzara | AI Receptionist Comparison
+NEW: Virtual Agent AI vs Dialzara | Virtual Agent AI
+
+app/compare/virtual-agent-ai-vs-goodcall/page.tsx
+OLD: Virtual Agent AI vs Goodcall | AI Receptionist Comparison
+NEW: Virtual Agent AI vs Goodcall | Virtual Agent AI
+
+app/compare/virtual-agent-ai-vs-smith-ai/page.tsx
+OLD: Virtual Agent AI vs Smith.ai | AI Receptionist Comparison
+NEW: Virtual Agent AI vs Smith.ai | Virtual Agent AI
+
+app/compare/virtual-agent-ai-vs-human-answering-service/page.tsx
+OLD: Virtual Agent AI vs Human Answering Service | AI Receptionist Comparison
+NEW: AI Receptionist vs Human Answering Service | Virtual Agent AI
+
+app/compare/virtual-agent-ai-vs-ruby/page.tsx
+OLD: Virtual Agent AI vs Ruby | AI Receptionist Comparison
+NEW: Virtual Agent AI vs Ruby | Virtual Agent AI
+
+app/blog/what-does-an-ai-receptionist-do/page.tsx
+OLD: What Does an AI Receptionist Do? 7 Real Call Tasks
+NEW: What Does an AI Receptionist Do? | Virtual Agent AI
+
+app/blog/can-ai-receptionist-transfer-calls/page.tsx
+OLD: Can an AI Receptionist Transfer Calls? How Routing Works
+NEW: Can an AI Receptionist Transfer Calls? | Virtual Agent AI
+
+app/blog/can-ai-receptionist-handle-multiple-businesses/page.tsx
+OLD: Can an AI Receptionist Handle Multiple Businesses? | Virtual Agent AI
+NEW: Can AI Receptionists Handle Multiple Businesses? | Virtual Agent AI
+
+app/blog/best-ai-receptionist-for-small-business/page.tsx
+OLD: Best AI Receptionist for Small Business: 9 Things to Compare
+NEW: Best AI Receptionist for Small Business | Virtual Agent AI
+
+app/blog/ai-receptionist-vs-human-receptionist/page.tsx
+OLD: AI Receptionist vs Human Receptionist: Which Is Better? | Virtual Agent AI
+NEW: AI Receptionist vs Human Receptionist | Virtual Agent AI
+
+app/blog/how-does-an-ai-receptionist-work/page.tsx
+OLD: How Does an AI Receptionist Work? 4 Steps + Examples
+NEW: How Does an AI Receptionist Work? | Virtual Agent AI
+
+app/blog/how-much-does-ai-receptionist-cost-2026/page.tsx
+OLD: AI Receptionist Cost in 2026: Pricing & What Changes It
+NEW: AI Receptionist Cost in 2026 | Virtual Agent AI
+
+app/blog/can-ai-receptionist-book-appointments/page.tsx
+OLD: Can an AI Receptionist Book Appointments? Yes — Here’s How
+NEW: Can AI Receptionists Book Appointments? | Virtual Agent AI
+
+app/blog/posts.ts
+OLD: AI Call Answering: How It Works for Service Businesses
+NEW: AI Call Answering: How It Works for Businesses | Virtual Agent AI
+
+app/blog/posts.ts
+OLD: What Is an AI Call Center? How AI Call Centers Work
+NEW: What Is an AI Call Center? | Virtual Agent AI
+
+app/blog/posts.ts
+OLD: AI Receptionist vs Answering Service: Full Comparison
+NEW: AI Receptionist vs Answering Service | Virtual Agent AI
+
+app/blog/posts.ts
+OLD: How to Stop Missing Business Calls: Practical Playbook
+NEW: How to Stop Missing Business Calls | Virtual Agent AI
+
+app/blog/posts.ts
+OLD: AI Appointment Scheduling for Service Businesses
+NEW: AI Appointment Scheduling for Businesses | Virtual Agent AI
+
+app/blog/posts.ts
+OLD: After-Hours Answering Service for Home Services
+NEW: After-Hours Answering for Home Services | Virtual Agent AI
+
+app/blog/posts.ts
+OLD: AI Lead Generation for Service Businesses: What Actually Works
+NEW: AI Lead Generation for Businesses: What Works | Virtual Agent AI
+
+app/blog/posts.ts
+OLD: AI Receptionist for Small Business: Is It Worth It?
+NEW: AI Receptionist for Small Business: Worth It? | Virtual Agent AI
+
+app/blog/posts.ts
+OLD: How AI Can Follow Up With Leads Without Sounding Robotic
+NEW: How AI Can Follow Up With Leads Naturally | Virtual Agent AI
+
+app/blog/posts.ts
+OLD: AI Receptionist for Plumbers: Calls, Booking & After-Hours
+NEW: AI Receptionist for Plumbers: Calls & Booking | Virtual Agent AI
+
+app/blog/posts.ts
+OLD: AI Receptionist for HVAC Companies | Calls & Scheduling
+NEW: AI Receptionist for HVAC Companies | Virtual Agent AI
+
+app/blog/posts.ts
+OLD: AI Receptionist for Roofing Companies | Calls & Storm Intake
+NEW: AI Receptionist for Roofing Companies | Virtual Agent AI
+
+app/blog/posts.ts
+OLD: How to Set Up an AI Receptionist Without Annoying Customers
+NEW: How to Set Up an AI Receptionist | Virtual Agent AI
+
+app/blog/posts.ts
+OLD: What Happens When an AI Receptionist Doesn't Know an Answer?
+NEW: When an AI Receptionist Does Not Know the Answer | Virtual Agent AI
+
+app/blog/posts.ts
+OLD: How to Turn More Inbound Calls into Booked Calls
+NEW: Turn More Inbound Calls Into Bookings | Virtual Agent AI
+
+app/blog/posts.ts
+OLD: Why Your Google Ads Get Calls but Not Customers
+NEW: Why Google Ads Calls Are Not Converting | Virtual Agent AI
+
+app/blog/posts.ts
+OLD: Why Service Business Leads Go Cold & How to Follow Up Faster
+NEW: Why Service Business Leads Go Cold | Virtual Agent AI
+
+app/blog/posts.ts
+OLD: Website vs Landing Page for Local Service Businesses
+NEW: Website vs Landing Page for Local Businesses | Virtual Agent AI
+
+app/blog/posts.ts
+OLD: What Makes a Service Business Website Actually Convert?
+NEW: What Makes a Business Website Convert? | Virtual Agent AI
+
+app/ai-agent-for-dental-offices/page.tsx
+OLD: AI Agent for Dental Offices and Appointment Calls
+NEW: AI Agent for Dental Offices & Scheduling | Virtual Agent AI
