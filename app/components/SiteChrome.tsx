@@ -43,7 +43,7 @@ export function SiteHeader() {
   const servicesActive = pathname.startsWith("/services");
 
   return <header className="siteHeader">
-    <a className="logo brandLogo" href="/" onClick={closeMenu}><img className="brandMarkImage" src="/virtual-agent-ai-logo-transparent.png" alt="Virtual Agent AI logo" /><span>Virtual Agent AI</span></a>
+    <a className="logo brandLogo" href="/" onClick={closeMenu}><img className="brandMarkImage" src="/virtualagentai-logo-optimized.webp" alt="Virtual Agent AI logo" /><span>Virtual Agent AI</span></a>
     <nav className={menuOpen ? "mobileNavOpen" : ""} aria-label="Main navigation" id="main-navigation">
       <a className={pathname === "/" ? "active" : ""} href="/" aria-current={pathname === "/" ? "page" : undefined} onClick={closeMenu}>Home</a>
       <div className={`servicesNav ${servicesOpen ? "mobileServicesOpen" : ""}`}>

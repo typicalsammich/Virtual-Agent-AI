@@ -1,0 +1,1 @@
+Upload these two files to the matching paths in your GitHub repository. Replace app/components/SiteChrome.tsx and add public/virtualagentai-logo-optimized.webp. Do not delete other files. This changes only the header logo source; the original PNG remains for other uses. Confirm Vercel deployment and check the header on desktop and mobile.
