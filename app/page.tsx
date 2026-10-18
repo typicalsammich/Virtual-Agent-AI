@@ -4,10 +4,10 @@ import { SiteFooter } from "./components/SiteFooter";
 import { RevenueCalculator } from "./components/RevenueCalculator";
 
 export const metadata: Metadata = {
-  title: "24/7 AI Receptionist for Business | Virtual Agent AI",
-  description: "Virtual Agent AI answers business calls 24/7, qualifies leads, books appointments, takes messages, and transfers important calls automatically.",
+  title: "Virtual Agent AI | 24/7 AI Receptionist & Phone Answering",
+  description: "Virtual Agent AI answers business calls 24/7, qualifies leads, books appointments, routes urgent calls, and gives your team clear call summaries. Hear the AI in action.",
   alternates: { canonical: "https://www.virtualagentai.org/" },
-  openGraph: { type: "website", url: "https://www.virtualagentai.org/", title: "24/7 AI Receptionist for Business | Virtual Agent AI", description: "Answer calls, qualify leads, book appointments, take messages, and transfer important calls 24/7.", images: ["/og-image.png"] },
+  openGraph: { type: "website", url: "https://www.virtualagentai.org/", title: "Virtual Agent AI | 24/7 AI Receptionist & Phone Answering", description: "Answer calls, qualify leads, book appointments, take messages, and transfer important calls 24/7.", images: ["/og-image.png"] },
 };
 
 export default function Home() {

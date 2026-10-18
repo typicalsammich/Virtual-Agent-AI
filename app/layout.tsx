@@ -5,13 +5,13 @@ import "./globals.css";
 const siteUrl = "https://www.virtualagentai.org";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: { default: "24/7 AI Receptionist for Business | Virtual Agent AI", template: "%s | Virtual Agent AI" },
+  title: { default: "Virtual Agent AI | 24/7 AI Receptionist & Phone Answering", template: "%s | Virtual Agent AI" },
   description: "Virtual Agent AI answers business calls 24/7, qualifies leads, books appointments, takes messages, and transfers important calls automatically.",
   keywords: ["AI receptionist","AI receptionist service","AI phone answering service","AI answering service","AI virtual receptionist","virtual AI receptionist","AI phone agent","AI call answering service","24/7 AI receptionist","AI receptionist for business"],
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 } },
   icons: { icon: [{ url: "/favicon.png", type: "image/png" }], shortcut: "/favicon.png", apple: "/favicon.png" },
-  openGraph: { type: "website", siteName: "Virtual Agent AI", title: "24/7 AI Receptionist for Business | Virtual Agent AI", description: "Answer calls, qualify leads, book appointments, take messages, and transfer important calls 24/7.", url: siteUrl, locale: "en_US", images: [{ url: "/og-image.png", width: 1024, height: 1024, alt: "Virtual Agent AI" }] },
-  twitter: { card: "summary_large_image", title: "24/7 AI Receptionist for Business | Virtual Agent AI", description: "Answer calls, qualify leads, and book appointments around the clock.", images: ["/og-image.png"] },
+  openGraph: { type: "website", siteName: "Virtual Agent AI", title: "Virtual Agent AI | 24/7 AI Receptionist & Phone Answering", description: "Answer calls, qualify leads, book appointments, take messages, and transfer important calls 24/7.", url: siteUrl, locale: "en_US", images: [{ url: "/og-image.png", width: 1024, height: 1024, alt: "Virtual Agent AI" }] },
+  twitter: { card: "summary_large_image", title: "Virtual Agent AI | 24/7 AI Receptionist & Phone Answering", description: "Answer calls, qualify leads, and book appointments around the clock.", images: ["/og-image.png"] },
 };
 export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#080b0d" };
 export default function RootLayout({children}:{children:React.ReactNode}) {
@@ -22,7 +22,9 @@ export default function RootLayout({children}:{children:React.ReactNode}) {
         "@type": "Organization",
         "@id": `${siteUrl}/#organization`,
         name: "Virtual Agent AI",
+        alternateName: "Virtual Agent AI Receptionist",
         url: siteUrl,
+        logo: `${siteUrl}/virtual-agent-ai-logo-transparent.png`,
         telephone: "+1-714-695-5646",
         email: "virtualagentai@gmail.com",
         description: "A managed AI receptionist service for businesses that need reliable call answering, lead qualification, appointment booking, and call routing.",

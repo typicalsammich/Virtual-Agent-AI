@@ -19,9 +19,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   };
   walk(appDir);
-  return [...new Set(routes)].sort().map((route) => ({
+  const publicRoutes = [...new Set(routes)].filter((route) => !route.startsWith("/admin"));
+  return publicRoutes.sort().map((route) => ({
     url: `${base}${route || "/"}`,
-    lastModified: new Date(),
     changeFrequency: route.startsWith("/blog/") ? "monthly" : "weekly",
     priority: route === "" ? 1 : ["/services","/industries","/locations","/resources","/pricing","/demo"].includes(route) ? .9 : .7,
   }));
