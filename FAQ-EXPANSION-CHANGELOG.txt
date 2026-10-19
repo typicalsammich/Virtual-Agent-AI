@@ -1,0 +1,5 @@
+PRIORITY INDUSTRY FAQ EXPANSION
+Expanded plumbing, HVAC and roofing from 4 to 8 FAQs each.
+Added 12 non-repetitive questions with direct answers covering service area, after-hours routing, multi-unit properties, warranties, estimates, photos, and scheduling.
+No changes to other industries, layout, intake sections, compliance considerations, or buyer guide.
+Based on Virtual-Agent-AI-Industry-Compliance-Complete-Website.zip.
