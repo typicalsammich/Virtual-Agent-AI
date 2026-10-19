@@ -1,0 +1,4 @@
+INDUSTRY COMPLIANCE CONSIDERATIONS
+Adds two tailored operational/compliance considerations to each of 12 AI receptionist industry pages, plus a shared note on jurisdiction-specific call recording and AI disclosure. Uses existing SeoContentPage component and scoped responsive styling.
+These are general planning considerations, not a compliance certification or legal advice. Confirm actual vendors, contracts, privacy/security practices, and applicable laws before publishing.
+Base: Virtual-Agent-AI-Buyer-Guide-Readability-Fixed-Complete.zip
