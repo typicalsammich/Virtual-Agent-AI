@@ -1,0 +1,4 @@
+Industry Intake Questions Update
+
+Base: Virtual-Agent-AI-FAQ-Rewrite-Complete-Site.zip
+Adds 4 realistic intake questions on each of 12 industry pages, a reusable section in SeoContentPage, and scoped responsive CSS. FAQ answers, page URLs, other content and schema preserved. Example scripts only; do not promise unconfigured integrations.
