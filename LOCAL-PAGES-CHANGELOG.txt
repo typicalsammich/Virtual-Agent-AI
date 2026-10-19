@@ -1,0 +1,1 @@
+Improved Riverside landing page and created distinct Menifee and Temecula pages. Added both to locations directory and cross-linked markets, industry pages, pricing, and demo. No claims of local offices, customers, results, or guaranteed booking. Existing visual components retained. Production build and live deployment not tested.
