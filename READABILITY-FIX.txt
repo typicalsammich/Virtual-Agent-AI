@@ -1,0 +1,1 @@
+Fixes overlapping buyer-guide question headings caused by inherited global h2 letter-spacing. No content or layout changes.
