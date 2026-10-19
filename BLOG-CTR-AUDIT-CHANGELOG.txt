@@ -1,0 +1,5 @@
+BLOG TITLE AND SEARCH SNIPPET CTR AUDIT
+Updated 12 high-intent blog article metadata titles and descriptions (5 from app/blog/posts.ts, 7 standalone pages).
+Preserved on-page H1s, article content, URLs, canonical tags, layout, and publication dates. Metadata descriptions are suggestions, not guaranteed Google snippets.
+Audit caveat: source package has 40 blog page routes, but posts.ts defines only five blogPosts. Many routes reference missing postsBySlug keys. This is a pre-existing content/build issue; NOT fixed by this metadata-only change. Investigate before deployment and do not assume all blog routes are functioning.
+No Search Console CTR data was available; titles selected for clearer intent and more useful previews, not measured uplift.
