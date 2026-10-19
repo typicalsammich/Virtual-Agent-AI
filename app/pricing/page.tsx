@@ -26,6 +26,7 @@ export default function Pricing() {
         <p>Pricing depends on how many calls you receive, when you need coverage, and what the AI Agent needs to accomplish. Adjust the three factors below for a practical planning estimate.</p>
       </section>
       <PricingEstimator />
+      <p className="pricingBuyerGuideLink">Questions about contracts, integrations, privacy, or keeping your number? <a href="/ai-receptionist-buyer-guide">Read the buyer guide</a>.</p>
     </main>
     <SiteFooter />
   </>;

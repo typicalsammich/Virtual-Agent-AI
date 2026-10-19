@@ -629,3 +629,29 @@ h2{font-size:clamp(34px,3.7vw,54px);line-height:1.08;letter-spacing:-3.2px;margi
 .seoLandingIntakeList li span{color:#42e0b1;font-size:.75rem;font-weight:700;letter-spacing:.08em;margin-top:.3rem}
 .seoLandingIntakeList li p{margin:0;font-size:clamp(1rem,1.3vw,1.14rem);line-height:1.55;font-weight:550}
 @media(max-width:760px){.seoLandingIntake{grid-template-columns:1fr;padding:3.5rem 22px;gap:2rem}}
+
+
+/* Buyer objection guide and industry cross-links */
+.buyerGuide{background:#091215;color:#f4f8f7}
+.buyerGuideHero,.buyerGuideGrid,.buyerGuideClose{padding-left:max(24px,calc((100vw - 1180px)/2));padding-right:max(24px,calc((100vw - 1180px)/2))}
+.buyerGuideHero{padding-top:clamp(4rem,9vw,8rem);padding-bottom:clamp(3rem,6vw,5rem);background:radial-gradient(ellipse at 80% 0%,rgba(37,195,149,.12),transparent 55%)}
+.buyerGuide .eyebrow,.buyerGuideNum,.buyerGuideInline .eyebrow{color:#42e0b1;letter-spacing:.14em}
+.buyerGuideHero h1{max-width:850px;font-size:clamp(2.4rem,5vw,5rem);line-height:1.05;letter-spacing:-.045em;margin:1rem 0}
+.buyerGuideHero>p:not(.eyebrow){max-width:750px;line-height:1.7;color:#b9c8c7}
+.buyerGuideActions{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2rem}
+.buyerGuideGrid{padding-bottom:5rem}
+.buyerGuideItem{display:flex;gap:1.5rem;border-top:1px solid rgba(130,210,188,.24);padding:2rem 0}
+.buyerGuideItem:last-child{border-bottom:1px solid rgba(130,210,188,.24)}
+.buyerGuideNum{min-width:2rem;font-size:.82rem;font-weight:700;padding-top:.3rem}
+.buyerGuideItem h2{font-size:clamp(1.15rem,2vw,1.55rem);margin:0 0 .75rem;line-height:1.3}
+.buyerGuideItem p{color:#b9c8c7;line-height:1.75;max-width:850px;margin:0}
+.buyerGuideClose{padding-top:4rem;padding-bottom:6rem;background:#0d1b1d}
+.buyerGuideClose h2{font-size:clamp(1.7rem,3vw,2.8rem);max-width:650px}
+.buyerGuideClose>p:not(.eyebrow){color:#b9c8c7;line-height:1.7;max-width:680px;margin-bottom:2rem}
+.buyerGuideInline{display:flex;justify-content:space-between;align-items:center;gap:2rem;flex-wrap:wrap;padding:2.5rem max(24px,calc((100vw - 1180px)/2));background:#102326;color:#f4f8f7;border-block:1px solid rgba(130,210,188,.18)}
+.buyerGuideInline>div{max-width:720px}
+.buyerGuideInline h2{font-size:clamp(1.4rem,2.5vw,2.2rem);line-height:1.2;margin:.5rem 0}
+.buyerGuideInline p:last-child{color:#b9c8c7;line-height:1.6}
+.buyerGuideInline>a,.pricingBuyerGuideLink a{color:#42e0b1;font-weight:700;text-underline-offset:4px}
+.pricingBuyerGuideLink{text-align:center;padding:1.5rem 20px 3rem;line-height:1.7}
+@media(max-width:700px){.buyerGuideItem{gap:1rem}.buyerGuideInline{padding:2.5rem 22px}}

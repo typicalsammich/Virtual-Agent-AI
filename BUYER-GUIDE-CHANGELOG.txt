@@ -1,0 +1,6 @@
+BUYER OBJECTIONS SEO UPDATE
+Based on Virtual-Agent-AI-Intake-Questions-Complete-Website.zip
+New /ai-receptionist-buyer-guide route with 9 practical objections and carefully qualified answers.
+Adds a contextual link on all 12 industry pages via shared component, plus a pricing page link.
+Adds responsive scoped CSS. Preserves existing FAQs, intake sections, design, routes and metadata.
+IMPORTANT: Answers deliberately avoid unverified promises about compliance, contract length, integrations or data security. Verify against actual company practices before publishing.
