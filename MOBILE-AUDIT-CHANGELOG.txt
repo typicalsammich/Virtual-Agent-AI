@@ -1,0 +1,7 @@
+MOBILE READABILITY & INTERNAL NAVIGATION AUDIT
+Updated mobile navigation to close on route change and Escape key.
+Added mobile-only wrapping and line-height safeguards for long headings, paragraphs, FAQ copy, and internal links.
+Added clear keyboard focus indication for site navigation and contextual internal links; preserved desktop styles and existing design.
+Files changed: app/components/SiteChrome.tsx and app/globals.css.
+IMPORTANT: Static source/CSS audit only. No browser-based responsive screenshots, touch testing, Lighthouse audit, production build or deployed verification performed. Test on actual small phones and tablets before marking fully validated.
+PREEXISTING ISSUE: Blog post data and blog routes may not match; investigate separately.

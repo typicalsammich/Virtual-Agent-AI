@@ -39,6 +39,23 @@ export function SiteHeader() {
     return () => document.body.classList.remove("mobileMenuOpen");
   }, [menuOpen]);
 
+  useEffect(() => {
+    setMenuOpen(false);
+    setServicesOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    if (!menuOpen) return;
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setMenuOpen(false);
+        setServicesOpen(false);
+      }
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [menuOpen]);
+
   const closeMenu = () => { setMenuOpen(false); setServicesOpen(false); };
   const servicesActive = pathname.startsWith("/services");
 
