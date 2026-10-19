@@ -1,0 +1,1 @@
+Added a visible October 18, 2026 content-review date to all five comparison guides. Explicitly states competitor pricing, plans, and features have not been independently verified. This is a content review date, not a claim of independent competitor verification. Existing design, content, and other pages preserved. Test build and deployed appearance after uploading.
