@@ -5,7 +5,7 @@ import "./globals.css";
 const siteUrl = "https://www.virtualagentai.org";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: { default: "Virtual Agent AI | 24/7 AI Receptionist & Phone Answering", template: "%s | Virtual Agent AI" },
+  title: { default: "Virtual Agent AI", template: "%s | Virtual Agent AI" },
   description: "Virtual Agent AI answers business calls 24/7, qualifies leads, books appointments, takes messages, and transfers important calls automatically.",
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 } },
   icons: { icon: [{ url: "/favicon.png", type: "image/png" }], shortcut: "/favicon.png", apple: "/favicon.png" },

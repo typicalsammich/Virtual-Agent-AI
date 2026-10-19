@@ -4,7 +4,7 @@ import { SiteFooter } from "./components/SiteFooter";
 import { RevenueCalculator } from "./components/RevenueCalculator";
 
 export const metadata: Metadata = {
-  title: "Virtual Agent AI | 24/7 AI Receptionist & Phone Answering",
+  title: { absolute: "Virtual Agent AI" },
   description: "AI receptionist for businesses: answer calls 24/7, qualify leads, book appointments, and route urgent requests. Hear Virtual Agent AI in action.",
   alternates: { canonical: "https://www.virtualagentai.org/" },
   openGraph: { type: "website", url: "https://www.virtualagentai.org/", title: "Virtual Agent AI | 24/7 AI Receptionist & Phone Answering", description: "Answer calls, qualify leads, book appointments, take messages, and transfer important calls 24/7.", images: ["/og-image.png"] },
@@ -18,7 +18,7 @@ export default function Home() {
       <section className="hero">
         <div className="heroText">
           <p className="eyebrow">THE AI REVENUE RECEPTIONIST</p>
-          <h1>24/7 AI Receptionist & AI Phone Answering for Businesses.</h1>
+          <h1>Virtual Agent AI | AI Receptionist &amp; Phone Answering.</h1>
           <p className="lead">Virtual Agent AI is a managed AI receptionist service and AI phone answering solution for businesses. Our virtual AI receptionist answers calls 24/7, qualifies leads, books appointments, takes messages, transfers important calls, and follows your business rules without adding another front-desk employee.</p>
           <div className="heroActions">
             <a className="button" href="/demo">See the AI in Action <span></span></a>

@@ -1,0 +1,1 @@
+Homepage hero H1: Virtual Agent AI | AI Receptionist & Phone Answering. Browser tab title: Virtual Agent AI. Homepage title uses absolute metadata to avoid template duplication. Root default title shortened; other pages retain their own SEO titles. OG/Twitter descriptions unchanged.
