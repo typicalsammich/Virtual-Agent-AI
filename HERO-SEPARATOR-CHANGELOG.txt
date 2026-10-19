@@ -1,0 +1,1 @@
+Homepage hero: wrap only the vertical separator in a span and add 0.12em inline margin on both sides. No changes to wording, font size, global letter spacing, SEO title, or other pages.

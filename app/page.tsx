@@ -18,7 +18,7 @@ export default function Home() {
       <section className="hero">
         <div className="heroText">
           <p className="eyebrow">THE AI REVENUE RECEPTIONIST</p>
-          <h1>Virtual Agent AI | AI Receptionist &amp; Phone Answering.</h1>
+          <h1>Virtual Agent AI <span className="heroSeparator">|</span> AI Receptionist &amp; Phone Answering.</h1>
           <p className="lead">Virtual Agent AI is a managed AI receptionist service and AI phone answering solution for businesses. Our virtual AI receptionist answers calls 24/7, qualifies leads, books appointments, takes messages, transfers important calls, and follows your business rules without adding another front-desk employee.</p>
           <div className="heroActions">
             <a className="button" href="/demo">See the AI in Action <span></span></a>
