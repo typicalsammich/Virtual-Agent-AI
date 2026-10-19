@@ -1,0 +1,6 @@
+KEYWORD CANNIBALIZATION: TARGETED ON-PAGE AUDIT
+Differentiated 7 overlapping informational blog pages by specific search intent, rewriting SEO titles and descriptions and adding reciprocal/contextual related links.
+Intent split: in-house human vs remote virtual receptionist; AI answering usage fees vs total receptionist budgeting; how calls work vs what tasks AI performs; buyer selection checklist.
+Preserved all URLs, content bodies, canonicals, existing page design and pricing values. Did not redirect or remove pages without evidence of redundant search intent.
+LIMITATION: No Google Search Console query/URL performance data was available; actual keyword cannibalization cannot be confirmed from source code alone. Check query-level impressions, clicks and rankings before any future consolidation.
+PREEXISTING ISSUE: posts.ts contains five blogPosts; some route files use postsBySlug for slugs not in the dataset. Those pages may fail to build; this package does not fix that separate problem.
