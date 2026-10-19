@@ -1,0 +1,5 @@
+PRICING AND DEMO INTERNAL LINK AUDIT + UPDATE
+Reviewed shared SeoContentPage component, 12 industry pages, and 9 detailed service pages.
+Already present: hero demo link, hero consultation link, end-of-page consultation link, related links. Existing pricing link varies by page.
+Added a compact, contextual 'Hear how it works. See what it costs.' block after FAQs on industry and service pages with links to /demo, /pricing and /#contact. No repeated blocks on blogs. Existing content, FAQ schema and layout preserved.
+Base: Virtual-Agent-AI-Priority-Industry-FAQ-Expansion-Complete-Website.zip
