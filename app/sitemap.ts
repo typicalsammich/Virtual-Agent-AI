@@ -19,7 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   };
   walk(appDir);
-  const publicRoutes = [...new Set(routes)].filter((route) => !route.startsWith("/admin") && !["/privacy-policy", "/terms-of-service"].includes(route));
+  const publicRoutes = [...new Set(routes)].filter((route) => !route.startsWith("/admin") && !["/privacy-policy", "/terms-of-service", "/ai-agent-for-plumbers", "/ai-agent-for-hvac", "/ai-agent-for-roofers", "/ai-agent-for-dental-offices"].includes(route));
   return publicRoutes.sort().map((route) => ({
     url: `${base}${route || "/"}`,
     changeFrequency: route.startsWith("/blog/") ? "monthly" : "weekly",

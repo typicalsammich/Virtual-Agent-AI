@@ -18,7 +18,13 @@ const nextConfig: NextConfig = {
     ];
   },
   async redirects() {
-    return [{ source: "/:path*", has: [{ type: "host", value: "virtualagentai.org" }], destination: "https://www.virtualagentai.org/:path*", permanent: true }];
+    return [
+      { source: "/ai-agent-for-plumbers", destination: "/ai-receptionist-for-plumbers", permanent: true },
+      { source: "/ai-agent-for-hvac", destination: "/ai-receptionist-for-hvac", permanent: true },
+      { source: "/ai-agent-for-roofers", destination: "/ai-receptionist-for-roofers", permanent: true },
+      { source: "/ai-agent-for-dental-offices", destination: "/ai-receptionist-for-dentists", permanent: true },
+      { source: "/:path*", has: [{ type: "host", value: "virtualagentai.org" }], destination: "https://www.virtualagentai.org/:path*", permanent: true }
+    ];
   },
 };
 export default nextConfig;

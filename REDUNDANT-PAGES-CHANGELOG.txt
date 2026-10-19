@@ -1,0 +1,11 @@
+REDUNDANT INDUSTRY PAGE CONSOLIDATION
+Found four strongly overlapping alternate industry landing-page routes. Added permanent redirects from each alternate route to the more complete priority /ai-receptionist-for-* destination:
+/ai-agent-for-plumbers -> /ai-receptionist-for-plumbers
+/ai-agent-for-hvac -> /ai-receptionist-for-hvac
+/ai-agent-for-roofers -> /ai-receptionist-for-roofers
+/ai-agent-for-dental-offices -> /ai-receptionist-for-dentists
+Excluded those redirected routes from sitemap generation. Source pages retained in repository as a reversible safety measure; the redirects prevent public duplication.
+No location pages were removed: statewide and city-specific pages have distinct intent and location detail.
+No blog pages were removed: informational posts and commercial landing pages serve different search intents.
+All other site behavior and styling retained.
+Build/deployment not tested. After deployment verify redirects and sitemap.
