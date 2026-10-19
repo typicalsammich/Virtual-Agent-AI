@@ -1,0 +1,1 @@
+About Us - Our Story section visual redesign only. All text, other sections, metadata and site routes remain unchanged. Replaces 3-column story paragraph layout with a readable single-column narrative; improves typography, emphasis, and mobile behavior. Deploy app/globals.css. No live browser build/test performed.
