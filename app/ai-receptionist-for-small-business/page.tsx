@@ -13,7 +13,7 @@ const data: SeoLandingData = {
   path: "/ai-receptionist-for-small-business",
   eyebrow: "AI RECEPTIONIST FOR SMALL BUSINESS",
   title: "Answer every call without adding another person to the front desk.",
-  intro: "Virtual Agent AI gives small businesses reliable 24/7 call coverage. It answers in a natural voice, uses your approved business information, qualifies new opportunities, schedules the right next step, and keeps your team informed.",
+  intro: "Small-business owners rarely have the luxury of answering every call. Virtual Agent AI helps you respond when you are with a customer, on a job, or finished for the day\u2014without pretending every business has the same phone workflow.",
   promise: "More callers helped, more qualified leads captured, and fewer opportunities lost to voicemail.",
   serviceType: "AI Receptionist for Small Business",
   benefits: [
@@ -33,10 +33,10 @@ const data: SeoLandingData = {
   fitText: "The strongest fit is a business that depends on inbound calls but cannot keep an employee available every minute of the day.",
   fitPoints: ["High-value services or appointments", "Frequent missed calls or voicemail", "Repetitive intake and scheduling questions", "After-hours or weekend demand", "A need for consistent lead qualification", "Clear rules for urgent call routing"],
   faqs: [
-    { question: "What can an AI receptionist do for a small business?", answer: "It can answer incoming calls, explain approved services, collect caller details, qualify leads, schedule appointments, route urgent requests, transfer calls, and send structured summaries to the team." },
-    { question: "Can it use my existing business phone number?", answer: "The final setup depends on your phone provider and preferred call flow. Many businesses forward all calls, overflow calls, or after-hours calls to the AI receptionist." },
-    { question: "Will it sound like a generic phone bot?", answer: "The greeting, tone, business knowledge, questions, and vocabulary are configured for your company. A good implementation also defines when the system should stop and involve a person." },
-    { question: "How is pricing determined?", answer: "Pricing is based on call volume, coverage hours, workflow complexity, and any calendars, notifications, transfers, or integrations included in the system." },
+    {"question": "Is an AI receptionist worth it if we do not get many calls?", "answer": "It depends on how valuable the missed opportunities are and what your current answering process costs. Start by tracking missed calls and whether a faster response would change the outcome."},
+    {"question": "Do I need to replace my existing phone number?", "answer": "Usually not. Many setups can work through forwarding or call routing, depending on your provider. We would confirm compatibility before making changes."},
+    {"question": "Can I choose which calls reach me directly?", "answer": "Yes. You can set rules for urgent callers, VIP customers, certain services, or times of day, subject to your phone setup."},
+    {"question": "What if the AI does not know an answer?", "answer": "It should say it cannot confirm, collect the question, and send it to your team rather than inventing information."}
   ],
   related: [{ href: "/services/ai-call-answering", label: "AI call answering" }, { href: "/services/appointment-booking", label: "Appointment booking" }, { href: "/ai-answering-service-for-home-services", label: "Home service answering" }],
 };
