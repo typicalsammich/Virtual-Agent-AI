@@ -1,0 +1,9 @@
+FAQ REWRITE — OCTOBER 2026
+
+Base: Virtual-Agent-AI-Latest-Merge-Plus-Industry-Rewrites.zip
+Changed: 12 ai-receptionist-for-* industry pages plus 3 ai-agent-for-* alternate landing pages.
+Each industry now has four distinct, scenario-specific questions and answers.
+Three alternate AI-agent pages have three revised FAQs each.
+No layout, navigation, schema component, booking link, or non-FAQ copy was intentionally modified.
+Deploy the complete ZIP if the previous merged ZIP is your exact live baseline; otherwise merge the changes-only ZIP.
+No Next.js production build was run here.
