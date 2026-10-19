@@ -1,0 +1,1 @@
+Hero separator refinement: 0.25em margin on both sides; visually thinner (65%) and shorter (85%) separator; removed whitespace before the span so it stays attached to preceding AI when wrapping. Heading wording and other layout unchanged. Not browser-tested.

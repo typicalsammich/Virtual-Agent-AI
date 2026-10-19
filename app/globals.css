@@ -815,5 +815,7 @@ h2{font-size:clamp(34px,3.7vw,54px);line-height:1.08;letter-spacing:-3.2px;margi
 /* Subtle breathing room around the homepage hero separator only. */
 .heroSeparator {
   display: inline-block;
-  margin-inline: 0.12em;
+  margin-inline: 0.25em;
+  transform: scaleX(0.65) scaleY(0.85);
+  transform-origin: center;
 }
