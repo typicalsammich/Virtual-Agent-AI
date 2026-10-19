@@ -9,7 +9,7 @@ const coverageOptions = [
 ];
 const workflowOptions = [
   { title: "Answer & Route", detail: "Capture details and hand off" },
-  { title: "Book + Integrate Included", detail: "Schedule and sync your tools" },
+  { title: "Booking + Integrations", detail: "When configured and supported" },
 ];
 
 export function PricingEstimator() {
@@ -68,10 +68,10 @@ export function PricingEstimator() {
     </div>
 
     <aside className="pricingEstimate" aria-live="polite">
-      <p className="eyebrow">ESTIMATED STARTING PRICE</p>
+      <p className="eyebrow">ILLUSTRATIVE MONTHLY ESTIMATE</p>
       <strong>${estimate.average.toLocaleString()}<small>/month</small></strong>
-      <p>Typical planning range: <b>${estimate.low.toLocaleString()} to ${estimate.high.toLocaleString()}/month</b></p>
-      <span>This is an estimate, not a final quote. Your exact price is confirmed after a short review of your real call flow.</span>
+      <p>Illustrative monthly range: <b>${estimate.low.toLocaleString()} to ${estimate.high.toLocaleString()}/month</b></p>
+      <span>Planning figures only, not a confirmed offer or final quote. Setup fees, call duration, usage limits, transfers, third-party charges, and integrations are not calculated here. Confirm all inclusions and pricing in a written proposal.</span>
       <a className="button" href={BOOKING_URL}>Book a pricing call <b></b></a>
     </aside>
   </section>;

@@ -2,7 +2,7 @@ import {SeoContentPage,contentMetadata} from '../../components/SeoContentPage';
 const data={
   "path": "/blog/how-much-does-ai-answering-service-cost",
   "title": "How Much Does an AI Answering Service Cost? | Virtual Agent AI",
-  "description": "How much does an AI answering service cost? Understand monthly plans, setup fees, call usage, integrations, and pricing questions to ask.",
+  "description": "How much does an AI answering service cost? Understand monthly plans, setup fees, call usage, integrations, and pricing questions to ask. Includes quote checklists, hidden-cost questions, and limits of online estimates.",
   "eyebrow": "ANSWERING SERVICE COSTS",
   "lead": "Providers may charge a flat subscription, usage-based minutes, per-call fees, setup fees, or a combination. This guide explains the practical decisions, handoffs, and tests that matter before putting the workflow in front of real callers.",
   "sections": [
@@ -21,6 +21,14 @@ const data={
     {
       "title": "Judge the result, not just the bill",
       "body": "Track how many calls become useful messages, qualified inquiries, or confirmed appointments. Do not assume every answered call is a recovered sale; review actual lead quality and staff follow-through."
+    },
+    {
+      "title": "What to request in a written quote",
+      "body": "Ask for the subscription amount, included call volume or minutes, overage rate, setup and onboarding charges, phone-number or transfer fees, and any costs from third-party tools. Request an example invoice using your own estimated call pattern."
+    },
+    {
+      "title": "What a planning estimate cannot tell you",
+      "body": "An online calculator can illustrate how volume, coverage, and workflow complexity may affect price. It cannot confirm your actual monthly bill, included integrations, service availability, or one-time implementation costs without a written proposal."
     }
   ],
   "bullets": [
@@ -41,6 +49,14 @@ const data={
     {
       "q": "How can we tell whether it works?",
       "a": "Review call outcomes, qualified inquiries, successful handoffs, and errors using your own call data rather than relying on a scripted demo."
+    },
+    {
+      "q": "Does the lowest monthly plan always cost less?",
+      "a": "No. A low subscription may exclude setup, extra minutes, transfers, integrations, or support. Compare the full expected bill at your own usage level."
+    },
+    {
+      "q": "Does Virtual Agent AI publish a guaranteed monthly price?",
+      "a": "No. Its online estimator provides illustrative planning figures, not a binding offer. Confirm the final scope and price in a written proposal."
     }
   ],
   "related": [
